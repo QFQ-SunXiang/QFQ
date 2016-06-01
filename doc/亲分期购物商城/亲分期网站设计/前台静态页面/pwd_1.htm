@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>会员登录 - 忘记密码</title>
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<link type="text/css" rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="images/logo.png">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39;; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+		<div><a href="#"><img src="images/zixun.png" class="zixun"></a><img src="images/number.png" > </div>
+
+	</div>
+</div>
+	<div class="main_box">
+		   <h3>找回密码：</h3>
+			<div class="modify-wrap step-1">
+				<div class="modify-left">
+                    <ul>
+                    	<li class="mdf-now"><i class="i_1_on"></i><span>验证身份</span></li>
+                    	<li class="vertical-line "></li>
+                    	<li class=""><i class="i_2_off"></i><span>设置新密码</span></li>
+                    	<li class="vertical-line"></li>
+                    	<li class=""><i class="i_3_off"></i><span>完成</span></li>
+                	</ul>
+				</div>
+				<div class="modify-right">
+                <div class="modify-item">
+                    	<label for="userName" id="label-one">用户名：</label>
+                    	<input type="text" id="phoneNumber" onblur="checkphoneNumber()">
+                    	<p class="prompt-step-1"><span id="checkphoneNumber" style="color: red;"></span></p>
+                    	<label for="userName" id="label-two">验证码：</label>
+                    	<input type="text" id="validateCode" class="validate-Code">
+                    	<img id="validateImage" onclick="flushValidateCode();" src="images/code.png">
+                    	<a href="javaScript:void(0);" onclick="flushValidateCode();" class="loading">刷新</a>
+                    	<p class="prompt-step-1"><span id="chckValidate"></span></p>
+                    	<p class="step-1">
+                    		<a class="get-verify" href="javascript:viod(0)" id="getverify" onclick="sendMessage()">获 取  验 证 码</a>
+                    		<a class="resend" href="javascript:viod(0)" id="resendcode"><span id="second_show">60秒</span>后重新发送</a></p>
+                    </div>    
+				<div class="modify-item">
+					<label for="phone" id="">输入验证码：</label>
+					<input type="text" id="phoneValidateCode">
+					<p class="verify-step-1"><span id="checkphoneValidateCode"></span></p>
+					<p><a id="step1" class="next-step" href="javascript:void(0)" onclick="checkNextstepOne()">下 一 步</a></p>
+				</div>
+				</div>
+			</div>
+	</div>	
+<footer>
+    <div class="base">
+		<div id="base_help">
+			<ul class="base_ul">
+            	<li><p><a href="#">关于亲分期</a></p>
+                	<ul>
+                    	<li><p><a href="#">关于我们</a></p></li>
+                        <li><p><a href="#">联系我们</a></p></li>
+                        <li><p><a href="#">加入我们</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">分期资质</a></p>
+                	<ul>
+                    	<li><p><a href="#">什么人能购买</a></p></li>
+                        <li><p><a href="#">能分几期购买</a></p></li>
+                        <li><p><a href="#">分期额度说明</a></p></li>
+                        <li><p><a href="#">必备审核资料</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">购物帮助</a></p>
+                	<ul>
+                    	<li><p><a href="#">购物须知</a></p></li>
+                        <li><p><a href="#">电子签约</a></p></li>
+                        <li><p><a href="#">商品相关</a></p></li>
+                        <li><p><a href="#">订单相关</a></p></li>
+                        <li><p><a href="#">账户信息</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">支付方式</a></p>
+                	<ul>
+                    	<li><p><a href="#">发票说明</a></p></li>
+                        <li><p><a href="#">在线支付</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">售后服务</a></p>
+                	<ul>
+                    	<li><p><a href="#">物流配送</a></p></li>
+                        <li><p><a href="#">还款规则</a></p></li>
+                        <li><p><a href="#">常见问题</a></p></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="base_div">
+            	<p class="base_p_number">400-628-5159</p>
+                <p class="base_p_time">周一至周五9:00~21:00</p>
+                <a href="#"><img src="images/base_kefu.png" alt=""  /></a>
+            </div>   
+             <hr />
+       		 <p class="hr_p_1">Copyright © 2015 亲分期 Qinfenqi.com 亲分期（北京）科技有限公司 版权所有</p>
+        	 <p class="hr_p_2">京ICP备15033191号-1 </p>
+		</div>
+       
+    </div>
+</footer>
+</body></html>

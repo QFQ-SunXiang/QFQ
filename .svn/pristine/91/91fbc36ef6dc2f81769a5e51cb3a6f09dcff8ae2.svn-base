@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table</title>
+<style type="text/css" >
+body, button, input, select, textarea { font-family:'\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', Verdana;}
+table {border:1px thin #666;font-size:14px;}
+td {width:100px;height:50px;padding-left:10px;padding-right:10px;}
+.td-1 {width:200px;text-align:right;}
+.td-2 {width:300px;}
+.td-title {font-size:16px;}
+</style>
+</head>
+
+<body>
+<div style="width:1000px;margin:0 auto;">
+    <table width="1000" border="1" cellpadding="1" cellspacing="0">
+        <tr>
+            <td colspan="6" style="text-align:center; font-size:18px;"><strong>大学生信息表</strong></td>
+        </tr>
+        <tr>
+            <td colspan="6"  class="td-title"><strong>身份学籍信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>用户名：</strong></td>
+            <td colspan="2" class="td-2">15546464646</td>
+            <td colspan="1" class="td-1"><strong>注册时间：</strong></td>
+            <td colspan="2" class="td-2">1666年7月8日</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>真实姓名：</strong></td>
+            <td colspan="2" class="td-2">诸葛孔明</td>
+            <td colspan="1" class="td-1"><strong>身份证号：</strong></td>
+            <td colspan="2" class="td-2">220102166566652315</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>所在学校：</strong></td>
+            <td colspan="2" class="td-2">黑龙江生态工程职业技术学院</td>
+            <td colspan="1" class="td-1"><strong>毕业年份：</strong></td>
+            <td colspan="2" class="td-2">2016年6月</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>学信网账号：</strong></td>
+            <td colspan="2" class="td-2">123123123</td>
+            <td colspan="1" class="td-1"><strong>学信网密码：</strong></td>
+            <td colspan="2" class="td-2">123123123</td>
+        </tr>
+        <tr>
+            <td colspan="6"  class="td-title"><strong>联系方式</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>QQ号码：</strong></td>
+            <td colspan="2" class="td-2">11111111111</td>
+            <td colspan="1" class="td-1"><strong>微信号码：</strong></td>
+            <td colspan="2" class="td-2">11111111111</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>同学姓名：</strong></td>
+            <td colspan="2" class="td-2">周瑜</td>
+            <td colspan="1" class="td-1"><strong>同学电话：</strong></td>
+            <td colspan="2" class="td-2">2222222222</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title"><strong>银行卡信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"> <strong>开户银行：</strong></td>
+            <td colspan="2" class="td-2">广发银行</td>
+            <td colspan="1" class="td-1"><strong>银行卡号：</strong></td>
+            <td colspan="2" class="td-2">0000000000000000000</td>
+        </tr>
+        <tr>
+          <td colspan="1" class="td-1"><strong>预留手机号：</strong></td>
+          <td colspan="2" class="td-2">15546464646</td>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>姓名：</strong></td>
+            <td colspan="2" class="td-2">诸葛孔明</td>
+            <td colspan="1" class="td-1"><strong>身份证号：</strong></td>
+            <td colspan="2" class="td-2">220102166566652315</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title" ><strong>紧急联系方式</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>父亲（母亲）姓名：</strong></td>
+            <td colspan="2" class="td-2">呵呵呵呵</td>
+            <td colspan="1" class="td-1"><strong>父亲（母亲）联系方式：</strong></td>
+            <td colspan="2" class="td-2">13131313131</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>同学姓名：</strong></td>
+            <td colspan="2" class="td-2">周瑜</td>
+            <td colspan="1" class="td-1"><strong>同学电话：</strong></td>
+            <td colspan="2" class="td-2">22222222222</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title" ><strong>补充说明：</strong></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfq.blacklist.dao.BlackListDao">
+
+	<!-- 保存黑名单 -->
+	<insert id="createBlackList" parameterType="com.qfq.blacklist.bean.Black">
+		insert into qfq_core_black_list (id, name, total_arrears, total_penalty, late_times, status, platform)
+			values
+		<foreach collection="list" item="item" index="index" separator=",">
+			(#{item.id}, #{item.name}, #{item.totalArrears}, #{item.totalPenalty}, #{item.lateTimes}, #{item.status}, #{item.platform})
+		</foreach>
+	</insert>
+
+
+	<!-- 获取所有黑名单 -->
+	<select id="getBlackList" resultType="com.qfq.blacklist.bean.Black">
+		select * from qfq_core_black_list
+	</select>
+
+</mapper>

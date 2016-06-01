@@ -1,0 +1,266 @@
+<!doctype html>
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<title>亲分期 - 白领信息表</title	>
+    <link href="css/white-collar.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    </head>
+<body>
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="images/logo.png">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39;; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="../images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+	<div><a href="#"><img src="../images/zixun.png" class="zixun"></a><img src="../images/number.png" > </div>
+	</div>
+</div>
+<div style="margin:0 auto; width:1200px;position:relative;">
+	<div class="main-wrap">
+		<!--left-->
+        <div class="mu-menu">
+                        <dl>
+                            <dt class="mu-menu-div"><span class="font-size3 font-bd "><a href="#" class="mu-menu-a">我的亲分期</a></span></dt>
+                            <dd>
+                                <a href="#" target="_self"><i></i>我的订单</a>
+                                <ul>
+                                    <li><a href="#" target="_self" class="">商品订单</a></li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_self"><i></i>我的账单</a>
+                                <ul>
+                                    <li><a href="#" target="_self" class="">商品账单</a></li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_self"><i></i>个人中心</a>
+                                <ul>
+                                    <!--<li><a href="#" target="_self" class="">优惠券</a></li>-->
+                                    <li><a href="#" target="_self" class="">我的信用</a></li>
+                                    <li><a href="#" target="_self" class="">账号设置</a></li>
+                                    <li><a href="#" target="_self" class="">修改密码</a></li>
+                                    <li><a href="#" target="_self" class="">收货地址</a></li>
+                                    <li><a href="#" target="_self" class="">申请成为大使</a></li>                
+                                </ul>
+                            </dd>
+                            <dd><a href="#" target="_self"><i></i>我的收藏</a>
+                                <ul>
+                                    <li><a href="#" target="_self" class="active">收藏夹</a></li>            
+                                </ul>
+                            </dd>
+                         </dl>
+                    </div>
+        <!--main-->
+        <div class="apply-all" id="">
+                <div class="apply-wrap">
+                    <div class="apply-tt">
+                        <p class="apply-tt-p">白领信息表</p>
+                    </div>
+                    <div id="" style="width: 970px; padding-top:10px;">
+                        <!--客户基本信息-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>客户基础信息</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block" id=""><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>姓名：</label><input type="text" class="input_w_80"/>
+                                                             性别：<select class="input_w_80"><option >请选择</option><option>男</option><option>女</option></select>
+                                                         身份证号：<input type="text" style="width:150px;"/></p>
+                            <p class="p_mian"><label>现居住地址：</label>
+                                              <select class="input_w_80"><option>请选择</option></select>省
+                                              <select class="input_w_80"><option>请选择</option></select>市（县）
+                                              <input type="text" class="input_w_80"/>区（村镇）
+                                              <input type="text" style="width:100px;"/>街（路）<br/>
+                                              <label></label>
+                                              <input type="text" style="margin-left:1px"/>小区
+                                              <input type="text" class="input_w_80"/>楼
+                                              <input type="text" class="input_w_80"/>层
+                                              <input type="text" class="input_w_80"/>室</p>
+                        </div>
+                        <!--单位信息-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>工作单位信息</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block;"><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>单位名称：</label><input type="text" style="width:300px"/>
+                                              单位性质：<select style="width:150px;">
+                                                       <option>请选择</option>
+                                                       <option>外商独资/外企办事处</option>
+                                                       <option>中外合营（合资/合作）</option>
+                                                       <option>私营/民营企业</option>
+                                                       <option>国有企业</option>
+                                                       <option>国内上市公司</option>
+                                                       <option>政府机关/非盈利机构</option>
+                                                       <option>事业单位</option>
+                                                       <option>其他</option>
+                                                       </select></p>
+                            <p class="p_mian"><label>所在部门：</label><input type="text" class="input_w_80"/>
+                                              职务：<input type="text" class="input_w_80"/></p>
+                            <p class="p_mian"><label>单位地址：</label><input type="text" style="width:400px"/></p>
+                            <p class="p_mian"><label>联系人：</label><input type="text" class="input_w_80"/>
+                                              固定电话：<input type="text" style="width:150px"/>
+                                              手机：<input type="text" style="width:150px"/></p>
+                        </div>
+                        <!--邮寄地址及联系方式-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>邮寄地址及联系方式</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block;"><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>邮寄地址：</label><select class="input_w_80"><option>请选择</option></select>省
+                                                                        <select class="input_w_80"><option>请选择</option></select>市（县）
+                                                                        <input type="text" class="input_w_80"/>区（村镇）
+                                                                        <input type="text" class="input_w_80"/>街（路）<br/>
+                                                                        <label></label>
+                                                                        <input type="text" style="margin-left:1px;"/>小区<input type="text" class="input_w_80"/>楼
+                                                                        <input type="text" class="input_w_80"/>层<input type="text" class="input_w_80"/>室</p>
+                            <p class="p_mian"><label>本人联系方式：</label><input type="text"/>qq：<input type="text"/><br/>
+                                              <label>微信：</label><input type="text"/>e-mail：<input type="text" style="width:150px;"/></p>
+                        </div>
+                        <!--家庭及紧急联系方式-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>家庭及紧急联系人信息</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block;"><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>父亲姓名：</label><input type="text"/>
+                                              联系方式：<input type="text"/></p>
+                            <p class="p_mian"><label>母亲姓名：</label><input type="text"/>
+                                              联系方式：<input type="text"/></p>
+                            <p class="p_mian"><label>夫妻或儿女姓名：</label><input type="text"/>
+                                              联系方式：<input type="text"/></p>
+                            <p class="p_mian"><label>亲戚或朋友姓名：</label><input type="text"/>
+                                              联系方式：<input type="text"/></p>
+                        </div>
+                        <!--收入及其他信息-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>收入及其他信息</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block;"><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>教育程度：</label>
+                                                                       <select class="input_w_80">
+                                                                            <option>请选择</option>
+                                                                            <option>中学</option>
+                                                                            <option>高中</option>
+                                                                            <option>专科</option>
+                                                                            <option>本科</option>
+                                                                            <option>研究生</option>
+                                                                            <option>博士</option>
+                                                                       </select>
+                                              家庭收入：¥<input type="text" class="input_w_80"/></p>
+                            <p class="p_mian"><label>总工作时间：</label><input type="text" class="input_w_80"/>（月）
+                                              现单位工作时间：<select class="input_w_80">
+                                                               <option>请选择</option>
+                                                               <option>一年以内</option>
+                                                               <option>一年</option>
+                                                               <option>两年</option>
+                                                               <option>三年</option>
+                                                               <option>四年</option>
+                                                               <option>五年</option>
+                                                               <option>六年</option>
+                                                               <option>七年</option>
+                                                               <option>八年</option>
+                                                               <option>九年</option>
+                                                               <option>十年</option>
+                                                               <option>十年以上</option>
+                                                           </select></p>
+                            <p class="p_mian"><label>个人月收入：</label>¥<input type="text" class="input_w_80"/>
+                                              是否有社保：<select class="input_w_80">
+                                                            <option>请选择</option>
+                                                            <option>是</option>
+                                                            <option>否</option></select>
+                                              是否有住房：<select class="input_w_80">
+                                                            <option>请选择</option>
+                                                            <option>是</option>
+                                                            <option>否</option></select>
+                                              每月生活支出额度：¥<input type="text" class="input_w_80"/></p>
+                            <p class="p_mian"><label>其他（担保人）联系人姓名：</label><input type="text"/>
+                                              联系人电话：<input type="text"/></p>
+                        </div>
+                        <!--银行卡信息-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>银行卡信息</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block;"><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>银行卡开户行：</label>
+                                                <select style="width:200px;">
+                                                    <option value="">请选择</option>
+                                                    <option value="ICBC">工商银行</option>
+                                                    <option value="ABC">农业银行</option>
+                                                    <option value="BOC">中国银行</option>
+                                                    <option value="CCB">建设银行</option>
+                                                    <option value="CMBCHINA">招商银行</option>
+                                                    <option value="SPDB">浦发银行</option>
+                                                    <option value="CIB">兴业银行</option>
+                                                    <option value="CEB">光大银行</option>
+                                                    <option value="GDB">广发银行</option>
+                                                    <option value="PINGAN">平安银行</option>
+                                                    <option value="HXB">华夏银行</option>
+                                                    <option value="CMBC">民生银行</option>
+                                                    <option value="SHB">上海银行</option>
+                                                    <option value="ECITIC">中信银行</option>
+                                                    <option value="BOCO">交通银行</option>
+                                                    <option value="POST">邮政储蓄银行</option>
+                                                </select></p>
+                            <p class="p_mian"><label>开户姓名：</label><input type="text"/>
+                                                        账号：<input type="text" style="width:250px"/></p>
+                        </div>  
+                        <!--上传资料-->
+                        <div class="white-collar-div">
+                            <p class="p_mian_title"><strong>上传资料</strong></p>
+                            <!--error窗口-->
+                            <div class="error-div" style="display:block;"><span class="error-span">测试信息</span></div>
+                            <p class="p_mian" style="margin-top:20px;"><label>身份证（正反面）：</label>
+                                              <input type="file" class="white-collar-file"/>
+                                              <input type="file" class="white-collar-file"/></p>
+                            <p class="p_mian"><label>银行流水：</label>
+                                              <input type="file" class="white-collar-file"/>
+                                              <input type="file" class="white-collar-file"/>
+                                              <input type="file" class="white-collar-file"/></p>
+                            <p class="p_mian"><label>其他：</label>
+                            	<div class="white-collar-other-div">
+                                	<input type="file" class="white-collar-file white-collar-other"/>
+									<input type="file" class="white-collar-file white-collar-other"/>
+                                    <input type="file" class="white-collar-file white-collar-other"/>
+                                    <input type="file" class="white-collar-file white-collar-other"/>
+                                    <input type="file" class="white-collar-file white-collar-other"/>
+                                    <input type="file" class="white-collar-file white-collar-other"/>
+                                </div>
+                                <div style="margin-left:225px;">
+                                	 <input type="button" value="添加" class="add-btn"/>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="annotation">
+                        <p class="annotation-p">注释:</p>
+                        <p class="annotation-p-title">1.关于分期</p>
+                        <p class="annotation-p-main">1.关于分期</p>
+                        <p class="annotation-p-main">1.关于分期</p>
+                        <p class="annotation-p-main">1.关于分期</p>
+                        <p class="annotation-p-main">1.关于分期</p>
+                        </div>       		
+                    </div>
+                </div>
+                <div class="btn-submit-div">
+                    <a href="#" class="btn-submit-a">提交</a>
+                </div>
+            </div>	
+     </div>
+</div>
+<!--底部-->
+
+
+</body></html>

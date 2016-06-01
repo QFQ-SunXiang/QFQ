@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qinfenqi.black.user.dao.UserDao">
+	<!-- 用户登录 -->
+	<select id="getUserByUserName" parameterType="com.qinfenqi.black.user.bean.User" resultType="com.qinfenqi.black.user.query.UserQuery">
+		select * from qfq_black_users where username = #{userName}
+	</select>
+	
+	
+	<!-- 查询用户 -->
+	<sql id="userFilter">
+		<trim prefix="where" prefixOverrides="and | or"> 
+			<if test="userName != null and userName != ''">
+				username like "%"#{userName}"%"
+	 		</if> 
+			<if test="currentLoginIp != null and currentLoginIp != ''">
+				and current_login_ip like "%"#{currentLoginIp}"%"
+	 		</if> 
+			<if test="lastLoginIp != null and lastLoginIp != ''">
+				and last_login_ip like "%"#{lastLoginIp}"%"
+	 		</if> 
+			<if test="registerIp != null and registerIp != ''">
+				and register_ip like "%"#{registerIp}"%"
+	 		</if> 
+	 		<if test="userStyle > 0">
+				and u.user_style = #{userStyle}
+	 		</if>
+	 		and u.user_style > 0 
+	 		and u.user_id > 0
+	 		and u.is_delete = 1
+		</trim>
+	</sql>
+	<select id="getAllUserList" parameterType="com.qinfenqi.black.user.query.UserQuery" resultType="com.qinfenqi.black.user.query.UserQuery">
+		select u.* from qfq_black_users u <include refid="userFilter"/> ORDER BY ${orderField} desc limit #{startNo}, #{pageSize}
+	</select>
+	<select id="getAllUserCount" parameterType="com.qinfenqi.black.user.query.UserQuery" resultType="int">
+		select count(1) from qfq_black_users u <include refid="userFilter"/>
+	</select>
+	
+	<!-- 根据ID查询后台用户列表 -->
+	<select id="getUserByUserId" parameterType="com.qinfenqi.black.user.query.UserQuery" resultType="com.qinfenqi.black.user.query.UserQuery">
+		select * from qfq_black_users u where user_id = #{userId};
+	</select>
+	
+	<!-- 更新用户信息 -->
+	<update id="updateUser" parameterType="com.qinfenqi.black.user.bean.User">
+		update qfq_black_users u  
+		<trim prefix="SET" suffixOverrides=","> 
+			<if test="currentLoginIp != null and currentLoginIp != '' ">
+				u.current_login_ip = #{currentLoginIp},
+			</if>
+			<if test="loginCount > 0">
+				u.login_count = #{loginCount},
+		 	</if>
+		 	<if test="currentLoginTime != null">
+				u.current_login_time = #{currentLoginTime},
+			</if>
+			<if test="lastLoginIp != null and lastLoginIp != '' ">
+				u.last_login_ip = #{lastLoginIp},
+			</if>
+			<if test="lastLoginTime != null">
+				u.last_login_time = #{lastLoginTime},
+			</if>
+			<if test="auditStatus > 0">
+				u.audit_status = #{auditStatus}
+			</if>
+		</trim>
+		where u.user_id = #{userId}
+	</update>
+	
+	<!-- 添加用户 -->
+	<insert id="createUser" useGeneratedKeys="true" keyProperty="userId"  parameterType="com.qinfenqi.black.user.query.UserQuery">
+		insert into qfq_black_users(username, password, user_style, company_name, company_short_name, company_lic_num, register_ip) 
+			values(#{userName}, #{password}, #{userStyle}, #{companyName}, #{companyShortName}, #{companyLicNum}, #{registerIp});
+	</insert>
+</mapper>

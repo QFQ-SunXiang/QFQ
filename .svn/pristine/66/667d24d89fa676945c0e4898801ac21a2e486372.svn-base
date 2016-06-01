@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>我的亲分期 - 信用认证 - 学籍认证</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/personal.css">
+    <link rel="stylesheet" href="../css/index.css">
+<style type="text/css">
+
+
+</style>
+
+</head>
+<body>
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="../images/index_3.gif">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="../images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+	<div><a href="#"><img src="../images/zixun.png" class="zixun"></a><img src="../images/number.png" > </div>
+	</div>
+</div>
+<div class="mid">
+<div class="main-wrap">
+<div class="mu-menu">
+                <dl>
+                    <dt class="mu-menu-div"><span class="font-size3 font-bd "><a href="#" class="mu-menu-a">我的亲分期</a></span></dt>
+                    <dd>
+                		<a href="#" target="_self"><i></i>我的订单</a>
+                        <ul>
+                            <li><a href="#" target="_self" class="">商品订单</a></li>
+                        </ul>
+         		    </dd>
+                    <dd>
+                		<a href="#" target="_self"><i></i>我的账单</a>
+                        <ul>
+                            <li><a href="#" target="_self" class="">商品账单</a></li>
+                        </ul>
+           			</dd>
+                    <dd>
+                		<a href="#" target="_self"><i></i>个人中心</a>
+                        <ul>
+                            <!--<li><a href="#" target="_self" class="">优惠券</a></li>-->
+                            <li><a href="#" target="_self" class="active">我的信用</a></li>
+                            <li><a href="#" target="_self" class="">账号设置</a></li>
+                            <li><a href="#" target="_self" class="">修改密码</a></li>
+                            <li><a href="#" target="_self" class="">收货地址</a></li>
+                            <li><a href="#" target="_self" class="">申请成为大使</a></li>                
+                        </ul>
+            		</dd>
+                    <dd><a href="#" target="_self"><i></i>我的收藏</a>
+                    	<ul>
+                            <li><a href="#" target="_self" class="">收藏夹</a></li>            
+                        </ul>
+                    </dd>
+                 </dl>
+    		</div>
+<div class="my-Credit">
+            <p class="clearfix my-Credittitle">
+                <i class="inline-block"></i>
+                <span class="inline-block font1 font-size3">信用认证</span>
+                <span class="inline-block font3 right">
+                    <a href="#">返回认证列表</a>
+                </span>
+            </p>
+            <div id="ejs_baseAuth">
+                <div class="auth_container">
+                    <p class="mycreditwrap-tit font-size2 font1"> 额度提升认证1</p>
+                    <div class="credit_contacts_title font-size2">
+                        <p class="clearfix">
+                            <a class="left block credit-title1 font-white" href="#">1、紧急联系方式</a>
+                            <a class="left block credit-title2 font-white" href="#">2、证件照认证</a>
+                        </p>
+                    </div>
+                    <!--error-->
+                    <div class="form-normal font-size0 ui-error" style="text-align:center">
+		                <p class="error-p inline-block font-red contacts_p" id="errorTxt" style="">图片不能为空！</p>
+		            </div>
+                    <div class="mycredit-title font-size2">
+                        <section id="uploadBlockSection" class="creditAuth-wrap uploadBlock creditAuth-wrap-on">
+                            <div id="creditUploadImg" class="creditAuth-content upload-warp event-creditAuthEdit creditAuthEdit ">
+                            	<!--第一步-->
+                                <div class="con_upImg">
+                                    <h2 class="con_title_left"> <b class="inline-block">01</b><span class="font-size3 font-bd">上传身份证</span></h2>
+                                    <div class="con_left">
+                                        <div class="esp">
+                                            <span class="block"></span>
+                                            <div class="ini_img ini_img1"></div>
+                                        </div>
+                                        <div class="esp">
+                                            <span class="block"></span>
+                                            <div class="ini_img ini_img2"></div>
+                                        </div>
+                                        <p class="img-tips">照片要求：照片需清晰，不可反光</p>
+                                    </div>
+                                    <div class="upload-img con_right">
+                                        <div id="card" class="upload-img-div ">
+                                            <div class="smallImg">
+                                                <p>点击上传图片</p>
+                                            </div>
+                                            <input id="event-auth-card-img-file" type="file" name="authCardImgFile"></input>
+                                        </div>
+                                        <div id="card2" class="upload-img-div ">
+                                            <div class="smallImg">
+                                                <p>点击上传图片 </p>
+                                            </div>
+                                            <input id="event-auth-card1-img-file" type="file" name="authCard1Img1File"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--第二步-->
+                                <div class="con_upImg">
+                                    <h2 class="con_title_left"><b class="inline-block">02</b><span class="font-size3 font-bd">上传学生证</span></h2>
+                                    <div class="con_left">
+                                        <div class="esp">
+                                            <span class=" block"></span>
+                                            <div class="ini_img ini_img3"></div>
+                                        </div>
+                                        <div class="esp">
+                                            <span class=" block"></span>
+                                            <div class="ini_img ini_img3_2"></div>
+                                        </div>
+                                        <p class="img-tips">
+                                            学生证需加盖钢印或者学校公章，
+                                            <span class="font-red"></span>
+                                        </p>
+                                    </div>
+                                    <div class="upload-img con_right">
+                                        <div id="card3" class="upload-img-div ">
+                                            <div class="smallImg">
+                                                <p>点击上传图片 </p>
+                                            </div>
+                                            <input id="event-auth-stu-card-img-file" type="file" name="authStuCardImgFile"></input>
+                                        </div>
+                                        <div id="card4" class="upload-img-div ">
+                                            <div class="smallImg">
+                                                <p>点击上传图片</p>
+                                            </div>
+                                            <input id="event-auth-stu-card1-img-file" type="file" name="authStuCard1ImgFile"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--第三步-->
+                                <div class="con_upImg">
+                                    <h2 class="con_title_left"><b class="inline-block"> 03</b><span class="font-size3 font-bd">上传声明合照</span></h2>
+                                    <div class="con_left">
+                                        <div class="esp">
+                                            <span class=" block"></span>
+                                            <div class="ini_img ini_img4"></div>
+                                        </div>
+                                        <p class="img-tips"><strong> 步骤一：请用A4纸手写以下内容及本人签名</strong></p>
+                                        <p class="img-tips">本人提供证件仅供亲分期网站信用认证并购买商品时使用；此账户由本人操作（未因任何理由交予别人代为操作）…
+                                            <span class="font-red">记得本人签名！</span>
+                                        </p>
+                                        <p class="img-tips"><strong>步骤二：证件人面部无遮挡、五官清晰可见，手持身份证、学生证及手写声明合影拍照。</strong></p>
+                                        <p class="img-tips"></p>
+                                    </div>
+                                    <div class="upload-img con_right">
+                                        <div id="card5" class="upload-img-div ">
+                                            <div class="smallImg">
+                                                <p>点击上传图片</p>
+                                            </div>
+                                            <input id="event-other1-img-file" type="file" name="authStuCard1ImgFile"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                            	<!--第四步-->
+                                <div class="con_upImg">
+                                    <h2 class="con_title_left"><b class="inline-block"> 04</b><span class="font-size3 font-bd">补充资料</span></h2>
+                                    <div class="con_left" style="margin-top:12px;height:auto">
+                                        <p class="img-tips">步骤一：请用A4纸手写以下内容及本人签名</p>
+                                        <p class="img-tips">本人提供证件仅供亲分期网站信用认证并购买商品时使用；此账户由本人操作（未因任何理由交予别人代为操作）</p>
+                                        <p class="img-tips">步骤二：证件人面部无遮挡、五官清晰可见，手持身份证、学生证及手写声明合影拍照。</p>
+                                        <p class="img-tips"></p>
+                                    </div>
+                                    <div class="supplement_div_file">
+                                            <input id="" type="file" name="" />
+                                    </div>
+                                    <div class="supplement_div_a">
+                                    	<a href="#" class="supplement_a">添加更多资料</a>
+                                    </div>
+                            	</div>
+                            </div>
+                            <a href="#" class="common-btn-blue a_btn_con"> 提交认证</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+<footer>
+    <div class="base">
+		<div id="base_help">
+			<ul class="base_ul">
+            	<li><p><a href="#">关于亲分期</a></p>
+                	<ul>
+                    	<li><p><a href="#">关于我们</a></p></li>
+                        <li><p><a href="#">联系我们</a></p></li>
+                        <li><p><a href="#">加入我们</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">分期资质</a></p>
+                	<ul>
+                    	<li><p><a href="#">什么人能购买</a></p></li>
+                        <li><p><a href="#">能分几期购买</a></p></li>
+                        <li><p><a href="#">分期额度说明</a></p></li>
+                        <li><p><a href="#">必备审核资料</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">购物帮助</a></p>
+                	<ul>
+                    	<li><p><a href="#">购物须知</a></p></li>
+                        <li><p><a href="#">电子签约</a></p></li>
+                        <li><p><a href="#">商品相关</a></p></li>
+                        <li><p><a href="#">订单相关</a></p></li>
+                        <li><p><a href="#">账户信息</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">支付方式</a></p>
+                	<ul>
+                    	<li><p><a href="#">发票说明</a></p></li>
+                        <li><p><a href="#">在线支付</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">售后服务</a></p>
+                	<ul>
+                    	<li><p><a href="#">物流配送</a></p></li>
+                        <li><p><a href="#">还款规则</a></p></li>
+                        <li><p><a href="#">常见问题</a></p></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="base_div">
+            	<p class="base_p_number">400-628-5159</p>
+                <p class="base_p_time">周一至周五9:00~21:00</p>
+                <a href="#"><img src="../images/base_kefu.png" alt=""  /></a>
+            </div>   
+             <hr />
+       		 <p class="hr_p_1">Copyright © 2015 亲分期 Qinfenqi.com 亲分期（北京）科技有限公司 版权所有</p>
+        	 <p class="hr_p_2">京ICP备15033191号-1 </p>
+		</div>
+       
+    </div>
+</footer>
+<script type="text/javascript" src="../js/jquery-1.js"></script>
+<script type="text/javascript" src="../js/1.js"></script>
+</body></html>
+
+
+
+
+
+
+

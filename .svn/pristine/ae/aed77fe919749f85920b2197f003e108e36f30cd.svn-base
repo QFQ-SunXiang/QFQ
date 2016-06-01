@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>帮助页面——正品承诺</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/info.css" rel="stylesheet">
+</head>
+<body>
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="../images/index_3.gif">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39;; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="../images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+		<div><a href="#"><img src="../images/zixun.png" class="zixun"></a><img src="../images/number.png" > </div>
+
+	</div>
+</div>
+
+
+<div class="mid">
+<div class="main_box">
+		<div class="grzx">
+			<div class="grzx_left"><h3>帮助</h3> 
+                <div class="help-tt">
+                    <h4>分期说明</h4>
+                    <div class="grzx_lm">
+                        <ul>
+                            <li><a class="" href="whocan.html">什么人可办理分期</a></li>
+                            <li><a class="" href="manage.html">如何办理分期</a></li>
+                            <li><a class="" href="max.html">最多可分几期</a></li>
+                            <li><a class="" href="limit.html">分期额度说明</a></li>
+                            <li class="nobb"><a class="" href="information.html">审核资料说明</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help-tt">
+                    <h4>售后服务</h4>
+                    <div class="grzx_lm">
+                        <ul>
+                            <li><a class="" href="refund.html">退换货规则</a></li>
+                            <li><a class="red_a" href="commitment.html">正品承诺</a></li>
+                            <li><a class="" href="consult.html">咨询投诉</a></li>
+                            <li class="nobb"><a class="" href="link.html">友情链接</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help-tt">
+                    <h4>支付方式</h4>
+                    <div class="grzx_lm">
+                        <ul>
+                            <li><a class="" href="invoice.html">发票说明</a></li>
+                            <li class="nobb"><a class="" href="payment.html">微信在线支付</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help-tt">
+                    <h4>购物指南</h4>
+                    <div class="grzx_lm">
+                        <ul>
+                            <li><a class="" href="question.html">购物常见问题</a></li>
+                            <li><a class="" href="shoppingprocess.html">购物流程</a></li>
+                            <li><a class="" href="clause.html">交易条款</a></li>
+                            <li><a class="" href="agreement.html">网站注册协议</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help-tt">
+                    <h4>配送方式</h4>
+                    <div class="grzx_lm">
+                        <ul>
+                            <li class="nobb"><a class="" href="freight.html">免运费</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help-tt">
+                    <h4>特色服务</h4>
+                    <div class="grzx_lm">
+                       <ul>
+                           <li><a class="" href="installment.html">分期付款</a></li>
+                           <li class="nobb"><a class="" href="down-payment.html">零首付</a></li>
+                       </ul>
+                    </div>
+                </div>
+			</div>
+			<div class="grzx_right">
+				<h3>正品承诺</h3>
+				<div class="mydd">
+				<p>&nbsp;</p>
+					<p>
+						<span style="color: #333333"><span style="font-size: 13px"><span style="font-family: 微软雅黑">亲分期保证所售产品100%为正品行货，承担所售产品的一年期联保服务义务。如果您在亲分期所购买的商品已经超出国家法律规定的退换货期限，使用过程中出现的非人为的故障问题，我们仍将进行全程跟踪服务，承担所售产品的联保服务义务。同时，亲分期将按照国家的要求严格履行产品的退换货等义务。
+</span></span></span>
+					</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--底部-->
+<footer>
+    <div class="base">
+		<div id="base_help">
+			<ul class="base_ul">
+            	<li><p>关于亲分期</p>
+                	<ul>
+                    	<li><p><a href="about_us.html">关于我们</a></p></li>
+                        <li><p><a href="contact_us.html">联系我们</a></p></li>
+                        <li><p><a href="join_us.html">加入我们</a></p></li>
+                    </ul>
+                </li>
+                <li><p>分期资质</p>
+                	<ul>
+                    	<li><p><a href="whocan.html">什么人能购买</a></p></li>
+                        <li><p><a href="max.html">能分几期购买</a></p></li>
+                        <li><p><a href="limit.html">分期额度说明</a></p></li>
+                        <li><p><a href="information.html">必备审核资料</a></p></li>
+                    </ul>
+                </li>
+                <li><p>购物帮助</p>
+                	<ul>
+                    	<li><p><a href="clause.html">购物须知</a></p></li>
+                        <li><p><a href="agreement.html">电子签约</a></p></li>
+                        <li><p><a href="about_goods.html">商品相关</a></p></li>
+                        <li><p><a href="about_order.html">订单相关</a></p></li>
+                        <li><p><a href="about_account.html">账户信息</a></p></li>
+                    </ul>
+                </li>
+                <li><p>支付方式</p>
+                	<ul>
+                    	<li><p><a href="invoice.html">发票说明</a></p></li>
+                        <li><p><a href="payment.html">在线支付</a></p></li>
+                    </ul>
+                </li>
+                <li><p>售后服务</p>
+                	<ul>
+                    	<li><p><a href="freight.html">物流配送</a></p></li>
+                        <li><p><a href="clause.html">还款规则</a></p></li>
+                        <li><p><a href="question.html">常见问题</a></p></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="base_div">
+            	<p class="base_p_number">400-628-5159</p>
+                <p class="base_p_time">周一至周五9:00~21:00</p>
+                <a href="#"><img src="../images/base_kefu.png" alt=""/></a>
+            </div>   
+             <hr />
+       		 <p class="hr_p_1">Copyright © 2015 亲分期 Qinfenqi.com 亲分期（北京）科技有限公司 版权所有</p>
+        	 <p class="hr_p_2">京ICP备15033191号-1 </p>
+		</div>
+       
+    </div>
+</footer>
+<!-- End Save for Web Slices -->
+</body>
+</html>

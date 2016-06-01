@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qinfenqi.black.black.dao.BlackDao">
+	<!-- 根据审核状态统计黑名单 -->
+	<select id="getAllBlackCounts" resultType="com.qinfenqi.black.bean.Count">
+		select audit_status as name, count(*) as total from qfq_black_list group by audit_status
+	</select>
+	<!-- 根据审核状态统计黑名单 -->
+	<select id="getBlackCounts" resultType="com.qinfenqi.black.bean.Count" parameterType="long">
+		select audit_status as name, count(*) as total from qfq_black_list where platform = #{userId} group by audit_status
+	</select>
+	<!-- 获取黑名单列表 -->
+	<sql id="queryFilter">
+		<trim prefix="where" prefixOverrides="and | or">
+			b.platform = u.user_id
+			<if test="type == 1 and keyword != ''">
+				and b.true_name = #{keyword}
+	 		</if>
+			<if test="type == 2 and keyword != ''">
+				and b.id_card = #{keyword}
+	 		</if>
+			<if test="platform > 0">
+				and b.platform = #{platform}
+	 		</if>
+			<if test="auditStatus > 0">
+				and b.audit_status = #{auditStatus}
+	 		</if>
+		</trim>
+	</sql>
+	<select id="getBlackList" parameterType="com.qinfenqi.black.black.query.BlackQuery" resultType="com.qinfenqi.black.black.query.BlackQuery">
+		select b.*, u.company_short_name from qfq_black_list b, qfq_black_users u <include refid="queryFilter"/> ORDER BY ${orderField} desc limit #{startNo}, #{pageSize}
+	</select>
+	<select id="getBlackCount" parameterType="com.qinfenqi.black.black.query.BlackQuery" resultType="int">
+		select count(1) from qfq_black_list b, qfq_black_users u <include refid="queryFilter"/>
+	</select>
+	
+	<!-- 根据ID查询黑名单详情 -->
+	<select id="getBlackById" parameterType="long" resultType="com.qinfenqi.black.black.query.BlackQuery">
+		select b.*, u.company_short_name from qfq_black_list b, qfq_black_users u where b.black_id = #{blackId} and b.platform = u.user_id
+	</select>
+	
+	<!-- 添加黑名单 -->
+	<insert id="createBlack" parameterType="com.qinfenqi.black.black.query.BlackQuery">
+		insert into qfq_black_list 
+			(true_name, sex, photo, mobile, id_card, 
+			id_card_address, email, qq, wechat, home_address, 
+			parent_name, parent_mobile, company_name, company_address, company_position, 
+			total_arrears, total_penalty, late_times, late_days, late_evidence, 
+			status, platform, publish_time, publish_opinion, audit_status, 
+			audit_opinion, audit_time, modify_time)
+		  values 
+			(#{trueName}, #{sex}, #{photo}, #{mobile}, #{idCard}, 
+			#{idCardAddress}, #{email}, #{qq}, #{wechat}, #{homeAddress}, 
+			#{parentName}, #{parentMobile}, #{companyName}, #{companyAddress}, #{companyPosition}, 
+			#{totalArrears}, #{totalPenalty}, #{lateTimes}, #{lateDays}, #{lateEvidence}, 
+			#{status}, #{platform}, #{publishTime}, #{publishOpinion}, #{auditStatus}, 
+			#{auditOpinion}, #{auditTime}, #{modifyTime})
+	</insert>
+	
+	<!-- 编辑黑名单 -->
+	<update id="modifyBlack" parameterType="com.qinfenqi.black.black.query.BlackQuery">
+		update qfq_black_list
+		<trim prefix="SET" suffixOverrides=","> 
+			<if test="trueName != null and trueName != '' ">
+				true_name = #{trueName}, 
+			</if>
+			<if test="sex > 0">
+				sex = #{sex}, 
+			</if>
+			<if test="photo != null and photo != '' ">
+				photo = #{photo}, 
+			</if>
+			<if test="mobile != null and mobile != '' ">
+				mobile = #{mobile}, 
+			</if>
+			<if test="idCard != null and idCard != '' ">
+				id_card = #{idCard}, 
+			</if>
+			<if test="idCardAddress != null and idCardAddress != '' ">
+				id_card_address = #{idCardAddress}, 
+			</if>
+			<if test="email != null and email != '' ">
+				email = #{email}, 
+			</if>
+			<if test="qq != null and qq != '' ">
+				qq = #{qq}, 
+			</if>
+			<if test="wechat != null and wechat != '' ">
+				wechat = #{wechat}, 
+			</if>
+			<if test="homeAddress != null and homeAddress != '' ">
+				home_address = #{homeAddress}, 
+			</if>
+			<if test="parentName != null and parentName != '' ">
+				parent_name = #{parentName}, 
+			</if>
+			<if test="parentMobile != null and parentMobile != '' ">
+				parent_mobile = #{parentMobile}, 
+			</if>
+			<if test="companyName != null and companyName != '' ">
+				company_name = #{companyName}, 
+			</if>
+			<if test="companyAddress != null and companyAddress != '' ">
+				company_address = #{companyAddress}, 
+			</if>
+			<if test="companyPosition != null and companyPosition != '' ">
+				company_position = #{companyPosition}, 
+			</if>
+			<if test="totalArrears > 0 ">
+				total_arrears = #{totalArrears}, 
+			</if>
+			<if test="totalPenalty > 0 ">
+				total_penalty = #{totalPenalty}, 
+			</if>
+			<if test="lateTimes > 0 ">
+				late_times = #{lateTimes}, 
+			</if>
+			<if test="lateDays > 0 ">
+				late_days = #{lateDays}, 
+			</if>
+			<if test="lateEvidence != null and lateEvidence != '' ">
+				late_evidence = #{lateEvidence}, 
+			</if>
+			<if test="status > 0 ">
+				status = #{status}, 
+			</if>
+			<if test="platform != null and platform != '' ">
+				platform = #{platform}, 
+			</if>
+			<if test="publishTime != null">
+				publish_time = #{publishTime}, 
+			</if>
+			<if test="publishOpinion != null and publishOpinion != '' ">
+				publish_opinion = #{publishOpinion}, 
+			</if>
+			<if test="auditStatus > 0 ">
+				audit_status = #{auditStatus}, 
+			</if>
+			<if test="auditOpinion != null and auditOpinion != '' ">
+				audit_opinion = #{auditOpinion}, 
+			</if>
+			<if test="auditTime != null">
+				audit_time = #{auditTime},
+			</if>
+			<if test="modifyTime != null">
+				modify_time = #{modifyTime}
+			</if>
+		</trim>
+		where black_id = #{blackId}	 
+	</update>
+	
+	<!-- 删除黑名单 -->
+	<delete id="deleteBlack" parameterType="com.qinfenqi.black.black.query.BlackQuery">
+		delete from qfq_black_list where black_id = #{blackId}
+	</delete>
+	
+	<!-- 审核通过(不通过) -->
+	<update id="updateBlack" parameterType="com.qinfenqi.black.black.query.BlackQuery">
+		update qfq_black_list set audit_status = #{auditStatus} where black_id = #{blackId}
+	</update>
+	
+</mapper>

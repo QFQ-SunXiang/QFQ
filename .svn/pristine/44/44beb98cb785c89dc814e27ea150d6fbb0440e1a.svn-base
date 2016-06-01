@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html style="overflow: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>亲分期 - 确认订单</title>
+    <link type="text/css" rel="stylesheet" href="../css/index.css">
+    <link type="text/css" rel="stylesheet" href="../css/shopping.css">
+    
+</head>
+<body>
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="../images/index_3.gif">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39;; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+	<div><a href="#"><img src="../images/zixun.png" class="zixun"></a><img src="../images/number.png" > </div>
+	</div>
+</div>
+<div class="mid">
+<div class="apply-all">
+        <div class="apply-wrap">
+            <div class="apply-tt">
+                <h3>完善订单信息</h3>
+            </div>
+            <div class="apply-steps">   
+            <!--地址可以编辑-->
+                <div class="step-wrap nobt">
+                        <div class="step-tt">
+                            <strong>收货人信息</strong>
+                        </div>
+                        <div style="display: none;" class="step-ctent" id="addressInfoDiv">
+                                                       <div class="item-info"><label>收货人：</label>邢程<button onclick="updateAddressUI(25656);" class="bg-ea common-btn" style="margin-left:130px">编辑</button></div>
+                                <div class="item-info"><label>手机号：</label>15844657070</div>
+                                                            <div class="item-info address-item"><label>地址：</label>吉林 白城市 大安市 慧阳街道 南湖新区18号楼2单元401</div>
+                                                </div>
+                        <div class="step-ctent" id="addressFormDiv" style="">
+                            <div class="item-info">
+                                <label for="realName">收货人：</label>
+                                <input id="contacts" placeholder="请务必填写真实姓名" maxlength="15" value="邢程" readonly style="background-color: #ddd;" type="text">
+                            </div>
+                            <div class="item-info">
+                                <label for="cardId">手机号码：</label>
+                                <input id="mobile" placeholder="请务必填写真实手机号码" maxlength="11" value="15844657070" type="text">
+                                <span class="font-error pl disnone" id="checkMobileMessage">
+                                </span>
+                            </div>
+                            <div class="item-info">
+                                <label>地址：</label>
+                                <select class="form-control cp" id="areaId" onchange="getArea1(1)"><option value="qingXuanZhe">请选择</option><option value="1">﻿北京</option><option value="31">新疆</option><option value="4">重庆</option><option value="19">广东</option><option value="3">天津</option><option value="15">浙江</option><option value="43">澳门</option><option value="20">广西</option><option value="11">内蒙古</option><option value="30">宁夏</option><option value="21">江西</option><option value="32">台湾</option><option value="14">安徽</option><option value="24">贵州</option><option value="27">陕西</option><option value="8">辽宁</option><option value="6">山西</option><option value="29">青海</option><option value="42">香港</option><option value="22">四川</option><option value="12">江苏</option><option value="5">河北</option><option value="26">西藏</option><option value="84">钓鱼岛</option><option value="16">福建</option><option value="9" selected="selected">吉林</option><option value="2">上海</option><option value="17">湖北</option><option value="23">海南</option><option value="25">云南</option><option value="28">甘肃</option><option value="18">湖南</option><option value="13">山东</option><option value="7">河南</option><option value="10">黑龙江</option></select><span class="span_only">&nbsp;省&nbsp;</span>
+                                <select class="form-control cp" id="area1Id" onchange="getArea2(1)"><option value="qingXuanZhe">请选择</option><option value="644">吉林市</option><option value="651">四平市</option><option value="687">延边州</option><option value="674">松原市</option><option value="681" selected="selected">白城市</option><option value="664">白山市</option><option value="2992">辽源市</option><option value="657">通化市</option><option value="639">长春市</option></select><span class="span_only">&nbsp;市&nbsp;</span>
+                                <select class="form-control cp " id="area2Id" onchange="getArea3(1)"><option value="qingXuanZhe">请选择</option><option value="682" selected="selected">大安市</option><option value="686">洮北区</option><option value="683">洮南市</option><option value="684">通榆县</option><option value="685">镇赉县</option></select><span class="span_only">&nbsp;区&nbsp;</span>
+                                <select class="form-control cp " id="area3Id" style=""><option value="qingXuanZhe">请选择</option><option value="24316">东方红农场</option><option value="24324">东风马场</option><option value="24299">两家子镇</option><option value="24302">丰收镇</option><option value="24292">临江街道</option><option value="24308">乐胜镇</option><option value="24317">五间房水库</option><option value="24304">叉干镇</option><option value="24309">四棵树乡</option><option value="24325">大安马场</option><option value="24321">大岗子林场</option><option value="24300">大岗子镇</option><option value="24313">大赉乡</option><option value="24306">太山镇</option><option value="24296">安北街道</option><option value="24326">安广猪场</option><option value="24301">安广镇</option><option value="24293" selected="selected">慧阳街道</option><option value="24298">新平安镇</option><option value="24310">新艾里乡</option><option value="24323">新荒渔场</option><option value="24297">月亮泡镇</option><option value="24314">海坨乡</option><option value="24307">烧锅镇</option><option value="24311">红岗子乡</option><option value="24320">红旗饲养场</option><option value="24315">经济开发区</option><option value="24312">联合乡</option><option value="24322">舍力林场</option><option value="24303">舍力镇</option><option value="24319">良种繁育场</option><option value="24295">锦华街道</option><option value="24294">长虹街道</option><option value="24318">风水山牧场</option><option value="24305">龙沼镇</option></select>
+                            </div>
+                            <div class="item-info address-info nomb">
+                                <label for="address">宿舍地址：</label>
+                                <textarea id="address" placeholder="请输入详细宿舍地址，具体到宿舍号。(50字以内)" maxlength="50"></textarea>
+                            </div>
+                            <div class="check-info">
+                                <label></label>
+                            </div>
+                            <div class="item-info">
+                                <label>&nbsp;</label>
+                                <input value="保存收货地址" class="bg-ea common-btn" onclick="saveOrUpdateAddress(1)" type="button">
+                            </div>
+                        </div>
+                    </div>
+            <!--地址不可编辑-->
+            <!--<div class="step-wrap nobt">
+                                <div class="step-tt">
+                                    <strong>收货人信息</strong>
+                                </div>
+                                <div class="step-ctent" id="addressInfoDiv"><div class="item-info"><label>收货人：</label>毕晨亮<button onclick="updateAddressUI(104371);" class="common-btn bg-ea" style="margin-left:120px">编辑</button></div><div class="item-info"><label>手机号：</label>18604455546</div><div class="item-info address-item"><label>地址：</label>北京 北京市 延庆 北京人文大学延庆校区14号公寓327</div></div>
+                                <div class="step-ctent" id="addressFormDiv" style="display: none;">
+                                    <div class="item-info">
+                                        <label for="realName">收货人：</label>
+                                        <input type="text" id="contacts" placeholder="请务必填写真实姓名" maxlength="15">
+                                    </div>
+                                    <div class="item-info">
+                                        <label for="cardId">手机号码：</label>
+                                        <input type="text" id="mobile" placeholder="请务必填写真实手机号码" maxlength="11">
+                                        <span class="font-error pl disnone" id="checkMobileMessage">
+                                        </span>
+                                    </div>
+                                    <div class="item-info">
+                                        <label>地址：</label>
+                                        <select class="form-control cp" id="areaId" onchange="getArea1(15)"><option value="qingXuanZhe">请选择</option><option value="110000">北京</option><option value="120000">天津</option><option value="130000">河北</option><option value="140000">山西</option><option value="150000">内蒙古</option><option value="160000">辽宁</option><option value="170000">吉林</option><option value="180000">黑龙江</option><option value="190000">上海</option><option value="200000">江苏</option><option value="210000">浙江</option><option value="220000">安徽</option><option value="230000">福建</option><option value="240000">江西</option><option value="250000">山东</option><option value="260000">河南</option><option value="270000">湖北</option><option value="280000">湖南</option><option value="290000">广东</option><option value="300000">广西</option><option value="310000">海南</option><option value="320000">重庆</option><option value="330000">四川</option><option value="340000">贵州</option><option value="350000">云南</option><option value="370000">陕西</option><option value="380000">甘肃</option><option value="390000">青海</option><option value="400000">宁夏</option><option value="420000">台湾</option><option value="430000">香港</option><option value="440000">澳门</option></select><span>&nbsp;省&nbsp;</span>
+                                        <select class="form-control cp" id="area1Id" onchange="getArea2(15)"><option value="qingXuanZhe">请选择</option><option value="110100">北京市</option></select><span>&nbsp;市&nbsp;</span>
+                                        <select class="form-control cp " id="area2Id" onchange="getArea3(15)"><option value="qingXuanZhe">请选择</option><option value="110101">东城</option><option value="110102">西城</option><option value="110103">朝阳</option><option value="110104">丰台</option><option value="110105">石景山</option><option value="110106">海淀</option><option value="110107">门头沟</option><option value="110108">房山</option><option value="110109">通州</option><option value="110110">顺义</option><option value="110111">昌平</option><option value="110112">大兴</option><option value="110113">平谷</option><option value="110114">怀柔</option><option value="110115">密云</option><option value="110116">延庆</option></select><span>&nbsp;区&nbsp;</span>
+                                        <select class="form-control cp " id="area3Id" style="display: none;"></select>
+                                    </div>
+                                    <div class="item-info address-info nomb">
+                                        <label for="address">宿舍地址：</label>
+                                        <textarea id="address" placeholder="请输入详细宿舍地址，具体到宿舍号。(50字以内)" maxlength="50" style="margin: 5px 0px; height: 54px; width: 449px;"></textarea>
+                                    </div>
+                                    <div class="check-info">
+                                        <label></label>
+                                    </div>
+                                    <div class="item-info">
+                                        <label>&nbsp;</label>
+                                        <input type="button" value="保存收货地址" class="bg-ea common-btn" onclick="saveOrUpdateAddress(15)">
+                                    </div>
+                                </div>
+                            </div>-->
+                <div class="step-wrap  ">
+                    <div class="step-tt">
+                        <strong>商品清单</strong>
+                    </div>
+                    <div class="step-ctent buy-goods">
+                        <table cellpadding="0" cellspacing="1" width="100%" border="0">
+                            <tbody><tr>
+                                <th width="60%">商品</th>
+                                <th>价格</th>
+                                <th>数量</th>
+                            </tr>
+                            <tr>
+                                <td class="goods-info">
+                                    <a href="#" target="blank">
+                                     <div><img src="../images/item_324_1.jpg"></div>
+                                     <p><span>佳能(Canon) 700D 单反套机(EF-S 18-135/3.5-5.6 IS STM镜头)</span></p>
+                                    </a>
+                                </td>
+                                <td>￥5099.0</td>
+                                <td>x<i class="buy-num">1</i></td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+                <div class="step-wrap ">
+                    <div class="step-tt">
+                        <strong>分期计算器</strong>
+                    </div>
+                    <div class="step-ctent">
+                        <div class=" item-info all-price">
+                            <label for="price">总价：</label>
+                            <span>￥</span><span id="price">5099.0</span>
+                        </div>
+                        <div class="item-info pay-info">
+                            <label for="paypre">首付金额：</label ><input type="text" >                     
+                            <span class="font-fc pl">￥</span><span id="shouFuKuan" class="font-fc">1019.8</span>
+                        </div>
+                        <div class="item-info pay-info nomb">
+                            <label for="paynum">分期月数：</label>
+                             <select id="stages" onchange="changeFenQi()" class="cp">
+										<option value="1">1月</option>
+										<option value="2">2月</option>
+                                        <option value="3">3月</option>
+                                        <option value="4">4月</option>
+                                        <option value="5">5月</option>
+                                        <option value="6">6月</option>
+                                        <option value="6">7月</option>
+                                        <option value="7">8月</option>
+                                        <option value="8">9月</option>
+                                        <option value="10">10月</option>
+                                        <option value="11">11月</option>
+                                        <option value="12">12月</option>
+                                        <option value="13">13月</option>
+                                        <option value="14">14月</option>
+                                        <option value="15">15月</option>
+                                        <option value="16">16月</option>
+                                        <option value="17">17月</option>
+                                        <option value="18">18月</option>
+                                        <option value="19">19月</option>
+                                        <option value="20">20月</option>
+                                        <option value="21">21月</option>
+                                        <option value="22">22月</option>
+                                        <option value="23">23月</option>
+										<option value="24" selected="selected">24月</option>
+							</select>
+                            <span class="font-ea pl">月供：</span><span class="font-fc">￥</span><span id="yueGong" class="font-fc">713.86</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-wrap ">
+                    <div class="step-tt">
+                        <strong>推荐码</strong>
+                    </div>
+                    <div class="step-ctent">
+                        <div class="item-info pay-info ">
+                            <span id="recommendCodeSpan"><input type="text" id="recommandCode"></span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <button class="bg-fc common-btn fr" onclick="submitOrder(this);" data-init="true" style="margin: 20px 0">提交订单</button>
+                （温馨提示：由于分期月数限制，暂不支持毕业时间为<font color="red">2015年12月之前</font>的同学下单）
+        <div class="clearfix"></div>
+    </div>
+</div>
+<footer>
+    <div class="base">
+		<div id="base_help">
+			<ul class="base_ul">
+            	<li><p><a href="#">关于亲分期</a></p>
+                	<ul>
+                    	<li><p><a href="#">关于我们</a></p></li>
+                        <li><p><a href="#">联系我们</a></p></li>
+                        <li><p><a href="#">加入我们</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">分期资质</a></p>
+                	<ul>
+                    	<li><p><a href="#">什么人能购买</a></p></li>
+                        <li><p><a href="#">能分几期购买</a></p></li>
+                        <li><p><a href="#">分期额度说明</a></p></li>
+                        <li><p><a href="#">必备审核资料</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">购物帮助</a></p>
+                	<ul>
+                    	<li><p><a href="#">购物须知</a></p></li>
+                        <li><p><a href="#">电子签约</a></p></li>
+                        <li><p><a href="#">商品相关</a></p></li>
+                        <li><p><a href="#">订单相关</a></p></li>
+                        <li><p><a href="#">账户信息</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">支付方式</a></p>
+                	<ul>
+                    	<li><p><a href="#">发票说明</a></p></li>
+                        <li><p><a href="#">在线支付</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">售后服务</a></p>
+                	<ul>
+                    	<li><p><a href="#">物流配送</a></p></li>
+                        <li><p><a href="#">还款规则</a></p></li>
+                        <li><p><a href="#">常见问题</a></p></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="base_div">
+            	<p class="base_p_number">400-628-5159</p>
+                <p class="base_p_time">周一至周五9:00~21:00</p>
+                <a href="#"><img src="../images/base_kefu.png" alt=""  /></a>
+            </div>   
+             <hr />
+       		 <p class="hr_p_1">Copyright © 2015 亲分期 Qinfenqi.com 亲分期（北京）科技有限公司 版权所有</p>
+        	 <p class="hr_p_2">京ICP备15033191号-1 </p>
+		</div>
+       
+    </div>
+</footer> 
+
+
+</body></html>

@@ -1,0 +1,47 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+}
+a{color:#b60000;}
+
+a,a:hover,a:active{
+    text-decoration:none;
+	color:#b60000;
+}
+
+*:focus{
+    outline: none;
+}
+.container
+{
+    padding:0px;
+    width:1200px;!important;
+}
+
+body{
+    background:#fff;
+    height: 100%;
+	font-size:14px;
+	font-family:"宋体";
+}
+
+
+ul{
+    list-style: none;
+}
+/* top
+––––––––––––––––––––––*/
+
+.topbox{ height:64px; border-bottom:3px solid #bb1100; line-height:64px; padding-top:16px;}
+.contactway{float:left;}
+.phone{background:url(../images/phone.png) no-repeat; padding-left:36px; display:block; float:left; height:28px; width:138px; line-height:28px;} 
+.online{background:url(../images/qq.png) no-repeat; padding-left:36px; display:block; float:left; height:28px; width:138px;line-height:28px;}
+.divlogin{ float:right; height:28px; line-height:28px;}
+.login{ color:#333;}
+/*footer
+––––––––––––––––––––––*/
+.footbox{ height:168px; border-top:3px solid #bb1100; margin-top:40px; padding-top:50px;}
+.footword{ color:#333;}
+
+
+

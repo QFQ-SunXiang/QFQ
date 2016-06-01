@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>我的亲分期 - 我的信用 - 绑定银行卡</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/personal.css">
+
+</head>
+<body>
+
+
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="../images/index_3.gif">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39;; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="../images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+	<div><a href="#"><img src="../images/zixun.png" class="zixun"></a><img src="../images/number.png" > </div>
+	</div>
+</div>
+<div class="mid">
+<div class="main-wrap">
+<div class="mu-menu">
+                <dl>
+                    <dt class="mu-menu-div"><span class="font-size3 font-bd "><a href="#" class="mu-menu-a">我的亲分期</a></span></dt>
+                    <dd>
+                		<a href="#" target="_self"><i></i>我的订单</a>
+                        <ul>
+                            <li><a href="#" target="_self" class="">商品订单</a></li>
+                        </ul>
+         		    </dd>
+                    <dd>
+                		<a href="#" target="_self"><i></i>我的账单</a>
+                        <ul>
+                            <li><a href="#" target="_self" class="">商品账单</a></li>
+                        </ul>
+           			</dd>
+                    <dd>
+                		<a href="#" target="_self"><i></i>个人中心</a>
+                        <ul>
+                            <!--<li><a href="#" target="_self" class="">优惠券</a></li>-->
+                            <li><a href="#" target="_self" class="active">我的信用</a></li>
+                            <li><a href="#" target="_self" class="">账号设置</a></li>
+                            <li><a href="#" target="_self" class="">修改密码</a></li>
+                            <li><a href="#" target="_self" class="">收货地址</a></li>
+                            <li><a href="#" target="_self" class="">申请成为大使</a></li>                
+                        </ul>
+            		</dd>
+                    <dd><a href="#" target="_self"><i></i>我的收藏</a>
+                    	<ul>
+                            <li><a href="#" target="_self" class="">收藏夹</a></li>            
+                        </ul>
+                    </dd>
+                 </dl>
+    		</div>
+<div class="my-Credit">
+    <p class="clearfix my-Credittitle">
+        <i class="inline-block"></i>
+        <span class="inline-block font1 font-size3">信用认证</span>
+        <span class="inline-block font3 right">&lt;<a href="#">返回认证列表</a></span>
+    </p>
+    <div id="ejs_baseAuth">
+        <div class="auth_container">
+            <div class="mycredit-wrap">
+                <p class="mycreditwrap-tit font-size2 font1">基础认证 （秒速认证&nbsp;&nbsp; 实时反馈&nbsp;&nbsp; 无需审核&nbsp;&nbsp; 立享额度）</p>
+                <div class="mycredit-title font-size2">
+                    <p class="clearfix">
+                        <a href="#" class="left block credit-title1 font-white">
+                            <i class="inline-block font-size0">1</i>
+                            身份学籍认证
+                        </a>
+                        <a href="#" class="left block credit-title2 font3">
+                            <i class="inline-block font-size0 font0">2</i>
+                            紧急联系方式</a>
+                        <a href="#" class="left block credit-title2 font3">
+                            <i class="inline-block font-size0 font0">3</i>
+                            银行卡认证
+                        </a>
+                    </p>
+                </div>
+                <div class="mycredit-form inline-block">
+                    <div class="form-normal font-size0 ui-error">
+                        <label class="label special-with"></label>
+                        <p class="error-p inline-block font-red card_width" id="errorTxt" style="visibility: visible;">请输入6位数动态验证码！</p>
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label special-with">姓名:</label>
+                        <input id="realName" class="txt-normal card_width" data-exp="void-" type="text" value="李吉" readonly>
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label special-with">身份证:</label>
+                        <input id="cardId" class="txt-normal card_width" data-exp="void-" type="text" value="220882199404074015" readonly>
+                    </div>
+                    <div class="form-normal font-size2 ui-error">
+                        <label class="label special-with">开户行:</label>
+                        <select id="bankBrand" class="select-long  card_width">
+                            <option value="ICBC">工商银行</option>
+			                <option value="ABC">农业银行</option>
+			                <option value="BOC">中国银行</option>
+			                <option value="CCB">建设银行</option>
+			                <option value="CMBCHINA">招商银行</option>
+			                <option value="SPDB">浦发银行</option>
+			                <option value="CIB">兴业银行</option>
+			                <option value="CEB">光大银行</option>
+			                <option value="GDB">广发银行</option>
+			                <option value="PINGAN">平安银行</option>
+			                <option value="HXB">华夏银行</option>
+			                <option value="CMBC">民生银行</option>
+			                <option value="SHB">上海银行</option>
+			                <option value="ECITIC">中信银行</option>
+			                <option value="BOCO">交通银行</option>
+			                <option value="POST">邮政储蓄银行</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label special-with">银行卡号:</label>
+                        <input id="bankCardNumber" class="txt-normal  card_width" data-exp="void" data-check="yes" placeholder="请输入本人银行卡号" type="text" value="">
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label special-with">银行预留手机号:</label>
+                        <input id="mobile" class="txt-normal card_width" data-exp="void-m" data-check="yes" placeholder="请输入本人银行预留手机号" type="text">
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label special-with"></label>
+                        <a href="#" class="common-btn-blue">
+                            获取验证码
+                        </a>
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label special-with" >验证码:</label>
+                        <input class="txt-normal card_width" data-exp="void-code6" placeholder="请输入验证码" type="text" id="validCode">
+                    </div>
+
+                    <div class="form-normal ">
+                        <label class="label special-with"></label>
+                       <a href="#" class="common-btn-blue">
+                            绑定
+                        </a>
+                    </div>
+
+                </div>
+                <div class="mycredit-question inline-block">
+                    <h1 class="font-size3">
+                        <i class="inline-block font-white">Q</i>银行卡绑定常见问题：
+                    </h1>
+                    <div class="credit-ques font3 font-size0">
+                        <dl>
+                            <dt>1.没有银行卡怎么办？</dt>
+                            <dd>请您拿本人的身份证到就近的银行办理即可，办理的同时预留一下您的手机号。</dd>
+                        </dl>
+                        <dl>
+                            <dt>2.我的银行卡是入学的时候学校发的，没有银行预留手机号怎么办？</dt>
+                            <dd>请您拿本人的身份证前往该银行的网点绑定您的手机号即可。</dd>
+                        </dl>
+                        <dl>
+                            <dt>3.为什么招商银行和上海银行的卡绑定时需要从我的卡中扣除1元？</dt>
+                            <dd>招商银行、上海银行由于银行系统问题绑定时需要暂时从您的银卡中扣除1元，绑定成功后会在24小时内将1元返还到您的银行卡中。</dd>
+                        </dl>
+                        <dl>
+                            <dt>4.我提供这些银行账户的信息安全吗？会不会存在无故被扣费的风险？</dt>
+                            <dd>是安全的，请您放心提供。各大电商平台都在采用这种方式，因为银行每次都会给您在银行预留的手机号发送短信验证码，所以您的银行账户是安全的。（温馨提示：为了保障您的资金安全，请不要将您的验证码告知他人。优分期的工作人员和校园大使绝对不会向您索要手机验证码。如果您发现有人向您索要手机验证码，请及时举报。）</dd>
+                        </dl>
+                        <dl>
+                            <dt>5.我自己的银行卡没有预留手机号，可不可以用我同学/朋友的银行卡代替？</dt>
+                            <dd>不可以，只能使用本人的手机号，使用他人的银行卡将无法通过验证，订单也无法发货。</dd>
+                        </dl>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+<footer>
+    <div class="base">
+		<div id="base_help">
+			<ul class="base_ul">
+            	<li><p><a href="#">关于亲分期</a></p>
+                	<ul>
+                    	<li><p><a href="#">关于我们</a></p></li>
+                        <li><p><a href="#">联系我们</a></p></li>
+                        <li><p><a href="#">加入我们</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">分期资质</a></p>
+                	<ul>
+                    	<li><p><a href="#">什么人能购买</a></p></li>
+                        <li><p><a href="#">能分几期购买</a></p></li>
+                        <li><p><a href="#">分期额度说明</a></p></li>
+                        <li><p><a href="#">必备审核资料</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">购物帮助</a></p>
+                	<ul>
+                    	<li><p><a href="#">购物须知</a></p></li>
+                        <li><p><a href="#">电子签约</a></p></li>
+                        <li><p><a href="#">商品相关</a></p></li>
+                        <li><p><a href="#">订单相关</a></p></li>
+                        <li><p><a href="#">账户信息</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">支付方式</a></p>
+                	<ul>
+                    	<li><p><a href="#">发票说明</a></p></li>
+                        <li><p><a href="#">在线支付</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">售后服务</a></p>
+                	<ul>
+                    	<li><p><a href="#">物流配送</a></p></li>
+                        <li><p><a href="#">还款规则</a></p></li>
+                        <li><p><a href="#">常见问题</a></p></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="base_div">
+            	<p class="base_p_number">400-628-5159</p>
+                <p class="base_p_time">周一至周五9:00~21:00</p>
+                <a href="#"><img src="../images/base_kefu.png" alt=""  /></a>
+            </div>   
+             <hr />
+       		 <p class="hr_p_1">Copyright © 2015 亲分期 Qinfenqi.com 亲分期（北京）科技有限公司 版权所有</p>
+        	 <p class="hr_p_2">京ICP备15033191号-1 </p>
+		</div>
+       
+    </div>
+</footer>    
+
+</body></html>

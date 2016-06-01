@@ -1,0 +1,114 @@
+/* ––––––––––––––––=== index=====–––––––––––––––––––––––––––––––*/
+
+/* logo
+––––––––––––––––––––––*/
+.logo{ margin-top:64px; text-align:center;}
+/* search
+––––––––––––––––––––––*/
+.search_box{ margin-top:26px; width:680px;}
+.form-control{ height:40px; border:2px solid #ef3936; border-right:none;}
+.name_btn, .name_btn:hover{ width:94px; background:#f1f1f1; height:40px; border:2px solid #ef3936; border-left:1px solid #ccc;}
+.search_btn{width:94px; background:#ef3936; height:40px;border:2px solid #ef3936; color:#fff; font-size:20px;font-family:"微软雅黑";}
+.search_btn:hover{width:94px; background:#ff0000; height:40px;border:2px solid #ff0000; color:#fff; font-size:20px;font-family:"微软雅黑";}
+
+
+/* Platform
+––––––––––––––––––––––*/
+.Platclass{float:left; margin-top:16px;line-height:32px; height:32px; margin-right:14px;}
+.Platform{ color:#fff; font-weight:bold; display:block;float:left;line-height:32px;margin-right:20px; text-align:center; width:97px; background:url(../images/class-bg.png) no-repeat;}
+.Platform:hover{ color:#fff; font-weight:bold;}
+
+/* statement
+––––––––––––––––––––––*/
+.statementbox{ width:1200px; height:224px; background:#f5f5f5; padding:24px;}
+.statementword{ line-height:32px;}
+.frameline{ width:1200px; height:644px; border:#dadada solid 1px; margin-top:30px;}
+/*sheet
+––––––––––––––––––––––*/
+.tablebox{ margin-top:36px;}
+.tablebg{ background:url(../images/tablebg.png) no-repeat; border-left:1px solid #dedbdb;border-right:1px solid #dedbdb; border-top:1px solid #dedbdb;}
+.tableheader{line-height:36px; height:36px; text-align:center; color:#fff; font-weight:bold; }
+.tableconet{line-height:50px; height:50px; text-align:center; }
+.tableconet > a,a:hover,a:active{ text-decoration:none; color:#b60000;}
+
+/*page
+––––––––––––––––––––––*/
+.pagebox{ text-align:center; padding-top:40px; padding-bottom:30px; border-left:1px solid #dedbdb;border-right:1px solid #dedbdb; border-bottom:1px solid #dedbdb;}
+.pagination > li > a, .pagination > li > span {color:#333;}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span,
+.pagination > .active > span:focus, .pagination > .active > span:hover { background-color:#ff0000;border-color:#ff0000;color: #fff;cursor: default;z-index: 2;}
+
+/*merchant
+––––––––––––––––––––––*/
+.merchant{float:left;line-height:56px; height:56px; margin-right:32px; margin-top:50px; }
+
+
+/* ––––––––––––––=== login =====––––––––––––––––––––––––––––––––––––––––––––*/
+
+/* left
+––––––––––––––––––––––*/
+.leftlogo{ margin-top:30px;}
+.leftnav{ margin-top:110px; padding-left: 95px; width: 30%;}
+.signlogin{ display:block; height:40px; width:200px; background:url(../images/navbg.jpg) no-repeat; margin-bottom:28px; text-align:center; line-height:40px; color:#333; font-family:"微软雅黑";
+           font-size:14px;}
+.signlogin:hover{ display:block; height:40px; width:200px; background:#e60012; margin-bottom:28px; text-align:center; line-height:40px; color:#fff; font-family:"微软雅黑";font-size:14px;}
+.leftnav .active{display:block; height:40px; width:200px; background:#e60012; margin-bottom:28px; text-align:center; line-height:40px; color:#fff; font-family:"微软雅黑";font-size:14px;}
+
+/* right
+––––––––––––––––––––––*/
+.rightcont{ background:url(../images/right_bg.png) repeat-y; margin-top:50px; padding-top:54px; padding-left:30px; height:800px;}
+#txt_usname{ width:310px; height:36px;}
+.login_title { font-size: 14px;line-height: 40px;padding-bottom: 20px;position: relative; width: 600px;}
+.denglu_shuruk { border: 1px solid #9f9f9f; border-radius: 2px;float: left;height: 35px; line-height: 35px; margin-top: 2px;padding-left:10px; width:290px;}
+.color_3 {color: #8c8b8b;font-size:12px;}
+.luse_button{ background:#e60012 none repeat scroll 0 0;color:#fff;font-size:14px; height:36px; line-height:36px;width:170px; border:none; text-align:center; margin-left:98px;font-family:"微软雅黑";}
+
+/* ––––––––––––––=== password =====––––––––––––––––––––––––––––––––––––––––––––*/
+.rleftword{float:left; text-align:right; width:100px;}
+.password_button, .register_button{ background:#e60012 none repeat scroll 0 0;color:#fff;font-size:14px; height:36px; line-height:36px;width:310px; border:none; text-align:center; margin-left:115px;font-family:"微软雅黑";}
+
+/* ––––––––––––––=== register=====––––––––––––––––––––––––––––––––––––––––––––*/
+.ruse_name{ border: 1px solid #9f9f9f; border-radius: 2px;float: left;height: 35px; line-height: 35px; margin-top: 2px;padding-left:10px; width:290px; text-align:left;}
+
+/* right
+––––––––––––––––––––––*/
+.listable{ text-align:center; margin-top:60px; padding-left:150px;}
+.leftside{ float:left; line-height:36px; height:36px; width:200px; text-align:right;}
+.listbox{margin-bottom:30px;}
+.rframe{ width:300px; height:36px; float:left;}
+.srframe{ width:110px; height:36px; float:left;}
+.eunit{float:left; line-height:38px; height:38px; margin-left:6px;}?
+.rchoice{float:left; width:100px; text-align:left; line-height:36px; height:36px;}
+.submit_button{ width:310px; height:38px; background:#e60012; border:none; color:#fff;font-family:"微软雅黑";font-size:14px; margin-left:-334px;}
+
+/* ––––––––––––––=== details =====––––––––––––––––––––––––––––––––––––––––––––*/
+/* table top
+––––––––––––––––––––––*/
+.infortop{ height:34px; width:1200px; background:url(../images/itopbg.jpg) no-repeat; height:34px; line-height:34px; color:#fff; font-weight:bold; padding-left:20px;}
+.statemar26{ margin-top:26px;}
+.infortop .inleft{ float:left;}
+.infortop .rdate{ float:right; margin-right:20px;}
+/* table details
+––––––––––––––––––––––*/
+.detailsbox{ border:solid 1px #dadada; margin-left:0px; margin-right:0px; border-top:none;}
+.inforight{background:url(../images/right_bg.png) repeat-y;}
+.infortitbg{ width:112px; height:34px; background:url(../images/intitbg.png) no-repeat; font-weight:bold; color:#fff; line-height:34px; padding-left:18px; margin-top:10px;}
+.martop{ margin-top:0px; height:1000px; padding-top:20px;}
+.inforbtit{ width:190px; font-weight:bold; color:#333; text-align:right; display:block; float:left; line-height:36px; height:36px;}
+.inforlw{ width:90px;}
+.inforleft{ padding-top:20px; padding-left:10px; padding-right:0px;}
+.inforword{ display:block; margin-left:10px; float:left; line-height:36px; height:36px;}
+.messagebox{ width:550px; height:68px; line-height:34px; margin-top:-20px;}
+.maright20{ margin-right:20px; float:left; border:1px solid #666;}
+/* ––––––––––––––=== manage =====––––––––––––––––––––––––––––––––––––––––––––*/
+.tablefcol{ color:#333; background:#dcdcdc;}
+.tlinebgw{ background:#fff;}
+.searchf{ float:left; margin-top:60px;}
+.handlebox{ margin-top:30px; margin-bottom:10px;}
+.handlebox a{color:#666;}
+.handlebox a:hover, .handlebox a:active{ text-decoration:none;color:#b60000;}
+.redbtnbox{ width:130px; height:28px; float:right; background:url(../images/redbg.jpg) no-repeat; line-height:28px; text-align:center; font-weight:bold;}
+.handlebox .active{ color:#ef3936;}
+
+
+

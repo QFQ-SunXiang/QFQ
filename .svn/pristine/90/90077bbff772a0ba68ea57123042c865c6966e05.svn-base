@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<link rel="icon" href="/favicon.ico">
+<title>分期信用黑名单-注册</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/black.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--top -->
+<div class="topbox">
+  <div class="container" >
+    <div class="contactway"><span class="phone">400-1112-222</span> <span class="online">6666666</span></div>
+    <div class="divlogin"> <a  class="login" href="#">登录</a> <a class="login" href="#">注册</a> <a href="#" class=" ">管理黑名单</a> </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="leftlogo container"><a href="#"><img src="images/logo.png"  width="487" height="97"></a> </div>
+
+<!--conent -->
+<div class="container ">
+  <div class="row">
+    <div class="leftnav col-md-4"> <a class="signlogin  " href="#">登录</a> <a class="signlogin active"  href="#">注册</a> <a class="signlogin" href="#">找回密码</a> </div>
+    <!--right start-->
+    <div class="rightcont col-md-8">
+      <div class="login_title">
+        <p class="rleftword"> 用户名：</p>
+        <input id="txt_usname" class="ruse_name" type="text" name="txt_usname">
+        <a class="color_3" target="_parent" href="#">我已经注册，现在就登录</a>
+        <div class="clear"> </div>
+      </div>
+      <div class="login_title">
+        <p class="rleftword"> 密 码：</p>
+        <input id="txt_usname" class="denglu_shuruk" type="text" name="txt_usname">
+        <a class="color_3" target="_parent" href="#">忘记密码？</a>
+        <div class="clear"> </div>
+      </div>
+      <div class="login_title">
+        <p class="rleftword"> 确认密码：</p>
+        <input id="txt_usname" class="denglu_shuruk" type="text" name="txt_usname">
+        <a class="color_3" target="_parent" href="#">*请再次输入密码</a>
+        <div class="clear"> </div>
+      </div>
+      <div class="login_title">
+        <p class="rleftword"> 邮箱：</p>
+        <input id="txt_usname" class="denglu_shuruk" type="text" name="txt_usname">
+        <a class="color_3" target="_parent" href="#">* 请填写正确邮箱格式，例如：****@163.com</a>
+        <div class="clear"> </div>
+      </div>
+      <div class="login_title">
+        <p class="rleftword"> 验证码：</p>
+        <input id="txt_usname" class="denglu_shuruk" type="text" name="txt_usname">
+        <img src="images/verconde.jpg" width="72" height="26">
+        <div class="clear"> </div>
+      </div>
+      
+      <div class="loginbtn">
+        <input id="sign" class="register_button" type="button"  value="立即注册" name="sign">
+      </div>
+    </div>
+    <!--right end--> 
+  </div>
+</div>
+<!--footer -->
+<footer class="footbox">
+  <p class="container" style="text-align:center"><a class="footword" href="#">关于我们</a>  &nbsp| &nbsp  <a class="footword"  href="#">联系我们</a> &nbsp| &nbsp  <a class="footword"  href="#">使用需知 </a>  &nbsp| &nbsp  <a class="footword"  href="#"> 常见问题解答</a> </p>
+  <p class="container" style="text-align:center">© 2015 fqblack.com 分期黑名单 |xxxxxxxxxxxxx号</p>
+</footer>
+
+</body>
+</html>

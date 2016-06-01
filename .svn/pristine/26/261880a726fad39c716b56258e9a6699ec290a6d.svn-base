@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0077)http://localhost:8080/jeeadmin/jspgou/product/v_edit.do?id=4&pageNo=&ctgId=11 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>详细资料</title>
+
+<link rel="stylesheet" type="text/css" href="css/editor.css">
+<link href="css/admin.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/pony.js" type="text/javascript"></script>
+<script src="js/pony.tree.js" type="text/javascript"></script>
+
+
+<style type="text/css">
+.ckl{padding-right:12px;}
+</style>
+
+</head>
+<body>
+<!--页头Begin-->
+<div id="top">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="272"><img src="img/logo.jpg" border="0"></td>
+      <td background="img/top_bg.jpg">
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        	<tbody><tr>
+          		<td height="35" align="right">
+          			<table border="0" cellspacing="0" cellpadding="0">
+	            		<tbody><tr>
+		              		<td width="17" align="center"><img src="img/user.gif" border="0"></td>
+		              		<td align="left"><span style="color:#FFF; padding:0 5px 0 5px;">您好,admin</span></td>
+		             		<td width="17" align="center"><img src="img/ico.gif" width="10" height="10" border="0"></td>
+		              		<td width="80" align="left"><a href="#" class="channel" onclick="return confirm(&#39;您确定退出吗？&#39;);">退出</a></td>
+		               		<td width="50" align="left"><a href="#" target="black" class="channel">首页</a></td>
+	            		</tr>
+         		   </tbody></table>
+         	   </td>
+           </tr>
+           <tr>
+          		<td height="32">
+		  
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td width="76" align="center"><a href="#" >首页</a> &nbsp; </td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			  <td width="76" align="center"><a href="#"  >分类</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+             
+              <td width="76" align="center"><a href="#"  >商品</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			  
+			  <td width="76" align="center"><a href="#"  >订单</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >栏目</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+            
+			  <td width="76" align="center"><a href="#"  >文章</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >模板</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >资源</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+            
+			  <td width="76" align="center"><a href="#"  >辅助</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >会员</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >配置</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			   <td width="76" align="center"><a href="#"  >营销</a></td>
+              <td width="8"><img src="" border="0"></td>
+             
+              <td width="76" align="center"></td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody></table>
+		  
+		  
+		  </td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+  <div style="border-top:1px solid #1879B0;"></div>
+</div>
+<!--页头End-->
+<!--left-->
+<div class="lttop">
+	<a href="javascript:location.reload()">刷新</a>
+&nbsp;	<a href="#"  >商品标签</a>
+</div>
+<hr>
+<div id="t" class="pn-tree">
+    <div id="t-0">
+      <div id="t-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img id="t-0-co" src="img/elbow-end-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0&#39;)" style="cursor:pointer;"><img id="t-0-cc" src="img/elbow-end-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0&#39;)" style="cursor:pointer;display:none;"><img id="t-0-fo" src="img/folder-open.gif" style=""><img id="t-0-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0&#39;,true)">所有分类</a>
+</div>
+<div id="t-0-" style="">
+<div id="t-0-0">
+<div id="t-0-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img id="t-0-0-co" src="img/elbow-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-0&#39;)" style="cursor:pointer;"><img id="t-0-0-cc" src="img/elbow-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-0&#39;)" style="cursor:pointer;display:none;"><img id="t-0-0-fo" src="img/folder-open.gif" style=""><img id="t-0-0-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0-0&#39;,true)">数码</a>
+</div>
+<div id="t-0-0-" style="">
+<div id="t-0-0-0">
+<div id="t-0-0-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >手机</a>
+</div>
+</div>
+<div id="t-0-0-1">
+<div id="t-0-0-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >笔记本</a>
+</div>
+</div>
+<div id="t-0-0-2">
+<div id="t-0-0-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >台式机</a>
+</div>
+</div>
+<div id="t-0-0-3">
+<div id="t-0-0-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >办公</a>
+</div>
+</div>
+<div id="t-0-0-4">
+<div id="t-0-0-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >相机</a>
+</div>
+</div>
+</div>
+</div>
+<div id="t-0-1">
+<div id="t-0-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img id="t-0-1-co" src="img/elbow-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-1&#39;)" style="cursor:pointer;"><img id="t-0-1-cc" src="img/elbow-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-1&#39;)" style="cursor:pointer;display:none;"><img id="t-0-1-fo" src="img/folder-open.gif" style=""><img id="t-0-1-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0-1&#39;,true)">服装</a>
+</div>
+<div id="t-0-1-" style="">
+<div id="t-0-1-0">
+<div id="t-0-1-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >女装</a>
+</div>
+</div>
+<div id="t-0-1-1">
+<div id="t-0-1-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >男装</a>
+</div>
+</div>
+<div id="t-0-1-2">
+<div id="t-0-1-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >童装</a>
+</div>
+</div>
+<div id="t-0-1-3">
+<div id="t-0-1-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >内衣</a>
+</div>
+</div>
+<div id="t-0-1-4">
+<div id="t-0-1-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >裤子</a>
+</div>
+</div>
+</div>
+</div>
+<div id="t-0-2">
+<div id="t-0-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img id="t-0-2-co" src="img/elbow-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-2&#39;)" style="cursor:pointer;"><img id="t-0-2-cc" src="img/elbow-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-2&#39;)" style="cursor:pointer;display:none;"><img id="t-0-2-fo" src="img/folder-open.gif" style=""><img id="t-0-2-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0-2&#39;,true)">鞋包配饰</a>
+</div>
+<div id="t-0-2-" style="">
+<div id="t-0-2-0">
+<div id="t-0-2-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >女包</a>
+</div>
+</div>
+<div id="t-0-2-1">
+<div id="t-0-2-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >男鞋</a>
+</div>
+</div>
+<div id="t-0-2-2">
+<div id="t-0-2-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >童鞋</a>
+</div>
+</div>
+<div id="t-0-2-3">
+<div id="t-0-2-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >女鞋</a>
+</div>
+</div>
+<div id="t-0-2-4">
+<div id="t-0-2-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >男包</a>
+</div>
+</div>
+</div>
+</div>
+<div id="t-0-3">
+<div id="t-0-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#">日用百货</a>
+</div>
+</div>
+<div id="t-0-4">
+<div id="t-0-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >家居建材</a>
+</div>
+</div>
+<div id="t-0-5">
+<div id="t-0-5-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+<img src="img/s.gif" width="15px"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >珠宝手表</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--left end-->
+<script type="text/javascript">
+//上传图片
+function uploadSwitch(n) {
+	var of = $('#uploadFileSwitch'+n);
+	//检查是否选择了图片
+	if(of.val()=='') {
+		alert('请先选择图片');
+		return;
+	}
+	//将file移动至上传表单
+	$('#fileContentSwitch').empty();
+	$('#fileContentSwitch').append(of);
+	//复制一个file放至原处
+	$('#ufcSwitch'+n).append(of.clone());
+	//修改属性
+	of.attr('id','');
+	
+	of.attr('name','uploadFileSwitch');
+	//其他表单
+	$('#ufFileNameSwitch').val($('#fileName'+n).val());
+	$('#ufWidthSwitch').val($('#zoomWidthSwitch'+n).val());
+	$('#ufHeightSwitch').val($('#zoomHeightSwitch'+n).val());
+	$('#uploadSwitchNum').val(n);	
+	$('#uploadSwitchForm').submit();
+}
+//剪裁图片
+function imgCut(n) {
+	if($('#uploadImgPath'+n).val()=='') {
+		alert("请先上传图片");
+		return;
+	}
+	var url = "../common/v_image_area_select.do?uploadNum="+n+"&imgSrcPath="
+		+$("#uploadImgPathSwitch"+n).val()+"&zoomWidthSwitch="+$("#zoomWidthSwitch"+n).val()+"&zoomHeightSwitch="+$("#zoomHeightSwitch"+n).val();
+	window.open(url,"imgcut","height=550, width=1000, top=0, left=0, toolbar=no, menubar=no, scrollbars=auto, resizable=yes,location=no, status=no");
+}
+//清除图片
+function clearImg(n) {
+	$('#uploadImgPathSwitch'+n).val("");
+	$('#preSwitchImg'+n).attr("src","");
+}
+
+//预览图片
+function previewImg(n) {
+	var img = $("#uploadImgPathSwitch"+n).val();
+	if(img!="") {
+		if(img.indexOf("?")==-1) {
+			$("#preSwitchImg"+n).attr("src",img+"?d="+new Date()*1);
+		} else {
+			$("#preSwitchImg"+n).attr("src",img+"&d="+new Date()*1);
+		}
+		if(!$("#preSwitchImg"+n).attr("noResize")) {
+			$("#preSwitchImg"+n).css("width","auto");
+			$("#preSwitchImg"+n).css("height","auto");
+		}
+	} else {
+		$("#preSwitchImg"+n).removeAttr("src");		
+	}
+}
+</script>
+<form id="uploadSwitchForm" action="http://localhost:8080/jeeadmin/jspgou/common/o_upload_switch_image.do" method="post" enctype="multipart/form-data" target="hiddenIframe" style="display:none;width:0px;height:0px;">
+<span id="fileContentSwitch">　</span>
+<input id="ufWidthSwitch" type="hidden" name="zoomWidthSwitch">
+<input id="ufHeightSwitch" type="hidden" name="zoomHeightSwitch">
+<input id="uploadSwitchNum" type="hidden" name="uploadNum">
+<input id="ufFileNameSwitch" type="hidden" name="fileName">
+</form>
+<script type="text/javascript">
+//上传图片
+function uploadBig(n) {
+	var of = $('#uploadFileBig'+n);
+	//检查是否选择了图片
+	if(of.val()=='') {
+		alert('请先选择图片');
+		return;
+	}
+	//将file移动至上传表单
+	$('#fileBigContent').empty();
+	$('#fileBigContent').append(of);
+	//复制一个file放至原处
+	$('#ufcBig'+n).append(of.clone());
+	//修改属性
+	of.attr('id','');
+	
+	of.attr('name','uploadFileBig');
+	//其他表单
+	$('#ufFileNameBig').val($('#fileName'+n).val());
+	$('#ufWidthBig').val($('#zoomWidthBig'+n).val());
+	$('#ufHeightBig').val($('#zoomHeightBig'+n).val());
+	$('#uploadBigNum').val(n);	
+	$('#uploadBigForm').submit();
+}
+//剪裁图片
+function imgCut(n) {
+	if($('#uploadImgPath'+n).val()=='') {
+		alert("请先上传图片");
+		return;
+	}
+	var url = "../common/v_image_area_select.do?uploadNum="+n+"&imgSrcPath="
+		+$("#uploadImgPathBig"+n).val()+"&zoomWidthBig="+$("#zoomWidthBig"+n).val()+"&zoomHeightBig="+$("#zoomHeightBig"+n).val();
+	window.open(url,"imgcut","height=550, width=1000, top=0, left=0, toolbar=no, menubar=no, scrollbars=auto, resizable=yes,location=no, status=no");
+}
+//清除图片
+function clearImg(n) {
+	$('#uploadImgPathBig'+n).val("");
+	$('#preBigImg'+n).attr("src","");
+}
+
+//预览图片
+function previewImg(n) {
+	var img = $("#uploadImgPathBig"+n).val();
+	if(img!="") {
+		if(img.indexOf("?")==-1) {
+			$("#preBigImg"+n).attr("src",img+"?d="+new Date()*1);
+		} else {
+			$("#preBigImg"+n).attr("src",img+"&d="+new Date()*1);
+		}
+		if(!$("#preBigImg"+n).attr("noResize")) {
+			$("#preBigImg"+n).css("width","auto");
+			$("#preBigImg"+n).css("height","auto");
+		}
+	} else {
+		$("#preBigImg"+n).removeAttr("src");		
+	}
+}
+</script>
+<form id="uploadBigForm" action="http://localhost:8080/jeeadmin/jspgou/common/o_upload_big_image.do" method="post" enctype="multipart/form-data" target="hiddenIframe" style="display:none;width:0px;height:0px;">
+<span id="fileBigContent">　</span>
+<input id="ufWidthBig" type="hidden" name="zoomWidthBig">
+<input id="ufHeightBig" type="hidden" name="zoomHeightBig">
+<input id="uploadBigNum" type="hidden" name="uploadNum">
+<input id="ufFileNameBig" type="hidden" name="fileName">
+</form>
+<script type="text/javascript">
+//上传图片
+function uploadAmp(n) {
+	var of = $('#uploadFileAmp'+n);
+	//检查是否选择了图片
+	if(of.val()=='') {
+		alert('请先选择图片');
+		return;
+	}
+	//将file移动至上传表单
+	$('#fileContentAmp').empty();
+	$('#fileContentAmp').append(of);
+	//复制一个file放至原处
+	$('#ufcAmp'+n).append(of.clone());
+	//修改属性
+	of.attr('id','');
+	
+	of.attr('name','uploadFileAmp');
+	//其他表单
+	$('#ufFileNameAmp').val($('#fileName'+n).val());
+	$('#ufWidthAmp').val($('#zoomWidthAmp'+n).val());
+	$('#ufHeightAmp').val($('#zoomHeightAmp'+n).val());
+	$('#uploadAmpNum').val(n);	
+	$('#uploadAmpForm').submit();
+}
+//剪裁图片
+function imgCut(n) {
+	if($('#uploadImgPath'+n).val()=='') {
+		alert("请先上传图片");
+		return;
+	}
+	var url = "../common/v_image_area_select.do?uploadNum="+n+"&imgSrcPath="
+		+$("#uploadImgPathAmp"+n).val()+"&zoomWidthAmp="+$("#zoomWidthAmp"+n).val()+"&zoomHeightAmp="+$("#zoomHeightAmp"+n).val();
+	window.open(url,"imgcut","height=550, width=1000, top=0, left=0, toolbar=no, menubar=no, scrollbars=auto, resizable=yes,location=no, status=no");
+}
+//清除图片
+function clearImg(n) {
+	$('#uploadImgPathAmp'+n).val("");
+	$('#preAmpImg'+n).attr("src","");
+}
+
+//预览图片
+function previewImg(n) {
+	var img = $("#uploadImgPathAmp"+n).val();
+	if(img!="") {
+		if(img.indexOf("?")==-1) {
+			$("#preAmpImg"+n).attr("src",img+"?d="+new Date()*1);
+		} else {
+			$("#preAmpImg"+n).attr("src",img+"&d="+new Date()*1);
+		}
+		if(!$("#preAmpImg"+n).attr("noResize")) {
+			$("#preAmpImg"+n).css("width","auto");
+			$("#preAmpImg"+n).css("height","auto");
+		}
+	} else {
+		$("#preAmpImg"+n).removeAttr("src");		
+	}
+}
+</script>
+<form id="uploadAmpForm" action="http://localhost:8080/jeeadmin/jspgou/common/o_upload_amp_image.do" method="post" enctype="multipart/form-data" target="hiddenIframe" style="display:none;width:0px;height:0px;">
+<span id="fileContentAmp">　</span>
+<input id="ufWidthAmp" type="hidden" name="zoomWidthAmp">
+<input id="ufHeightAmp" type="hidden" name="zoomHeightAmp">
+<input id="uploadAmpNum" type="hidden" name="uploadNum">
+<input id="ufFileNameAmp" type="hidden" name="fileName">
+</form>
+<!--上传图片相关-->
+<script type="text/javascript">
+//上传图片
+function upload(n) {
+	var of = $('#uploadFile'+n);
+	//检查是否选择了图片
+	if(of.val()=='') {
+		alert('请先选择图片');
+		return;
+	}
+	//将file移动至上传表单
+	$('#fileContent').empty();
+	$('#fileContent').append(of);
+	//复制一个file放至原处
+	$('#ufc'+n).append(of.clone());
+	//修改属性
+	of.attr('id','');
+	
+	of.attr('name','uploadFile');
+	//其他表单
+	var zoomWidth=$('#zoomWidth'+n).val();
+    var zoomHeight=$('#zoomHeight'+n).val();
+	$('#ufFileName').val($('#fileName'+n).val());
+	$('#ufWidth').val(zoomWidth);
+	$('#ufHeight').val(zoomHeight);
+	$('#uploadNum').val(n);	
+	$('#uploadForm').submit();
+}
+//剪裁图片
+function imgCut(n) {
+	if($('#uploadImgPath'+n).val()=='') {
+		alert("请先上传图片");
+		return;
+	}
+	var url = "../common/v_image_area_select.do?uploadNum="+n+"&imgSrcPath="
+		+$("#uploadImgPath"+n).val()+"&zoomWidth="+$("#zoomWidth"+n).val()+"&zoomHeight="+$("#zoomHeight"+n).val();
+	window.open(url,"imgcut","height=550, width=1000, top=0, left=0, toolbar=no, menubar=no, scrollbars=auto, resizable=yes,location=no, status=no");
+}
+//清除图片
+function clearImg(n) {
+	$('#uploadImgPath'+n).val("");
+	$('#preImg'+n).attr("src","");
+}
+
+//预览图片
+function previewImg(n) {
+	var img = $("#uploadImgPath"+n).val();
+	if(img!="") {
+		if(img.indexOf("?")==-1) {
+			$("#preImg"+n).attr("src",img+"?d="+new Date()*1);
+		} else {
+			$("#preImg"+n).attr("src",img+"&d="+new Date()*1);
+		}
+		if(!$("#preImg"+n).attr("noResize")) {
+			$("#preImg"+n).css("width","auto");
+			$("#preImg"+n).css("height","auto");
+		}
+	} else {
+		$("#preImg"+n).removeAttr("src");		
+	}
+}
+</script>
+<form id="uploadForm" action="http://localhost:8080/jeeadmin/jspgou/common/o_upload_image.do" method="post" enctype="multipart/form-data" target="hiddenIframe" style="display:none;width:0px;height:0px;">
+<span id="fileContent">　</span>
+<input id="ufWidth" type="hidden" name="zoomWidth">
+<input id="ufHeight" type="hidden" name="zoomHeight">
+<input id="uploadNum" type="hidden" name="uploadNum">
+<input id="ufFileName" type="hidden" name="fileName">
+</form>
+<iframe name="hiddenIframe" frameborder="0" border="0" style="display:none;width:0px;height:0px;"></iframe><div class="body-box">
+<div class="rhead">
+	<div class="rpos">当前位置: 商品 - 商品管理 - 修改</div>
+	<form class="ropt">
+		<input type="hidden" name="ctgId" value="11">
+		<input type="hidden" name="pageNo" value="">
+		<input type="button" value="返回列表" onclick="var f=this.form;f.action=&#39;v_list.do&#39;;f.submit();">
+	</form>
+	<div class="clear"></div>
+</div>
+<!--上传图片相关-->
+<script type="text/javascript">
+//上传图片
+function upload(n) {
+	var of = $('#uploadFile'+n);
+	//检查是否选择了图片
+	if(of.val()=='') {
+		alert('请先选择图片');
+		return;
+	}
+	//将file移动至上传表单
+	$('#fileContent').empty();
+	$('#fileContent').append(of);
+	//复制一个file放至原处
+	$('#ufc'+n).append(of.clone());
+	//修改属性
+	of.attr('id','');
+	
+	of.attr('name','uploadFile');
+	//其他表单
+	var zoomWidth=$('#zoomWidth'+n).val();
+    var zoomHeight=$('#zoomHeight'+n).val();
+	$('#ufFileName').val($('#fileName'+n).val());
+	$('#ufWidth').val(zoomWidth);
+	$('#ufHeight').val(zoomHeight);
+	$('#uploadNum').val(n);	
+	$('#uploadForm').submit();
+}
+//剪裁图片
+function imgCut(n) {
+	if($('#uploadImgPath'+n).val()=='') {
+		alert("请先上传图片");
+		return;
+	}
+	var url = "../common/v_image_area_select.do?uploadNum="+n+"&imgSrcPath="
+		+$("#uploadImgPath"+n).val()+"&zoomWidth="+$("#zoomWidth"+n).val()+"&zoomHeight="+$("#zoomHeight"+n).val();
+	window.open(url,"imgcut","height=550, width=1000, top=0, left=0, toolbar=no, menubar=no, scrollbars=auto, resizable=yes,location=no, status=no");
+}
+//清除图片
+function clearImg(n) {
+	$('#uploadImgPath'+n).val("");
+	$('#preImg'+n).attr("src","");
+}
+
+//预览图片
+function previewImg(n) {
+	var img = $("#uploadImgPath"+n).val();
+	if(img!="") {
+		if(img.indexOf("?")==-1) {
+			$("#preImg"+n).attr("src",img+"?d="+new Date()*1);
+		} else {
+			$("#preImg"+n).attr("src",img+"&d="+new Date()*1);
+		}
+		if(!$("#preImg"+n).attr("noResize")) {
+			$("#preImg"+n).css("width","auto");
+			$("#preImg"+n).css("height","auto");
+		}
+	} else {
+		$("#preImg"+n).removeAttr("src");		
+	}
+}
+</script>
+<form id="uploadForm" action="http://localhost:8080/jeeadmin/jspgou/common/o_upload_image.do" method="post" enctype="multipart/form-data" target="hiddenIframe" style="display:none;width:0px;height:0px;">
+<span id="fileContent">　</span>
+<input id="ufWidth" type="hidden" name="zoomWidth">
+<input id="ufHeight" type="hidden" name="zoomHeight">
+<input id="uploadNum" type="hidden" name="uploadNum">
+<input id="ufFileName" type="hidden" name="fileName">
+</form>
+<iframe name="hiddenIframe" frameborder="0" border="0" style="display:none;width:0px;height:0px;"></iframe><form method="post" action="http://localhost:8080/jeeadmin/jspgou/product/o_update.do" id="jvForm" enctype="multipart/form-data">
+<input type="hidden" name="pageNo">
+<!--不可动-->
+<table width="100%" class="pn-ftable" cellpadding="2" cellspacing="1" border="0">
+<tbody><tr>
+<td width="12%" class="pn-flabel pn-flabel-h"><span class="pn-frequired">*</span>商品名称:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" maxlength="150" value="支付测试" name="name" class="required" size="40"></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h"><span class="pn-frequired">*</span>分类:</td><td colspan="1" width="38%" class="pn-fcontent"><select name="categoryId"><option value="1">数码</option><option value="3">&nbsp;&nbsp;&gt;手机</option><option value="5">&nbsp;&nbsp;&gt;笔记本</option><option value="10">&nbsp;&nbsp;&gt;台式机</option><option value="11" selected="selected">&nbsp;&nbsp;&gt;办公</option><option value="12">&nbsp;&nbsp;&gt;相机</option><option value="2">服装</option><option value="4">&nbsp;&nbsp;&gt;女装</option><option value="13">&nbsp;&nbsp;&gt;男装</option><option value="14">&nbsp;&nbsp;&gt;童装</option><option value="15">&nbsp;&nbsp;&gt;内衣</option><option value="16">&nbsp;&nbsp;&gt;裤子</option><option value="6">鞋包配饰</option><option value="17">&nbsp;&nbsp;&gt;女包</option><option value="18">&nbsp;&nbsp;&gt;男鞋</option><option value="19">&nbsp;&nbsp;&gt;童鞋</option><option value="20">&nbsp;&nbsp;&gt;女鞋</option><option value="21">&nbsp;&nbsp;&gt;男包</option><option value="7">日用百货</option><option value="8">家居建材</option><option value="9">珠宝手表</option></select>
+</td><td width="12%" class="pn-flabel pn-flabel-h">品牌:</td><td colspan="1" width="38%" class="pn-fcontent"><select name="brandId"><option value="" selected="selected">--无--</option></select>
+</td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h"><span class="pn-frequired">*</span>价格:</td><td colspan="3" width="88%" class="pn-fcontent">
+        市场价: <input type="text" value="0.01" name="marketPrice" class="required number" style="width:50px"> &nbsp;
+        销售价: <input type="text" value="0.01" name="salePrice" class="required number" style="width:50px"> &nbsp;
+        成本价: <input type="text" value="0.01" name="costPrice" class="required number" style="width:50px"> &nbsp;
+     </td> </tr>
+<tr>
+<td width="12%" class="pn-flabel pn-flabel-h"><span class="pn-frequired">*</span>商品库存:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" id="stockCount" maxlength="10" value="92" name="stockCount" class="required digits" size="10"></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">商品重量:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" maxlength="10" value="0" name="weight" class="digits" size="10"> <span class="pn-fhelp">克(g)</span></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">设置:</td><td colspan="3" width="88%" class="pn-fcontent">
+      <label class="ckl">
+	    <input type="checkbox" onclick="$(&#39;#onSale&#39;).val(this.checked)" checked="checked">
+	    上架<input type="hidden" id="onSale" name="onSale" value="true">
+     </label>
+     <label class="ckl">
+	   <input type="checkbox" onclick="$(&#39;#recommend&#39;).val(this.checked)">
+	  推荐<input type="hidden" id="recommend" name="recommend" value="false">
+    </label>
+    <label>
+	  <input type="checkbox" onclick="$(&#39;#special&#39;).val(this.checked)">
+	  特价<input type="hidden" id="special" name="special" value="false">
+   </label>
+   <label>
+	 <input type="checkbox" onclick="$(&#39;#hotsale&#39;).val(this.checked)">
+	  热卖<input type="hidden" id="hotsale" name="hotsale" value="false">
+   </label>
+   <label>
+	 <input type="checkbox" onclick="$(&#39;#newProduct&#39;).val(this.checked)">
+	  新品<input type="hidden" id="newProduct" name="newProduct" value="false">
+    </label>
+</td></tr>
+<tr>   
+<td width="12%" class="pn-flabel pn-flabel-h">可得积分:</td><td colspan="1" width="38%" class="pn-fcontent"><input type="text" maxlength="10" value="0" name="score"></td><td width="12%" class="pn-flabel pn-flabel-h">警戒库存:</td><td colspan="1" width="38%" class="pn-fcontent"><input type="text" maxlength="10" name="alertInventory"></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">标签:</td><td colspan="3" width="88%" class="pn-fcontent"><label><input type="checkbox" value="1" name="tagIds">惠民</label></td></tr>
+<tr>  
+<td width="12%" class="pn-flabel"><span class="pn-frequired">*</span>封面图片:</td><td colspan="1" width="38%" class="pn-fcontent">
+<input type="text" id="uploadImgPath100" value="/u/201408/20094626rwjs.jpg" name="coverImg" class="required" size="30">        <input type="button" value="清空" onclick="clearImg(100);"><br>
+        <span id="ufc100"><input type="file" id="uploadFile100" size="20"></span> 
+        <input type="button" value="上传" onclick="upload(100);"><br>
+        <input type="hidden" id="zoomWidth100" value="100"> 
+        <input type="hidden" id="zoomHeight100" value="100"> 
+</td><td colspan="2" class="pn-fbutton">
+            <img id="preImg100" alt="预览160*160" src="20094626rwjs.jpg" style="width:100px;height:100px;background-color:#CCCCCC;border:1px solid #333">
+</td>      </tr>
+<!--上传图片-->
+<tr><td width="12%" class="pn-flabel pn-flabel-h"><span class="pn-frequired">*</span>商品款式集:</td>
+          <td colspan="3" width="48%" class="pn-fcontent">
+		   <table id="picTable1" border="0" style="float: left;">
+		     <tbody><tr>
+               <td align="left" colspan="3"> <input type="button" value="增加款式" onclick="addPicLine()"> </td>
+             </tr>
+		     <tr>
+               <td align="center"> 切换图片预览60*60</td>
+               <td align="center"> 大图片预览380*380</td>
+              <td align="center"> 放大图片预览600*600</td>
+           </tr>
+		   <tr>
+			  <td align="center">
+			    <div>
+		    	 <img id="preSwitchImg1" alt="预览" src="img/20094626rwjs.jpg" style="width:60px;height:60px;background-color:#ccc;border:1px solid #333">
+			     <br> <br><br>
+			     
+			      <span class="pn-frequired">*</span>
+				 <input type="text" id="uploadImgPathSwitch1" name="fashionSwitchPic" value="/u/201408/20094626rwjs.jpg" style="width: 160px"></div>
+		         <div><span id="ufcSwitch1">
+		              <input type="file" id="uploadFileSwitch1" size="10" style="width: 150px"></span> 
+					  <input type="button" value="上传" onclick="uploadSwitch(1);"></div>
+			  </td>
+			  <td align="center">
+			  <div>
+		    	<img id="preBigImg1" alt="预览" src="img/20094626rwjs.jpg" style="width:90px;height:90px;background-color:#ccc;border:1px solid #333">
+			    <br>
+			     <span class="pn-frequired">*</span>
+				<input type="text" id="uploadImgPathBig1" name="fashionBigPic" value="/u/201408/20094626rwjs.jpg" style="width: 160px"></div>
+		        <div><span id="ufcBig1">
+		             <input type="file" id="uploadFileBig1" size="10" style="width: 150px"></span> 
+					 <input type="button" value="上传" onclick="uploadBig(1);"></div>
+			 </td>
+			<td align="center">
+			  <div>
+		    	<img id="preAmpImg1" alt="预览" src="img/20094626rwjs.jpg" style="width:90px;height:90px;background-color:#ccc;border:1px solid #333">
+			    <br>
+			     <span class="pn-frequired">*</span>
+				<input type="text" id="uploadImgPathAmp1" name="fashionAmpPic" value="/u/201408/20094626rwjs.jpg" style="width: 160px"></div>
+		        <div><span id="ufcAmp1">
+		             <input type="file" id="uploadFileAmp1" size="10" style="width: 150px"></span> 
+					 <input type="button" value="上传" onclick="uploadAmp(1);"></div>
+			</td>
+		</tr>
+		</tbody></table>
+    <div id="picBefore" style="clear:both"></div>
+    </td>
+    </tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">价格:</td><td colspan="3" width="88%" class="pn-fcontent"><label><input type="radio" value="20" checked="checked" name="exended_price">9400以上</label> <label><input type="radio" value="21" name="exended_price">0-699</label> <label><input type="radio" value="15" name="exended_price">1800-2699</label> <label><input type="radio" value="17" name="exended_price">2700-5499</label> <label><input type="radio" value="16" name="exended_price">1300-1799</label> <label><input type="radio" value="19" name="exended_price">700-1299</label> <label><input type="radio" value="18" name="exended_price">5500-9399</label></td>
+</tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">尺寸:</td><td colspan="3" width="88%" class="pn-fcontent"><label><input type="radio" value="22" name="exended_measure">10.1英寸及以下</label> <label><input type="radio" value="24" name="exended_measure">12英寸</label> <label><input type="radio" value="23" name="exended_measure">11英寸</label> <label><input type="radio" value="26" name="exended_measure">14英寸</label> <label><input type="radio" value="25" name="exended_measure">13英寸</label> <label><input type="radio" value="28" name="exended_measure">16英寸</label> <label><input type="radio" value="27" name="exended_measure">15英寸</label> <label><input type="radio" value="29" checked="checked" name="exended_measure">17英寸17英寸以上</label></td>
+</tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">分享内容:</td><td colspan="3" width="88%" class="pn-fcontent"><textarea cols="70" rows="3" name="shareContent" maxlength="255"></textarea>
+</td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">页面标题:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" maxlength="255" name="mtitle" size="30"></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">关键字:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" maxlength="255" name="productKeywords"> <span class="pn-fhelp">用,分割</span></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">页面关键字:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" maxlength="255" name="mkeywords" size="30"></td></tr>
+<tr><td width="12%" class="pn-flabel pn-flabel-h">页面描述:</td><td colspan="3" width="88%" class="pn-fcontent"><input type="text" maxlength="255" name="mdescription" size="60"></td></tr>
+<!--商品详情控件-->
+<tr><td width="12%" class="pn-flabel pn-flabel-h">商品详情:</td><td colspan="3" width="88%" class="pn-fcontent"><textarea id="text" name="text" style="visibility: hidden; display: none;"></textarea><span id="cke_text" class="cke_skin_kama cke_1 cke_editor_text" dir="ltr" title="" lang="zh-cn" tabindex="0" role="application" aria-labelledby="cke_text_arialbl" style="width: auto;"><span id="cke_text_arialbl" class="cke_voice_label">所见即所得编辑器</span><span class="cke_browser_webkit" role="presentation"><span class="cke_wrapper cke_ltr" role="presentation"><table class="cke_editor" border="0" cellspacing="0" cellpadding="0" role="presentation"><tbody><tr role="presentation"><td id="cke_top_text" class="cke_top" role="presentation"><div class="cke_toolbox" role="group" aria-labelledby="cke_7" onmousedown="return false;"><span id="cke_7" class="cke_voice_label">工具栏</span><span id="cke_8" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_9" class="cke_off cke_button_source" "="" href="javascript:void('源码')" title="源码" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_9_label" onkeydown="return CKEDITOR.tools.callFunction(4, event);" onfocus="return CKEDITOR.tools.callFunction(5, event);" onclick="CKEDITOR.tools.callFunction(6, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_9_label" class="cke_label">源码</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_10" class="cke_off cke_button_preview" "="" href="javascript:void('预览')" title="预览" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_10_label" onkeydown="return CKEDITOR.tools.callFunction(7, event);" onfocus="return CKEDITOR.tools.callFunction(8, event);" onclick="CKEDITOR.tools.callFunction(9, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_10_label" class="cke_label">预览</span></a></span><span class="cke_button"><a id="cke_11" class="cke_off cke_button_print" "="" href="javascript:void('打印')" title="打印" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_11_label" onkeydown="return CKEDITOR.tools.callFunction(10, event);" onfocus="return CKEDITOR.tools.callFunction(11, event);" onclick="CKEDITOR.tools.callFunction(12, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_11_label" class="cke_label">打印</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_12" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_13" class="cke_button_cut cke_disabled" "="" href="javascript:void('剪切')" title="剪切" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" onkeydown="return CKEDITOR.tools.callFunction(13, event);" onfocus="return CKEDITOR.tools.callFunction(14, event);" onclick="CKEDITOR.tools.callFunction(15, this); return false;" aria-disabled="true"><span class="cke_icon">&nbsp;</span><span id="cke_13_label" class="cke_label">剪切</span></a></span><span class="cke_button"><a id="cke_14" class="cke_button_copy cke_disabled" "="" href="javascript:void('复制')" title="复制" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" onkeydown="return CKEDITOR.tools.callFunction(16, event);" onfocus="return CKEDITOR.tools.callFunction(17, event);" onclick="CKEDITOR.tools.callFunction(18, this); return false;" aria-disabled="true"><span class="cke_icon">&nbsp;</span><span id="cke_14_label" class="cke_label">复制</span></a></span><span class="cke_button"><a id="cke_15" class="cke_off cke_button_paste" "="" href="javascript:void('粘贴')" title="粘贴" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_15_label" onkeydown="return CKEDITOR.tools.callFunction(19, event);" onfocus="return CKEDITOR.tools.callFunction(20, event);" onclick="CKEDITOR.tools.callFunction(21, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_15_label" class="cke_label">粘贴</span></a></span><span class="cke_button"><a id="cke_16" class="cke_off cke_button_pastetext" "="" href="javascript:void('粘贴为无格式文本')" title="粘贴为无格式文本" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" onkeydown="return CKEDITOR.tools.callFunction(22, event);" onfocus="return CKEDITOR.tools.callFunction(23, event);" onclick="CKEDITOR.tools.callFunction(24, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_16_label" class="cke_label">粘贴为无格式文本</span></a></span><span class="cke_button"><a id="cke_17" class="cke_off cke_button_pastefromword" "="" href="javascript:void('从 MS Word 粘贴')" title="从 MS Word 粘贴" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" onkeydown="return CKEDITOR.tools.callFunction(25, event);" onfocus="return CKEDITOR.tools.callFunction(26, event);" onclick="CKEDITOR.tools.callFunction(27, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_17_label" class="cke_label">从 MS Word 粘贴</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_18" class="cke_off cke_button_scayt" "="" href="javascript:void('即时拼写检查')" title="即时拼写检查" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(28, event);" onfocus="return CKEDITOR.tools.callFunction(29, event);" onclick="CKEDITOR.tools.callFunction(30, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_18_label" class="cke_label">即时拼写检查</span><span class="cke_buttonarrow">&nbsp;</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_19" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_20" class="cke_button_undo cke_disabled" "="" href="javascript:void('撤消')" title="撤消" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" onkeydown="return CKEDITOR.tools.callFunction(31, event);" onfocus="return CKEDITOR.tools.callFunction(32, event);" onclick="CKEDITOR.tools.callFunction(33, this); return false;" aria-disabled="true"><span class="cke_icon">&nbsp;</span><span id="cke_20_label" class="cke_label">撤消</span></a></span><span class="cke_button"><a id="cke_21" class="cke_button_redo cke_disabled" "="" href="javascript:void('重做')" title="重做" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_21_label" onkeydown="return CKEDITOR.tools.callFunction(34, event);" onfocus="return CKEDITOR.tools.callFunction(35, event);" onclick="CKEDITOR.tools.callFunction(36, this); return false;" aria-disabled="true"><span class="cke_icon">&nbsp;</span><span id="cke_21_label" class="cke_label">重做</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_22" class="cke_off cke_button_find" "="" href="javascript:void('查找')" title="查找" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" onkeydown="return CKEDITOR.tools.callFunction(37, event);" onfocus="return CKEDITOR.tools.callFunction(38, event);" onclick="CKEDITOR.tools.callFunction(39, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_22_label" class="cke_label">查找</span></a></span><span class="cke_button"><a id="cke_23" class="cke_off cke_button_replace" "="" href="javascript:void('替换')" title="替换" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_23_label" onkeydown="return CKEDITOR.tools.callFunction(40, event);" onfocus="return CKEDITOR.tools.callFunction(41, event);" onclick="CKEDITOR.tools.callFunction(42, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_23_label" class="cke_label">替换</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_24" class="cke_off cke_button_selectAll" "="" href="javascript:void('全选')" title="全选" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_24_label" onkeydown="return CKEDITOR.tools.callFunction(43, event);" onfocus="return CKEDITOR.tools.callFunction(44, event);" onclick="CKEDITOR.tools.callFunction(45, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_24_label" class="cke_label">全选</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_25" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_26" class="cke_off cke_button_bold" "="" href="javascript:void('加粗')" title="加粗" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" onkeydown="return CKEDITOR.tools.callFunction(46, event);" onfocus="return CKEDITOR.tools.callFunction(47, event);" onclick="CKEDITOR.tools.callFunction(48, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_26_label" class="cke_label">加粗</span></a></span><span class="cke_button"><a id="cke_27" class="cke_off cke_button_italic" "="" href="javascript:void('倾斜')" title="倾斜" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" onkeydown="return CKEDITOR.tools.callFunction(49, event);" onfocus="return CKEDITOR.tools.callFunction(50, event);" onclick="CKEDITOR.tools.callFunction(51, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_27_label" class="cke_label">倾斜</span></a></span><span class="cke_button"><a id="cke_28" class="cke_off cke_button_underline" "="" href="javascript:void('下划线')" title="下划线" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_28_label" onkeydown="return CKEDITOR.tools.callFunction(52, event);" onfocus="return CKEDITOR.tools.callFunction(53, event);" onclick="CKEDITOR.tools.callFunction(54, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_28_label" class="cke_label">下划线</span></a></span><span class="cke_button"><a id="cke_29" class="cke_off cke_button_strike" "="" href="javascript:void('删除线')" title="删除线" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_29_label" onkeydown="return CKEDITOR.tools.callFunction(55, event);" onfocus="return CKEDITOR.tools.callFunction(56, event);" onclick="CKEDITOR.tools.callFunction(57, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_29_label" class="cke_label">删除线</span></a></span><span class="cke_button"><a id="cke_30" class="cke_off cke_button_subscript" "="" href="javascript:void('下标')" title="下标" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_30_label" onkeydown="return CKEDITOR.tools.callFunction(58, event);" onfocus="return CKEDITOR.tools.callFunction(59, event);" onclick="CKEDITOR.tools.callFunction(60, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_30_label" class="cke_label">下标</span></a></span><span class="cke_button"><a id="cke_31" class="cke_off cke_button_superscript" "="" href="javascript:void('上标')" title="上标" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_31_label" onkeydown="return CKEDITOR.tools.callFunction(61, event);" onfocus="return CKEDITOR.tools.callFunction(62, event);" onclick="CKEDITOR.tools.callFunction(63, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_31_label" class="cke_label">上标</span></a></span><span class="cke_button"><a id="cke_32" class="cke_off cke_button_textcolor" "="" href="javascript:void('文本颜色')" title="文本颜色" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_32_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(64, event);" onfocus="return CKEDITOR.tools.callFunction(65, event);" onclick="CKEDITOR.tools.callFunction(66, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_32_label" class="cke_label">文本颜色</span><span class="cke_buttonarrow">&nbsp;</span></a></span><span class="cke_button"><a id="cke_33" class="cke_off cke_button_bgcolor" "="" href="javascript:void('背景颜色')" title="背景颜色" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(67, event);" onfocus="return CKEDITOR.tools.callFunction(68, event);" onclick="CKEDITOR.tools.callFunction(69, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_33_label" class="cke_label">背景颜色</span><span class="cke_buttonarrow">&nbsp;</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_34" class="cke_off cke_button_removeFormat" "="" href="javascript:void('清除格式')" title="清除格式" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_34_label" onkeydown="return CKEDITOR.tools.callFunction(70, event);" onfocus="return CKEDITOR.tools.callFunction(71, event);" onclick="CKEDITOR.tools.callFunction(72, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_34_label" class="cke_label">清除格式</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_35" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_36" class="cke_off cke_button_numberedlist" "="" href="javascript:void('编号列表')" title="编号列表" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_36_label" onkeydown="return CKEDITOR.tools.callFunction(73, event);" onfocus="return CKEDITOR.tools.callFunction(74, event);" onclick="CKEDITOR.tools.callFunction(75, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_36_label" class="cke_label">编号列表</span></a></span><span class="cke_button"><a id="cke_37" class="cke_off cke_button_bulletedlist" "="" href="javascript:void('项目列表')" title="项目列表" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_37_label" onkeydown="return CKEDITOR.tools.callFunction(76, event);" onfocus="return CKEDITOR.tools.callFunction(77, event);" onclick="CKEDITOR.tools.callFunction(78, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_37_label" class="cke_label">项目列表</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_38" class="cke_button_outdent cke_disabled" "="" href="javascript:void('减少缩进量')" title="减少缩进量" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_38_label" onkeydown="return CKEDITOR.tools.callFunction(79, event);" onfocus="return CKEDITOR.tools.callFunction(80, event);" onclick="CKEDITOR.tools.callFunction(81, this); return false;" aria-disabled="true"><span class="cke_icon">&nbsp;</span><span id="cke_38_label" class="cke_label">减少缩进量</span></a></span><span class="cke_button"><a id="cke_39" class="cke_off cke_button_indent" "="" href="javascript:void('增加缩进量')" title="增加缩进量" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_39_label" onkeydown="return CKEDITOR.tools.callFunction(82, event);" onfocus="return CKEDITOR.tools.callFunction(83, event);" onclick="CKEDITOR.tools.callFunction(84, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_39_label" class="cke_label">增加缩进量</span></a></span><span class="cke_button"><a id="cke_40" class="cke_off cke_button_blockquote" "="" href="javascript:void('块引用')" title="块引用" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_40_label" onkeydown="return CKEDITOR.tools.callFunction(85, event);" onfocus="return CKEDITOR.tools.callFunction(86, event);" onclick="CKEDITOR.tools.callFunction(87, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_40_label" class="cke_label">块引用</span></a></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_41" class="cke_off cke_button_justifyleft" "="" href="javascript:void('左对齐')" title="左对齐" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_41_label" onkeydown="return CKEDITOR.tools.callFunction(88, event);" onfocus="return CKEDITOR.tools.callFunction(89, event);" onclick="CKEDITOR.tools.callFunction(90, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_41_label" class="cke_label">左对齐</span></a></span><span class="cke_button"><a id="cke_42" class="cke_off cke_button_justifycenter" "="" href="javascript:void('居中')" title="居中" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_42_label" onkeydown="return CKEDITOR.tools.callFunction(91, event);" onfocus="return CKEDITOR.tools.callFunction(92, event);" onclick="CKEDITOR.tools.callFunction(93, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_42_label" class="cke_label">居中</span></a></span><span class="cke_button"><a id="cke_43" class="cke_off cke_button_justifyright" "="" href="javascript:void('右对齐')" title="右对齐" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_43_label" onkeydown="return CKEDITOR.tools.callFunction(94, event);" onfocus="return CKEDITOR.tools.callFunction(95, event);" onclick="CKEDITOR.tools.callFunction(96, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_43_label" class="cke_label">右对齐</span></a></span><span class="cke_button"><a id="cke_44" class="cke_off cke_button_justifyblock" "="" href="javascript:void('两端对齐')" title="两端对齐" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_44_label" onkeydown="return CKEDITOR.tools.callFunction(97, event);" onfocus="return CKEDITOR.tools.callFunction(98, event);" onclick="CKEDITOR.tools.callFunction(99, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_44_label" class="cke_label">两端对齐</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_46" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_rcombo" role="presentation"><span id="cke_45" class="cke_styles cke_off" role="presentation"><span id="cke_45_label" class="cke_label">样式</span><a hidefocus="true" title="样式" tabindex="-1" href="javascript:void('样式')" role="button" aria-labelledby="cke_45_label" aria-describedby="cke_45_text" aria-haspopup="true" onkeydown="CKEDITOR.tools.callFunction( 101, event, this );" onfocus="return CKEDITOR.tools.callFunction(102, event);" onclick="CKEDITOR.tools.callFunction(100, this); return false;"><span><span id="cke_45_text" class="cke_text cke_inline_label">样式</span></span><span class="cke_openbutton"><span class="cke_icon"></span></span></a></span></span><span class="cke_rcombo" role="presentation"><span id="cke_47" class="cke_format cke_off" role="presentation"><span id="cke_47_label" class="cke_label">格式</span><a hidefocus="true" title="格式" tabindex="-1" href="javascript:void('格式')" role="button" aria-labelledby="cke_47_label" aria-describedby="cke_47_text" aria-haspopup="true" onkeydown="CKEDITOR.tools.callFunction( 104, event, this );" onfocus="return CKEDITOR.tools.callFunction(105, event);" onclick="CKEDITOR.tools.callFunction(103, this); return false;"><span><span id="cke_47_text" class="cke_text cke_inline_label">格式</span></span><span class="cke_openbutton"><span class="cke_icon"></span></span></a></span></span><span class="cke_rcombo" role="presentation"><span id="cke_48" class="cke_font cke_off" role="presentation"><span id="cke_48_label" class="cke_label">字体</span><a hidefocus="true" title="字体" tabindex="-1" href="javascript:void('字体')" role="button" aria-labelledby="cke_48_label" aria-describedby="cke_48_text" aria-haspopup="true" onkeydown="CKEDITOR.tools.callFunction( 107, event, this );" onfocus="return CKEDITOR.tools.callFunction(108, event);" onclick="CKEDITOR.tools.callFunction(106, this); return false;"><span><span id="cke_48_text" class="cke_text cke_inline_label">字体</span></span><span class="cke_openbutton"><span class="cke_icon"></span></span></a></span></span><span class="cke_rcombo" role="presentation"><span id="cke_49" class="cke_fontSize cke_off" role="presentation"><span id="cke_49_label" class="cke_label">大小</span><a hidefocus="true" title="大小" tabindex="-1" href="javascript:void('大小')" role="button" aria-labelledby="cke_49_label" aria-describedby="cke_49_text" aria-haspopup="true" onkeydown="CKEDITOR.tools.callFunction( 110, event, this );" onfocus="return CKEDITOR.tools.callFunction(111, event);" onclick="CKEDITOR.tools.callFunction(109, this); return false;"><span><span id="cke_49_text" class="cke_text cke_inline_label">大小</span></span><span class="cke_openbutton"><span class="cke_icon"></span></span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_50" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_51" class="cke_off cke_button_link" "="" href="javascript:void('插入/编辑超链接')" title="插入/编辑超链接" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_51_label" onkeydown="return CKEDITOR.tools.callFunction(112, event);" onfocus="return CKEDITOR.tools.callFunction(113, event);" onclick="CKEDITOR.tools.callFunction(114, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_51_label" class="cke_label">插入/编辑超链接</span></a></span><span class="cke_button"><a id="cke_52" class="cke_button_unlink cke_disabled" "="" href="javascript:void('取消超链接')" title="取消超链接" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_52_label" onkeydown="return CKEDITOR.tools.callFunction(115, event);" onfocus="return CKEDITOR.tools.callFunction(116, event);" onclick="CKEDITOR.tools.callFunction(117, this); return false;" aria-disabled="true"><span class="cke_icon">&nbsp;</span><span id="cke_52_label" class="cke_label">取消超链接</span></a></span><span class="cke_button"></span><span class="cke_button cke_noalphafix"></span><span class="cke_button"><a id="cke_59" class="cke_off cke_button_flash" "="" href="javascript:void('Flash')" title="Flash" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_59_label" onkeydown="return CKEDITOR.tools.callFunction(130, event);" onfocus="return CKEDITOR.tools.callFunction(131, event);" onclick="CKEDITOR.tools.callFunction(132, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_59_label" class="cke_label">Flash</span></a></span><span class="cke_button"><a id="cke_60" class="cke_off cke_button_table" "="" href="javascript:void('表格')" title="表格" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_60_label" onkeydown="return CKEDITOR.tools.callFunction(133, event);" onfocus="return CKEDITOR.tools.callFunction(134, event);" onclick="CKEDITOR.tools.callFunction(135, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_60_label" class="cke_label">表格</span></a></span><span class="cke_button"><a id="cke_61" class="cke_off cke_button_horizontalrule" "="" href="javascript:void('插入水平线')" title="插入水平线" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_61_label" onkeydown="return CKEDITOR.tools.callFunction(136, event);" onfocus="return CKEDITOR.tools.callFunction(137, event);" onclick="CKEDITOR.tools.callFunction(138, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_61_label" class="cke_label">插入水平线</span></a></span><span class="cke_button"><a id="cke_62" class="cke_off cke_button_smiley" "="" href="javascript:void('表情符')" title="表情符" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_62_label" onkeydown="return CKEDITOR.tools.callFunction(139, event);" onfocus="return CKEDITOR.tools.callFunction(140, event);" onclick="CKEDITOR.tools.callFunction(141, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_62_label" class="cke_label">表情符</span></a></span><span class="cke_button"></span><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_81" class="cke_off cke_button_preview" "="" href="javascript:void('预览')" title="预览" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_81_label" onkeydown="return CKEDITOR.tools.callFunction(154, event);" onfocus="return CKEDITOR.tools.callFunction(155, event);" onclick="CKEDITOR.tools.callFunction(156, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_81_label" class="cke_label">预览</span></a></span><span class="cke_button"><a id="cke_82" class="cke_off cke_button_print" "="" href="javascript:void('打印')" title="打印" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_82_label" onkeydown="return CKEDITOR.tools.callFunction(157, event);" onfocus="return CKEDITOR.tools.callFunction(158, event);" onclick="CKEDITOR.tools.callFunction(159, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_82_label" class="cke_label">打印</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_128" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_129" class="cke_off cke_button_image" "="" href="javascript:void('图象')" title="图象" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_129_label" onkeydown="return CKEDITOR.tools.callFunction(274, event);" onfocus="return CKEDITOR.tools.callFunction(275, event);" onclick="CKEDITOR.tools.callFunction(276, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_129_label" class="cke_label">图象</span></a></span><span class="cke_button"><a id="cke_130" class="cke_off cke_button_flash" "="" href="javascript:void('Flash')" title="Flash" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_130_label" onkeydown="return CKEDITOR.tools.callFunction(277, event);" onfocus="return CKEDITOR.tools.callFunction(278, event);" onclick="CKEDITOR.tools.callFunction(279, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_130_label" class="cke_label">Flash</span></a></span><span class="cke_button"><a id="cke_131" class="cke_off cke_button_table" "="" href="javascript:void('表格')" title="表格" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_131_label" onkeydown="return CKEDITOR.tools.callFunction(280, event);" onfocus="return CKEDITOR.tools.callFunction(281, event);" onclick="CKEDITOR.tools.callFunction(282, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_131_label" class="cke_label">表格</span></a></span><span class="cke_button"><a id="cke_132" class="cke_off cke_button_horizontalrule" "="" href="javascript:void('插入水平线')" title="插入水平线" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_132_label" onkeydown="return CKEDITOR.tools.callFunction(283, event);" onfocus="return CKEDITOR.tools.callFunction(284, event);" onclick="CKEDITOR.tools.callFunction(285, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_132_label" class="cke_label">插入水平线</span></a></span><span class="cke_button"><a id="cke_133" class="cke_off cke_button_smiley" "="" href="javascript:void('表情符')" title="表情符" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_133_label" onkeydown="return CKEDITOR.tools.callFunction(286, event);" onfocus="return CKEDITOR.tools.callFunction(287, event);" onclick="CKEDITOR.tools.callFunction(288, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_133_label" class="cke_label">表情符</span></a></span><span class="cke_button"><a id="cke_134" class="cke_off cke_button_specialchar" "="" href="javascript:void('插入特殊符号')" title="插入特殊符号" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_134_label" onkeydown="return CKEDITOR.tools.callFunction(289, event);" onfocus="return CKEDITOR.tools.callFunction(290, event);" onclick="CKEDITOR.tools.callFunction(291, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_134_label" class="cke_label">插入特殊符号</span></a></span></span><span class="cke_toolbar_end"></span></span></div><a title="折叠工具栏" id="cke_135" tabindex="-1" class="cke_toolbox_collapser" onclick="CKEDITOR.tools.callFunction(292)"><span>▲</span></a></td></tr><tr role="presentation"><td id="cke_contents_text1" class="cke_contents" style="height:300px" role="presentation"><span id="cke_139" class="cke_voice_label">按 ALT+0 获得帮助</span><iframe style="width:100%;height:100%" frameborder="0" aria-describedby="cke_139" title="富文本编辑器，text1" src="" tabindex="-1" allowtransparency="true"></iframe></td></tr><tr role="presentation"><td id="cke_bottom_text1" class="cke_bottom" role="presentation"><div class="cke_resizer cke_resizer_ltr" title="拖拽以改变尺寸" onmousedown="CKEDITOR.tools.callFunction(150, event)"></div><span id="cke_path_text1_label" class="cke_voice_label">元素路径</span><div id="cke_path_text1" class="cke_path" role="group" aria-labelledby="cke_path_text1_label"><span class="cke_empty">&nbsp;</span></div></td></tr></tbody></table></span></span></span>  
+<script type="text/javascript">
+$(function() {
+   	CKEDITOR.replace( 'text1' ,
+   			{
+		   		filebrowserUploadUrl : '/jeeadmin/jspgou/fck/upload.do?Type=File',  
+		   		filebrowserImageUploadUrl : '/jeeadmin/jspgou/fck/upload.do?Type=Image',  
+		   		filebrowserFlashUploadUrl : '/jeeadmin/jspgou/fck/upload.do?Type=Media'  
+   		     }
+   	);  
+ });
+</script>
+</td></tr>
+<!--提交重置按钮-->
+<tr>
+<td colspan="4" class="pn-fbutton">
+<input type="hidden" name="ctgId" value="11">
+<input type="hidden" name="id" value="4">
+	<input type="hidden" name="colorSize" id="colorSize" value="false">
+	<input type="button" value="提交" onclick="checkSubmit();">&nbsp; <input type="reset" value="重置">
+</td></tr></tbody>
+</table>
+</form>
+</div>
+
+
+<script type="text/javascript">
+var picIndex = 1+1;
+	var picTpl = $.format($("#picTable").val());
+	function addPicLine() {
+		$('#picBefore').before(picTpl(picIndex++));
+	}
+</script>
+
+</body></html>

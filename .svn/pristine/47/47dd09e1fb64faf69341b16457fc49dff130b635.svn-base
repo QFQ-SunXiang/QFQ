@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table</title>
+<style type="text/css" >
+body, button, input, select, textarea { font-family:'\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', Verdana;}
+table {border:1px thin #666;font-size:14px;}
+td {width:100px;height:45px;padding-left:10px;padding-right:10px;}
+.td-1 {width:200px;text-align:right;}
+.td-2 {width:300px;}
+.td-title {font-size:16px;}
+</style>
+</head>
+
+<body>
+<div style="width:1000px;margin:0 auto;">
+    <table width="1000" border="1" cellpadding="1" cellspacing="0">
+        <tr>
+            <td colspan="6" style="text-align:center; font-size:18px;"><strong>白领信息表</strong></td>
+        </tr>
+        <tr>
+            <td colspan="6"  class="td-title"><strong>客户基础信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>姓名：</strong></td>
+            <td colspan="2" class="td-2">诸葛孔明</td>
+            <td colspan="1" class="td-1"><strong>性别：</strong></td>
+            <td colspan="2" class="td-2">男</td>
+        </tr>
+        <tr>
+          <td colspan="1" class="td-1"><strong>身份证号：</strong></td>
+          <td colspan="2" class="td-2">220102166666666666</td>
+          <td colspan="3">&nbsp;</td>        
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>现居住地：</strong></td>
+            <td colspan="5" class="td-2"><span>北京</span>省<span>北京</span>市（县）<span>石景山</span>区（村镇）<span>实兴大街</span>街（路）<span>30号院</span>小区<span>17号楼</span>楼<span>4</span>层<span></span>室</td>
+
+        </tr>
+        <tr>
+            <td colspan="6"  class="td-title"><strong>工作单位信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>工作单位：</strong></td>
+            <td colspan="2" class="td-2">亲分期（北京科技有限公司）</td>
+            <td colspan="1" class="td-1"><strong>公司性质：</strong></td>
+            <td colspan="2" class="td-2">私营/民营企业</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>工作部门：</strong></td>
+            <td colspan="2" class="td-2">市场部</td>
+            <td colspan="1" class="td-1"><strong>工作职位：</strong></td>
+            <td colspan="2" class="td-2">部门经理</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>工作地址：</strong></td>
+            <td colspan="5" class="td-2"><span>北京</span>省<span>北京</span>市（县）<span>石景山</span>区（村镇）<span>实兴大街</span>街（路）<span>30号院</span>小区<span>17号楼</span>楼<span>4</span>层<span></span>室</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>联系人：</strong></td>
+            <td colspan="2" class="td-2">诸葛孔明</td>
+            <td colspan="1" class="td-1"><strong>固定电话：</strong></td>
+            <td colspan="2" class="td-2">0.000000000</td>
+        </tr>
+        <tr>
+          <td colspan="1" class="td-1"><strong>手机号：</strong></td>
+          <td colspan="2" class="td-2">13333333333</td>
+          <td colspan="3">&nbsp;</td>        
+        </tr>
+        <tr>
+            <td colspan="6"  class="td-title"><strong>邮寄地址以及联系方式</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>邮寄地址：</strong></td>
+            <td colspan="5" class="td-2"><span>北京</span>省<span>北京</span>市（县）<span>石景山</span>区（村镇）<span>实兴大街</span>街（路）<span>30号院</span>小区<span>17号楼</span>楼<span>4</span>层<span></span>室</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>本人联系方式：</strong></td>
+            <td colspan="2" class="td-2">13333333333</td>
+            <td colspan="1" class="td-1"><strong>QQ：</strong></td>
+            <td colspan="2" class="td-2">101101101</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>微信：</strong></td>
+            <td colspan="2" class="td-2">zhugekongming</td>
+            <td colspan="1" class="td-1"><strong>E-mail：</strong></td>
+            <td colspan="2" class="td-2">kongming@163.com</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title" ><strong>家庭及紧急联系人信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>父亲姓名：</strong></td>
+            <td colspan="2" class="td-2">呵呵呵呵</td>
+            <td colspan="1" class="td-1"><strong>联系方式：</strong></td>
+            <td colspan="2" class="td-2">13131313131</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>母亲姓名：</strong></td>
+            <td colspan="2" class="td-2">呵呵呵呵</td>
+            <td colspan="1" class="td-1"><strong>联系方式：</strong></td>
+            <td colspan="2" class="td-2">13131313131</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>夫妻或儿女姓名：</strong></td>
+            <td colspan="2" class="td-2">呵呵呵呵</td>
+            <td colspan="1" class="td-1"><strong>联系方式：</strong></td>
+            <td colspan="2" class="td-2">13131313131</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>亲戚或朋友姓名：</strong></td>
+            <td colspan="2" class="td-2">周瑜</td>
+            <td colspan="1" class="td-1"><strong>联系方式：</strong></td>
+            <td colspan="2" class="td-2">22222222222</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title" ><strong>收入及其他信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>教育程度：</strong></td>
+            <td colspan="2" class="td-2">高中</td>
+            <td colspan="1" class="td-1"><strong>家庭收入：</strong></td>
+            <td colspan="2" class="td-2">1000</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>总工作时间：</strong></td>
+            <td colspan="2" class="td-2">24月</td>
+            <td colspan="1" class="td-1"><strong>现单位工作时间：</strong></td>
+            <td colspan="2" class="td-2">1年</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>个人月收入：</strong></td>
+            <td colspan="2" class="td-2">1000</td>
+            <td colspan="1" class="td-1"><strong>是否有社保：</strong></td>
+            <td colspan="2" class="td-2">是</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>是否有住房：</strong></td>
+            <td colspan="2" class="td-2">否</td>
+            <td colspan="1" class="td-1"><strong>每月生活支出额度：</strong></td>
+            <td colspan="2" class="td-2">1000</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>其他（担保人）联系人姓名：</strong></td>
+            <td colspan="2" class="td-2">周瑜</td>
+            <td colspan="1" class="td-1"><strong>联系人电话：</strong></td>
+            <td colspan="2" class="td-2">13232323232</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title" ><strong>银行卡信息</strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="td-1"><strong>银行卡开户行：</strong></td>
+            <td colspan="2" class="td-2">北京邮政储蓄银行</td>
+            <td colspan="1" class="td-1"><strong>开户姓名：</strong></td>
+            <td colspan="2" class="td-2">诸葛孔明</td>
+        </tr>
+        <tr>
+          <td colspan="1" class="td-1"><strong>账号：</strong></td>
+          <td colspan="2" class="td-2">0000000000000000000</td>
+          <td colspan="3">&nbsp;</td>        
+        </tr>
+        <tr>
+            <td colspan="6" class="td-title" ><strong>补充说明：</strong></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

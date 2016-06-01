@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!-- saved from url=(0044)http://localhost:8080/jeeadmin/jspgou/top.do -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>JspGou Administrator's Control Panel - powered by jspgou</title>
+<link href="css/admin1.css" rel="stylesheet" type="text/css">
+<script src="js/pony.js" type="text/javascript"></script>
+<script src="js/pony.tree.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+<!--页头Begin-->
+<div id="top">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="272"><img src="img/logo.jpg" border="0"></td>
+      <td background="img/top_bg.jpg">
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        	<tbody><tr>
+          		<td height="35" align="right">
+          			<table border="0" cellspacing="0" cellpadding="0">
+	            		<tbody><tr>
+		              		<td width="17" align="center"><img src="img/user.gif" border="0"></td>
+		              		<td align="left"><span style="color:#FFF; padding:0 5px 0 5px;">您好,admin</span></td>
+		             		<td width="17" align="center"><img src="img/ico.gif" width="10" height="10" border="0"></td>
+		              		<td width="80" align="left"><a href="#" class="channel" onclick="return confirm(&#39;您确定退出吗？&#39;);">退出</a></td>
+		               		<td width="50" align="left"><a href="#" target="black" class="channel">首页</a></td>
+	            		</tr>
+         		   </tbody></table>
+         	   </td>
+           </tr>
+           <tr>
+          		<td height="32">
+		  
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td width="76" align="center"><a href="#" >首页</a> &nbsp; </td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			  <td width="76" align="center"><a href="#"  >分类</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+             
+              <td width="76" align="center"><a href="#"  >商品</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			  
+			  <td width="76" align="center"><a href="#"  >订单</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >栏目</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+            
+			  <td width="76" align="center"><a href="#"  >文章</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >模板</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >资源</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+            
+			  <td width="76" align="center"><a href="#"  >辅助</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >会员</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			
+			  <td width="76" align="center"><a href="#"  >配置</a></td>
+              <td width="8"><img src="img/top-sep.jpg" border="0"></td>
+			   <td width="76" align="center"><a href="#"  >营销</a></td>
+              <td width="8"><img src="" border="0"></td>
+             
+              <td width="76" align="center"></td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody></table>
+		  
+		  
+		  </td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+  <div style="border-top:1px solid #1879B0;"></div>
+</div>
+<!--页头End-->
+<div style="overflow:hidden;">
+<!--left-->
+    <div class="div_l" >
+            <div class="lttop">
+                <a href="javascript:location.reload()">刷新</a>
+            &nbsp;	<a href="#"  >商品标签</a>
+            </div>
+            <hr>
+            <div id="t" class="pn-tree">
+                <div id="t-0">
+                    <div id="t-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img id="t-0-co" src="img/elbow-end-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0&#39;)" style="cursor:pointer;">
+                        <img id="t-0-cc" src="img/elbow-end-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0&#39;)" style="cursor:pointer;display:none;">
+                        <img id="t-0-fo" src="img/folder-open.gif" style="">
+                        <img id="t-0-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#" onclick="Pn.Tree.switchDisplay(&#39;t-0&#39;,true)">所有分类</a>
+                    </div>
+                    <div id="t-0-" style="">
+                        <div id="t-0-0">
+                        <div id="t-0-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img id="t-0-0-co" src="img/elbow-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-0&#39;)" style="cursor:pointer;"><img id="t-0-0-cc" src="img/elbow-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-0&#39;)" style="cursor:pointer;display:none;"><img id="t-0-0-fo" src="img/folder-open.gif" style=""><img id="t-0-0-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0-0&#39;,true)">数码</a>
+                        </div>
+                        <div id="t-0-0-" style="">
+                        <div id="t-0-0-0">
+                        <div id="t-0-0-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >手机</a>
+                        </div>
+                        </div>
+                        <div id="t-0-0-1">
+                        <div id="t-0-0-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >笔记本</a>
+                        </div>
+                        </div>
+                        <div id="t-0-0-2">
+                        <div id="t-0-0-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >台式机</a>
+                        </div>
+                        </div>
+                        <div id="t-0-0-3">
+                        <div id="t-0-0-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >办公</a>
+                        </div>
+                        </div>
+                        <div id="t-0-0-4">
+                        <div id="t-0-0-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >相机</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="t-0-1">
+                        <div id="t-0-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img id="t-0-1-co" src="img/elbow-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-1&#39;)" style="cursor:pointer;"><img id="t-0-1-cc" src="img/elbow-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-1&#39;)" style="cursor:pointer;display:none;"><img id="t-0-1-fo" src="img/folder-open.gif" style=""><img id="t-0-1-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0-1&#39;,true)">服装</a>
+                        </div>
+                        <div id="t-0-1-" style="">
+                        <div id="t-0-1-0">
+                        <div id="t-0-1-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >女装</a>
+                        </div>
+                        </div>
+                        <div id="t-0-1-1">
+                        <div id="t-0-1-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >男装</a>
+                        </div>
+                        </div>
+                        <div id="t-0-1-2">
+                        <div id="t-0-1-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >童装</a>
+                        </div>
+                        </div>
+                        <div id="t-0-1-3">
+                        <div id="t-0-1-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >内衣</a>
+                        </div>
+                        </div>
+                        <div id="t-0-1-4">
+                        <div id="t-0-1-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >裤子</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="t-0-2">
+                        <div id="t-0-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img id="t-0-2-co" src="img/elbow-minus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-2&#39;)" style="cursor:pointer;"><img id="t-0-2-cc" src="img/elbow-plus.gif" onclick="Pn.Tree.switchDisplay(&#39;t-0-2&#39;)" style="cursor:pointer;display:none;"><img id="t-0-2-fo" src="img/folder-open.gif" style=""><img id="t-0-2-fc" src="img/folder.gif" style="display:none;">&nbsp;<a href="#"   onclick="Pn.Tree.switchDisplay(&#39;t-0-2&#39;,true)">鞋包配饰</a>
+                        </div>
+                        <div id="t-0-2-" style="">
+                        <div id="t-0-2-0">
+                        <div id="t-0-2-0-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >女包</a>
+                        </div>
+                        </div>
+                        <div id="t-0-2-1">
+                        <div id="t-0-2-1-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >男鞋</a>
+                        </div>
+                        </div>
+                        <div id="t-0-2-2">
+                        <div id="t-0-2-2-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >童鞋</a>
+                        </div>
+                        </div>
+                        <div id="t-0-2-3">
+                        <div id="t-0-2-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >女鞋</a>
+                        </div>
+                        </div>
+                        <div id="t-0-2-4">
+                        <div id="t-0-2-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-line.gif"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >男包</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="t-0-3">
+                        <div id="t-0-3-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#">日用百货</a>
+                        </div>
+                        </div>
+                        <div id="t-0-4">
+                        <div id="t-0-4-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >家居建材</a>
+                        </div>
+                        </div>
+                        <div id="t-0-5">
+                        <div id="t-0-5-s" onmouseover="Pn.Tree.lineOver(this)" onmouseout="Pn.Tree.lineOut(this)" onclick="Pn.Tree.lineSelected(this,&#39;t&#39;);" isdisplay="true">
+                        <img src="img/s.gif" width="15px"><img src="img/elbow-end.gif"><img src="img/leaf.gif">&nbsp;<a href="#"  >珠宝手表</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<!--left end-->
+    <div class="div_mid">
+            <div class="lttop">
+                资源树
+            </div>
+            <hr>
+            <div id="">
+                <ul class="mid_ul">
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                	<li><img src="img/icon_file.gif" alt="file"/><a href="#">测试测试（1）</a>&nbsp;<span><a href="#"><img src="img/icon_edit.gif" alt="edit"/></a><span class="mid_span">|</span><a href="#"><img src="img/icon_delete.gif" alt="delete"/></a></span></li>
+                </ul>
+            </div>
+    </div>
+<!--main-->
+    <div class="special-body-box">
+    		
+            <div class="rhead">
+                    <div class="rpos">当前位置: 商品 - 商品管理 - 列表</div>
+                    <form class="ropt">
+                    <div style="padding:5px 0 0 0">请选择商品分类</div>
+                </form>
+                    <div class="clear"></div>
+            </div>
+            <div class="rhead">
+                    <form action="v_list.htm">
+                     <select name="typeId">
+                            <option value="">--商品分类--</option>
+                            <option value="1">数码</option>
+                            <option value="2">服装</option>
+                            <option value="3">鞋包配饰</option>
+                            <option value="4">日用百货</option>
+                            <option value="5">家居建材</option>
+                            <option value="6">珠宝手表</option>
+                            <option value="7">酒店</option>
+                            <option value="8">手机</option>
+                            <option value="9">笔记本</option>
+                       </select>
+                    商品名称:<input type="text" name="productName" value="" style="width:100px">
+                    品牌名称: <input type="text" name="brandName" value="" style="width:100px">  
+                    <label class="ckl">
+                        <input type="checkbox" id="isOnSale" name="isOnSale" value="true">上架
+                    </label>
+                    <label class="ckl">
+                         <input type="checkbox" id="isRecommend" name="isRecommend" value="true">推荐
+                    </label>
+                    <label class="ckl">
+                          <input type="checkbox" id="isSpecial" name="isSpecial" value="true">特价
+                    </label>
+                    <label class="ckl">
+                         <input type="checkbox" id="isHotsale" name="isHotsale" value="true"> 热卖
+                    </label>
+                    <label>
+                        <input type="checkbox" id="isNewProduct" name="isNewProduct" value="true"> 新品
+                     </label>
+                      库存:
+                        <input type="text" name="startStock" value="" style="width:50px">
+                        &nbsp;至&nbsp;<input type="text" name="endStock" value="" style="width:50px">
+                        <input type="submit" class="ropt" value="查询">
+                    </form>
+                <div class="clear"></div>
+            </div>
+            <form id="tableForm" method="post">
+            <input type="hidden" name="pageNo" value="">
+            <input type="hidden" name="ctgId" value="">
+            <table class="pn-ltable" style="" width="100%" cellspacing="1" cellpadding="0" border="0">
+            <thead class="pn-lthead"><tr>
+                <th width="20"><input type="checkbox" onclick="Pn.checkbox(&quot;ids&quot;,this.checked)"></th>
+                <th width="20">ID</th>
+                <th>商品名称</th>
+                <th>分类</th>
+                <th>类型</th>
+                <th>销售价</th>
+                <th>商品库存</th>
+                <th>品牌</th>
+                <th>上架</th>
+                <th>操作选项</th></tr></thead>
+            <tbody class="pn-ltbody"><tr>
+                <td><input type="checkbox" name="ids" value="5"></td>
+                <td>5</td>
+                <td><a href="#" target="_blank">test</a></td>
+                <td>办公</td>
+                <td>数码</td>
+                <td>0.1</td>
+                <td>97</td>
+                <td></td>
+                <td>是</td>
+                <td align="center">		<a href="#">修改</a> | <a href="#" onclick="if(!confirm(&#39;您确定删除吗？&#39;)) {return false;}">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ids" value="4"></td>
+                <td>4</td>
+                <td><a href="#" target="_blank">支付测试</a></td>
+                <td>办公</td>
+                <td>数码</td>
+                <td>0.01</td>
+                <td>92</td>
+                <td></td>
+                <td>是</td>
+                <td align="center">		<a href="#">修改</a> | <a href="#" onclick="if(!confirm(&#39;您确定删除吗？&#39;)) {return false;}">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ids" value="3"></td>
+                <td>3</td>
+                <td><a href="#" target="_blank">佳能EOS450D数码相机</a></td>
+                <td>相机</td>
+                <td>数码</td>
+                <td>40000</td>
+                <td>8</td>
+                <td>尼康</td>
+                <td>是</td>
+                <td align="center">		<a href="#">修改</a> | <a href="#" onclick="if(!confirm(&#39;您确定删除吗？&#39;)) {return false;}">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ids" value="2"></td>
+                <td>2</td>
+                <td><a href="#" target="_blank">华硕R510VC</a></td>
+                <td>笔记本</td>
+                <td>笔记本</td>
+                <td>3399</td>
+                <td>45</td>
+                <td>华硕</td>
+                <td>是</td>
+                <td align="center">		<a href="#">修改</a> | <a href="#" onclick="if(!confirm(&#39;您确定删除吗？&#39;)) {return false;}">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ids" value="1"></td>
+                <td>1</td>
+                <td><a href="#" target="_blank">苹果4S</a></td>
+                <td>手机</td>
+                <td>手机</td>
+                <td>2248</td>
+                <td>144</td>
+                <td>iPhone</td>
+                <td>是</td>
+                <td align="center">		<a href="#">修改</a> | <a href="#" onclick="if(!confirm(&#39;您确定删除吗？&#39;)) {return false;}">删除</a></td>
+            </tr></tbody>
+            </table>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td align="center" class="pn-sp">
+                共 5 条&nbsp;
+                每页<input type="text" value="20" style="width:30px" onfocus="this.select();" onblur="$.cookie(&#39;_cookie_page_size&#39;,this.value,{expires:3650});" onkeypress="if(event.keyCode==13){$(this).blur();return false;}">条&nbsp;
+                <input type="button" value="首 页" onclick="_gotoPage(&#39;1&#39;);" disabled="disabled">
+                <input type="button" value="上一页" onclick="_gotoPage(&#39;1&#39;);" disabled="disabled">
+                <input type="button" value="下一页" onclick="_gotoPage(&#39;1&#39;);" disabled="disabled">
+                <input type="button" value="尾 页" onclick="_gotoPage(&#39;1&#39;);" disabled="disabled">&nbsp;
+                当前 1/1 页 &nbsp;转到第<input type="text" id="_goPs" style="width:50px" onfocus="this.select();" onkeypress="if(event.keyCode==13){$(&#39;#_goPage&#39;).click();return false;}">页
+                <input id="_goPage" type="button" value="转" onclick="_gotoPage($(&#39;#_goPs&#39;).val());" disabled="disabled">
+            </td></tr></tbody></table>
+            </form>
+    </div>
+<!--main end-->
+</div>
+</body></html>
+
+
+
+
+

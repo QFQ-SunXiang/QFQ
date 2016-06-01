@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Sep 04 11:38:42 CST 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=C\:\\Users\\baiyu\\Desktop\\rest demo\\CCP_REST_SMS_DEMO_JAVA_v2.6r\\CCP_REST_SDK_JAVA_v2.6.3r\\demo\\lib\\CCP_REST_SMS_SDK_JAVA_v2.6.3r.jar
+manifest.mergeall=true
+manifest.mainclass=com.cloopen.rest.demo.Test
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

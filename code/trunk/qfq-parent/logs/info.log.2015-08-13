@@ -1,0 +1,48 @@
+2015-08-13 17:53:12 INFO org.springframework.context.support.ClassPathXmlApplicationContext line:510  - [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Aug 13 17:53:12 CST 2015]; root of context hierarchy
+2015-08-13 17:53:12 INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  - [main] Loading XML bean definitions from class path resource [applicationContext-common.xml]
+2015-08-13 17:53:13 INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  - [main] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2015-08-13 17:53:13 INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  - [main] Loading XML bean definitions from class path resource [applicationContext-quartz.xml]
+2015-08-13 17:53:14 INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer line:172  - [main] Loading properties file from class path resource [conn.properties]
+2015-08-13 17:53:14 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory line:603  - [main] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@86be70a: defining beans [blackListService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,messageSource,mysqlDataSource,ysSqlSessionFactory,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.mybatis.spring.mapper.MapperScannerConfigurer#0,updateBlackListJob,updateBlackListTrigger,startQuertz,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,blackListDao]; root of factory hierarchy
+2015-08-13 17:53:16 INFO org.quartz.impl.StdSchedulerFactory line:1184  - [main] Using default implementation for ThreadExecutor
+2015-08-13 17:53:16 INFO org.quartz.core.SchedulerSignalerImpl line:61  - [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2015-08-13 17:53:16 INFO org.quartz.core.QuartzScheduler line:240  - [main] Quartz Scheduler v.2.2.1 created.
+2015-08-13 17:53:16 INFO org.quartz.simpl.RAMJobStore line:155  - [main] RAMJobStore initialized.
+2015-08-13 17:53:16 INFO org.quartz.core.QuartzScheduler line:305  - [main] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2015-08-13 17:53:16 INFO org.quartz.impl.StdSchedulerFactory line:1339  - [main] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2015-08-13 17:53:16 INFO org.quartz.impl.StdSchedulerFactory line:1343  - [main] Quartz scheduler version: 2.2.1
+2015-08-13 17:53:16 INFO org.quartz.core.QuartzScheduler line:2311  - [main] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@c05fddc
+2015-08-13 17:53:17 INFO org.springframework.context.support.DefaultLifecycleProcessor line:334  - [main] Starting beans in phase 2147483647
+2015-08-13 17:53:17 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean line:643  - [main] Starting Quartz Scheduler now
+2015-08-13 17:53:17 INFO org.quartz.core.QuartzScheduler line:575  - [main] Scheduler startQuertz_$_NON_CLUSTERED started.
+2015-08-13 17:53:41 INFO org.springframework.context.support.ClassPathXmlApplicationContext line:510  - [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55d56113: startup date [Thu Aug 13 17:53:41 CST 2015]; root of context hierarchy
+2015-08-13 17:53:41 INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  - [main] Loading XML bean definitions from class path resource [applicationContext-common.xml]
+2015-08-13 17:53:42 INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  - [main] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2015-08-13 17:53:42 INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  - [main] Loading XML bean definitions from class path resource [applicationContext-quartz.xml]
+2015-08-13 17:53:43 INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer line:172  - [main] Loading properties file from class path resource [conn.properties]
+2015-08-13 17:53:43 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory line:603  - [main] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@57250572: defining beans [blackListService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,messageSource,mysqlDataSource,ysSqlSessionFactory,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.mybatis.spring.mapper.MapperScannerConfigurer#0,updateBlackListJob,updateBlackListTrigger,startQuertz,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,blackListDao]; root of factory hierarchy
+2015-08-13 17:53:46 INFO org.quartz.impl.StdSchedulerFactory line:1184  - [main] Using default implementation for ThreadExecutor
+2015-08-13 17:53:46 INFO org.quartz.core.SchedulerSignalerImpl line:61  - [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2015-08-13 17:53:46 INFO org.quartz.core.QuartzScheduler line:240  - [main] Quartz Scheduler v.2.2.1 created.
+2015-08-13 17:53:46 INFO org.quartz.simpl.RAMJobStore line:155  - [main] RAMJobStore initialized.
+2015-08-13 17:53:46 INFO org.quartz.core.QuartzScheduler line:305  - [main] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2015-08-13 17:53:46 INFO org.quartz.impl.StdSchedulerFactory line:1339  - [main] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2015-08-13 17:53:46 INFO org.quartz.impl.StdSchedulerFactory line:1343  - [main] Quartz scheduler version: 2.2.1
+2015-08-13 17:53:46 INFO org.quartz.core.QuartzScheduler line:2311  - [main] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2f66e802
+2015-08-13 17:53:46 INFO org.springframework.context.support.DefaultLifecycleProcessor line:334  - [main] Starting beans in phase 2147483647
+2015-08-13 17:53:46 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean line:643  - [main] Starting Quartz Scheduler now
+2015-08-13 17:53:46 INFO org.quartz.core.QuartzScheduler line:575  - [main] Scheduler startQuertz_$_NON_CLUSTERED started.

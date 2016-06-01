@@ -1,0 +1,25 @@
+# msm setting
+MSG.BASE.URL=app.cloopen.com
+MSG.PORT=8883
+MSG.ACOUNT.SID=aaf98f894dbdcf0f014dc7296dbc06e9
+MSG.AUTH.TOKEN=9237cd65b85f4338968155dbb652ea7d
+#MSG.APP.ID=aaf98f894dbdcf0f014dc72b7ace06ee
+MSG.APP.ID=aaf98f894e3e5b81014e48dc94020ae1
+MSG.TEMPLATE.ID=24339
+MSG.TEMPLATE.ID1=25159
+MSG.TIME=5
+
+# Email setting
+MAIL_HOST=smtp.163.com
+MAIL_USER=dbn-14132008
+MAIL_PASS=dbn130518shh
+FROM_MAIL=dbn-14132008@163.com
+
+# Test payment 1:test_env, 0:prod_evn
+TEST_PAY=0
+
+USE_DEFAULT_RATE=1
+
+credit_1=500
+credit_2=5500
+credit_3=4000

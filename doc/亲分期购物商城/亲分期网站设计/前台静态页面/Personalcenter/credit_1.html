@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>我的亲分期 - 信用认证 - 学籍认证</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/personal.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+
+</head>
+<body>
+<div class="head">
+	<div id="head_hello">
+	  <div class="hello_left">欢迎来到最值得信赖的分期商城！</div>
+      <div class="hello_right">您好！&nbsp;&nbsp;
+      <a href="#"><span class="hello_right_span1">测试用户</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>个人中心</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>收藏夹</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#"><span>帮助中心</span></a>&nbsp;&nbsp;</div>
+	</div>
+	<div class="head_ul">
+        <div id="logo">
+            <img src="../images/index_3.gif">
+        </div>
+        <div id="search">
+             <input type="text" value="请输入关键字进行搜索" onfocus="if(value==defaultValue){value=&#39;&#39;; }" onblur="if(!value){value=defaultValue;}" id="search_main" >
+             <a href="#"><img src="../images/search_main.png" style="margin:-10px;padding-left:5px;"></a>
+             <div> <a href="#"><span>iPhone6</span></a>&nbsp;&nbsp;
+             	   <a href="#"><span>iPad mini</span></a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPad Air</span> </a>&nbsp;&nbsp;
+            	   <a href="#"><span>iPhone6 plus</span></a></div>
+        </div>
+	<div><a href="#"><img src="../images/zixun.png" class="zixun"></a><img src="../images/number.png" > </div>
+	</div>
+</div>
+<div class="mid">
+<div class="main-wrap">
+<div class="mu-menu">
+                <dl>
+                    <dt class="mu-menu-div"><span class="font-size3 font-bd "><a href="#" class="mu-menu-a">我的亲分期</a></span></dt>
+                    <dd>
+                		<a href="#" target="_self"><i></i>我的订单</a>
+                        <ul>
+                            <li><a href="#" target="_self" class="">商品订单</a></li>
+                        </ul>
+         		    </dd>
+                    <dd>
+                		<a href="#" target="_self"><i></i>我的账单</a>
+                        <ul>
+                            <li><a href="#" target="_self" class="">商品账单</a></li>
+                        </ul>
+           			</dd>
+                    <dd>
+                		<a href="#" target="_self"><i></i>个人中心</a>
+                        <ul>
+                            <!--<li><a href="#" target="_self" class="">优惠券</a></li>-->
+                            <li><a href="#" target="_self" class="active">我的信用</a></li>
+                            <li><a href="#" target="_self" class="">账号设置</a></li>
+                            <li><a href="#" target="_self" class="">修改密码</a></li>
+                            <li><a href="#" target="_self" class="">收货地址</a></li>
+                            <li><a href="#" target="_self" class="">申请成为大使</a></li>                
+                        </ul>
+            		</dd>
+                    <dd><a href="#" target="_self"><i></i>我的收藏</a>
+                    	<ul>
+                            <li><a href="#" target="_self" class="">收藏夹</a></li>            
+                        </ul>
+                    </dd>
+                 </dl>
+    		</div>
+<div class="my-Credit">
+    <p class="clearfix my-Credittitle">
+        <i class="inline-block"></i>
+        <span class="inline-block font1 font-size3">信用认证</span>
+        <span class="inline-block font3 right">&lt;<a href="#">返回认证列表</a></span>
+    </p>
+    <div id="ejs_baseAuth">
+        <div class="auth_container">
+            <div class="mycredit-wrap">
+            <p class="mycreditwrap-tit font-size2 font1">基础认证 （秒速认证&nbsp;&nbsp; 实时反馈&nbsp;&nbsp; 无需审核&nbsp;&nbsp; 立享额度）</p>
+            <div class="mycredit-title font-size2">
+                <p class="clearfix">
+                        <a href="#" class="left block credit-title1 font-white">
+                            <i class="inline-block font-size0">1</i>
+                            身份学籍认证
+                        </a>
+                        <a href="#" class="left block credit-title3 font3">
+                            <i class="inline-block font-size0 font4">2</i>
+                            紧急联系方式</a>
+                        <a href="#" class="left block credit-title3 font3">
+                            <i class="inline-block font-size0 font4">3</i>
+                            银行卡认证
+                        </a>
+                </p>
+            </div>
+            <div class="mycredit-form inline-block" id="baseInfoForm">
+                    <div class="form-normal font-size0 ui-error">
+                        <label class="label"></label>
+                        <p class="error-p inline-block font-red card_width" id="errorTxt">密码错误</p>
+                    </div>
+                    <div class="form-normal font-size2">
+                        <label class="label ">姓名:</label>
+                        <input class="txt-normal card_width" id="realName" data-check="yes" data-exp="void-r" placeholder="请填写本人身份证姓名" type="text" value="">
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label">身份证号码:</label>
+                        <input class="txt-normal card_width" id="cardId" data-exp="void-c" placeholder="请填写本人身份证号码" type="text" value="">
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label">所在学校:</label>
+                        <input class="txt-normal card_width" placeholder="点击选择" id="university" value="大学" readonly>
+                    </div>
+                    <div class="form-normal font-size2">
+                        <label class="label">所在校区:</label> 
+                        <select class="select-long card_width" id="schoolId">
+                            <option value="2919">延庆校区</option>
+                        </select>
+                    </div>
+                    <div class="form-normal font-size2">
+                        <label class="label">毕业年月:</label>
+                        <select id="graduationYear" class="select-short ">
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                        </select>
+                        <select id="graduationMonth" class="select-short" style="margin-left:12px;">
+                            <option>02</option>
+                            <option>03</option>
+                            <option>06</option>
+                        </select>
+                    </div>
+                    <div class="form-normal font-size2 ">
+                        <label class="label school-float">学籍认证:</label>
+                       <div class="slide_first">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li class="h_hou" onclick="tabchange(this,'slide_first','d11-top','h_qian','h_hou')">学信网认证</li>
+                                        <li class="h_qian" onClick="tabchange(this,'slide_first','d11-top','h_qian','h_hou')">教务网认证</li>
+                                    </ul>
+                    
+                                </div>
+                                <div class="bd">
+                                    <div class="d11-top">  
+                                        <div>
+                        					<label class="label">所在校区:</label> 
+                                            <input class="txt-normal school-width" id="" placeholder="" type="text" value="">
+                                        </div>
+                                        <div>
+                        					<label class="label">所在校区:</label> 
+                                            <input class="txt-normal school-width" id="" placeholder="" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div  class="d11-top" style="display: none;">
+                                        <div>
+                                        <div>
+                        					<label class="label ">所在校区:</label> 
+                                            <input class="txt-normal school-width" id="" placeholder="" type="text" value="">
+                                        </div>
+                                        <div>
+                        					<label class="label ">所在校区:</label> 
+                                            <input class="txt-normal school-width" id="" placeholder="" type="text" value="">
+                                        </div>
+                                        <div>
+                        					<label class="label">所在校区:</label> 
+                                            <input class="txt-normal school-width" id="" placeholder="" type="text" value="">
+                                        </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    					</div>
+                    </div>
+                    <div class="form-normal ">
+                        <label class="label"></label>
+                        <a href="#" class="common-btn-blue">
+                            我已如实填写，下一步
+                        </a>
+                    </div>
+                    <div class="form-normal none" id="message">
+                        <p class="font-red font-size0 error-p inline-block error_red_p">
+                            学籍认证失败，请检查个人信息，您还有<span>1</span>次机会
+                        </p>
+                        
+                    </div>
+                </div>                 
+            <div class="mycredit-question inline-block">
+                <h1 class="font-size3">
+                    <i class="inline-block font-white">Q</i>学籍身份认证常见问题：
+                </h1>
+                <div class="credit-ques font3 font-size2">
+                    <p><strong>为什么我没有认证通过？</strong></p>
+                    <p>认证失败常由于以下原因造成：</p>
+                    <div>
+                        <p>1）姓名和身份证不真实；学籍不存在</p>
+                        <p>2）由于分期政策限制，2015年11月以前毕业的的&nbsp; 学生不支持申请。</p>
+                        <p>3）由于物流限制，不支持新疆和西藏的同学申请</p>
+                        <p>4）暂不支持学校为网络学校和成人教育院校和3+2院校的同学申请</p>
+                        <h2 class="font-red font-size0"><strong>*每人仅有三次认证机会，请务必真实填写</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--choose-->
+<div class="chooseboxwp" id="chooseboxwp" style="display: none;">
+		<div class="choosebox">
+			<div class="chooseboxtt">
+				<span>选择学校</span>
+			</div>
+			<div class="chooseprovince">
+				<ul class="province-list">
+					<li class="choosen" id="110000">北京</li>
+					<li id="120000">天津</li>
+					<li id="130000">河北</li>
+					<li id="140000">山西</li>
+					<li id="150000">内蒙</li>
+					<li id="160000">辽宁</li>
+				</ul>
+				
+			</div>
+			<div class="chooseuniversity">
+				 <div class="searchSchool">
+					<label>搜索：</label>
+					 <input type="text" id="searchSchool">
+				</div>
+				<ul class="university-list" id="chooseUniversity">
+                <li><a class="universityitem" data-id="462" data-name="中央音乐学院">中央音乐学院</a></li>
+                <li><a class="universityitem" data-id="243" data-name="首都经济贸易大学">首都经济贸易大学</a></li>
+                <li><a class="universityitem" data-id="242" data-name="北京中医药大学">北京中医药大学</a></li>
+                <li><a class="universityitem" data-id="6" data-name="北京石油化工学院">北京石油化工学院</a></li>
+                </ul>
+			</div>
+			<div class="chooseboxbtm">
+				<button class="chooseboxClose">关闭</button>
+			</div>
+		</div>
+	</div>
+<!--choose-->
+</div>
+<footer>
+    <div class="base">
+		<div id="base_help">
+			<ul class="base_ul">
+            	<li><p><a href="#">关于亲分期</a></p>
+                	<ul>
+                    	<li><p><a href="#">关于我们</a></p></li>
+                        <li><p><a href="#">联系我们</a></p></li>
+                        <li><p><a href="#">加入我们</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">分期资质</a></p>
+                	<ul>
+                    	<li><p><a href="#">什么人能购买</a></p></li>
+                        <li><p><a href="#">能分几期购买</a></p></li>
+                        <li><p><a href="#">分期额度说明</a></p></li>
+                        <li><p><a href="#">必备审核资料</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">购物帮助</a></p>
+                	<ul>
+                    	<li><p><a href="#">购物须知</a></p></li>
+                        <li><p><a href="#">电子签约</a></p></li>
+                        <li><p><a href="#">商品相关</a></p></li>
+                        <li><p><a href="#">订单相关</a></p></li>
+                        <li><p><a href="#">账户信息</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">支付方式</a></p>
+                	<ul>
+                    	<li><p><a href="#">发票说明</a></p></li>
+                        <li><p><a href="#">在线支付</a></p></li>
+                    </ul>
+                </li>
+                <li><p><a href="#">售后服务</a></p>
+                	<ul>
+                    	<li><p><a href="#">物流配送</a></p></li>
+                        <li><p><a href="#">还款规则</a></p></li>
+                        <li><p><a href="#">常见问题</a></p></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="base_div">
+            	<p class="base_p_number">400-628-5159</p>
+                <p class="base_p_time">周一至周五9:00~21:00</p>
+                <a href="#"><img src="../images/base_kefu.png" alt=""  /></a>
+            </div>   
+             <hr />
+       		 <p class="hr_p_1">Copyright © 2015 亲分期 Qinfenqi.com 亲分期（北京）科技有限公司 版权所有</p>
+        	 <p class="hr_p_2">京ICP备15033191号-1 </p>
+		</div>
+       
+    </div>
+</footer>
+<script type="text/javascript" src="../js/jquery-1.js"></script>
+<script type="text/javascript" src="../js/1.js"></script>
+</body></html>
+
+
+
+
+
+
+
