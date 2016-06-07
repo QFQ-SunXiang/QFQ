@@ -75,6 +75,9 @@ public class Member extends BaseBean{
 	
 	private double creditLimit;
 	private double usedCreditLimit;
+	private double creditCashLimit;
+	private double usedCashCreditLimit;
+
 	private String graduateYear;
 	private String graduateMonth;
 	private int certificationType;
@@ -517,7 +520,31 @@ public class Member extends BaseBean{
 	public void setUsedCreditLimit(double usedCreditLimit) {
 		this.usedCreditLimit = usedCreditLimit;
 	}
-
+	/**
+	 * @return the creditCashLimit
+	 */
+	public double getCreditCashLimit() {
+		return creditCashLimit;
+	}
+	/**
+	 * @param creditCashLimit the creditCashLimit to set
+	 */
+	public void setCreditCashLimit(double creditCashLimit) {
+		this.creditCashLimit = creditCashLimit;
+	}
+	/**
+	 * @return the usedCashCreditLimit
+	 */
+	public double getUsedCashCreditLimit() {
+		return usedCashCreditLimit;
+	}
+	/**
+	 * @param usedCashCreditLimit the usedCashCreditLimit to set
+	 */
+	public void setUsedCashCreditLimit(double usedCashCreditLimit) {
+		this.usedCashCreditLimit = usedCashCreditLimit;
+	}
+	
 	/**
 	 * @return the graduateYear
 	 */

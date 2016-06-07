@@ -275,6 +275,10 @@ public class AlipayServiceImpl implements AlipayService {
 			billQuery.setBillId(billId);
 			BillQuery bill = billDao.getBillById(billQuery);
 			double principal = bill.getPrincipal();
+			double creditLimit = 0;
+			double usedCreditLimit = 0;
+			double creditCashLimit = 0;
+			double usedCashCreditLimit = 0;
 
 			if ("2".equals(userStyle)) {
 				CollarQuery cq = collarDao.getCollarByUserId(userId);
@@ -284,8 +288,19 @@ public class AlipayServiceImpl implements AlipayService {
 			}
 			if ("1".equals(userStyle)) {
 				MemberQuery mq = memberDao.getMemberByUserId(userId);
-				mq.setCreditLimit(mq.getCreditLimit() + principal);
-				mq.setUsedCreditLimit(mq.getUsedCreditLimit() - principal);
+				int productId = bill.getProductId();
+				if(productId == 1571)
+				{
+					creditCashLimit = mq.getCreditCashLimit();
+					mq.setCreditCashLimit(creditCashLimit + principal);
+					usedCashCreditLimit = mq.getUsedCashCreditLimit();
+					mq.setUsedCashCreditLimit(usedCashCreditLimit - principal);
+					
+				}
+				creditLimit = mq.getCreditLimit();
+				mq.setCreditLimit(creditLimit + principal);
+				usedCreditLimit = mq.getUsedCreditLimit();
+				mq.setUsedCreditLimit(usedCreditLimit - principal);
 				memberDao.updateCreditLimit(mq);
 			}
 		}

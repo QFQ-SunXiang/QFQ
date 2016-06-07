@@ -102,7 +102,7 @@
 		                                </s:if>
 	                                	<s:if test="orderStatus == 6">
 	                                		 <s:if test="productId == 1568 || productId == 1569 || productId == 1570">
-	                                			<div><a href="freeproducts/<s:property value="productId" />.html">再次领取</a></div>
+	                                			<div><a href="products/<s:property value="productId" />.html">再次领取</a></div>
 	                                		</s:if>
 	                                		<s:else> 
 	                                			<div><a href="products/<s:property value="productId" />.html">再次购买</a></div>

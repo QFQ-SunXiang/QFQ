@@ -84,6 +84,8 @@
 			</div>
 			<div id="contractContent" style="width: 1000px;">
 				<form id="contractForm">
+					<input type="hidden" name="orderQuery.productId" value="${orderQuery.productId}" />
+				
 					<input type="hidden" name="contract.belong" value="${memberQuery.trueName}${collarQuery.trueName}" />
 					<input type="hidden" name="contract.orderId" value="${orderQuery.orderId}" id="orderId" />
 					<input type="hidden" name="contract.code" value="${contract.code}" />
@@ -100,6 +102,7 @@
 					<input type="hidden" name="contract.paymentDay" value="${day}" />
 					
 					<input type="hidden" name="memberQuery.creditLimit" value="${memberQuery.creditLimit}" />
+					<input type="hidden" name="memberQuery.creditCashLimit" value="${memberQuery.creditCashLimit}" />
 					<input type="hidden" name="memberQuery.memberId" value="${memberQuery.memberId}" />
 					
 					<input type="hidden" name="collarQuery.collarId" value="${collarQuery.collarId}" />

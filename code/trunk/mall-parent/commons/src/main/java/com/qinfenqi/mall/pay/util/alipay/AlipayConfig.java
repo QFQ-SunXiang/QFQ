@@ -43,11 +43,11 @@ public class AlipayConfig {
 	// 签名方式 不需修改
 	public static String SIGN_TYPE = "MD5";
 
-	public static final String NOTIFY_URL = "http://www.qinfenqi.com/pay/alipayNotifyPage.html";
+	public static final String NOTIFY_URL = "http://o1520c1135.imwork.net/mall/pay/alipayNotifyPage.html";
 
-	public static final String RETURN_URL = "http://www.qinfenqi.com/center/order.html";
+	public static final String RETURN_URL = "http://o1520c1135.imwork.net/mall/center/order.html";
 	
-	public static final String EXTER_INVOKE_IP = "101.200.234.70";
+	public static final String EXTER_INVOKE_IP = "113.226.205.238";
 	
 	public static final String PAYMENT_TYPE = "1";
 }

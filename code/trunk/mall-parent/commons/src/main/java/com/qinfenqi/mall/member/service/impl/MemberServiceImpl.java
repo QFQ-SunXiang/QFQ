@@ -146,10 +146,11 @@ public class MemberServiceImpl extends BaseService implements MemberService {
 		} else if ("isCardOauth".equals(oauthType)) { // 如果认证通过，则提升信用额度5500
 			if (memberQuery.getIsCardOauth() == 3) {
 				if (mq.getIsEcpOauth() == 3) {
-					// memberQuery.setCreditLimit(mq.getCreditLimit() + PropertyUtil.getInt("credit_2"));
-					// msg = "提升额度1-证件照片，审核通过，信用额度变为：" + PropertyUtil.getInt("credit_2");
+					 memberQuery.setCreditLimit(mq.getCreditLimit() + PropertyUtil.getInt("credit_2"));
+					 memberQuery.setCreditCashLimit(mq.getCreditCashLimit()+ PropertyUtil.getInt("cash_credit_2"));
+					 msg = "提升额度1-证件照片，审核通过，信用额度变为：" + PropertyUtil.getInt("credit_2");
 					memberQuery.setAuditStatus(3);
-					// } else {
+					 } else {
 					msg = "提升额度1-证件照片，审核通过!";
 				}
 			}
@@ -157,6 +158,7 @@ public class MemberServiceImpl extends BaseService implements MemberService {
 			if (memberQuery.getIsBkflowOauth() == 3) {
 				if (mq.getIsCardOauth() == 3 && mq.getIsBkcardOauth() == 3) {
 					memberQuery.setCreditLimit(mq.getCreditLimit() + PropertyUtil.getInt("credit_3"));
+					memberQuery.setCreditCashLimit(PropertyUtil.getInt("cash_credit_2"));
 					memberQuery.setAuditStatus(3);
 					msg = "提升额度2-银行流水，审核通过，信用额度变为：" + PropertyUtil.getInt("credit_3");
 				}

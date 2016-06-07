@@ -84,6 +84,7 @@ public class LoginInterceptor extends MethodFilterInterceptor {
 			"channel/channel!eleven.do",
 			"channel/channel!apple.do",
 			"channel/channel!free.do",
+			"channel/channel!cashCredit.do",
 			
 			//activity
 			"activity/activity!rule.do",

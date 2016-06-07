@@ -72,5 +72,13 @@ public class ChannelAction extends BaseAction {
 	public String free() {
 		return "free";
 	}
-
+	
+	/**
+	 * 免费送活动
+	 * 
+	 * @return
+	 */
+	public String cashCredit() {
+		return "cashCredit";
+	}
 }

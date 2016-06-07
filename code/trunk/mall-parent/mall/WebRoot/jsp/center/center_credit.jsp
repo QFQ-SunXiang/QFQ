@@ -24,7 +24,8 @@
         <p class="mycreditwrap-tit font-size2 font1 ">
             <span class="inline-block left">完成以下认证，<span class="font-red font-size4">10000元</span> 额度等你拿~</span>
 					<span class="inline-block right">
-						信用额度：<span class="font-red font-size4">￥${memberQuery.creditLimit }</span>
+						总信用额度：<span class="font-red font-size4">￥${memberQuery.creditLimit }</span>
+						现金信用额度：<span class="font-red font-size4">￥${memberQuery.creditCashLimit }</span>
 					</span>
         </p>
         <div class="mycredit-box">
@@ -105,6 +106,7 @@
 					</s:if>
 					<s:if test="memberQuery.isIdOauth == 3 && memberQuery.isContactOauth == 3 && memberQuery.isBkcardOauth == 3">
 						<p class="font1">获得额度：<span class="font-size3 font-red"> ￥<s:property value="%{@com.qinfenqi.mall.util.PropertyUtil@get('credit_1')}"/></span></p>
+						<p class="font1">获得现金额度：<span class="font-size3 font-red"> ￥<s:property value="%{@com.qinfenqi.mall.util.PropertyUtil@get('cash_credit_1')}"/></span></p>
 					</s:if>
                     
                 </div>
@@ -168,8 +170,9 @@
 					</s:if>
 					<s:if test="memberQuery.isEcpOauth == 3 && memberQuery.isCardOauth == 3">
 						<p class="font1">
-							获得额度：<span class="font-size3 font-red"> ￥<s:property value="%{@com.qinfenqi.mall.util.PropertyUtil@get('credit_2')}"/></span>
+							获得额度：<span class="font-size3 font-red"> ￥<s:property value="%{@com.qinfenqi.mall.util.PropertyUtil@get('credit_2')}"/></span>							
 						</p>
+						<p class="font1">获得现金额度：<span class="font-size3 font-red"> ￥<s:property value="%{@com.qinfenqi.mall.util.PropertyUtil@get('cash_credit_2')}"/></span></p>
 					</s:if>
                 </div>
             </div>

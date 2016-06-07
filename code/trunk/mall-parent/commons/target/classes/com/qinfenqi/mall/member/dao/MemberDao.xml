@@ -127,6 +127,9 @@
 	 		<if test="creditLimit > 6000">
 				credit_limit = #{creditLimit},
 	 		</if>
+	 		<if test="creditCashLimit >= 0">
+	       		credit_cash_limit = #{creditCashLimit},
+	       	</if>
 	 		<if test="auditStatus > 1">
 				audit_status = #{auditStatus},
 	 		</if>
@@ -181,6 +184,9 @@
 	        <if test="creditLimit >= 0">
 	       		credit_limit = #{creditLimit},
 	       	</if>
+	       	<if test="creditCashLimit >= 0">
+	       		credit_cash_limit = #{creditCashLimit},
+	       	</if>
 	       	<if test="auditStatus > 1">
 				audit_status = #{auditStatus},
 	 		</if>
@@ -191,7 +197,22 @@
 	
 	<!-- 更新会员信用额度 -->
 	<update id="updateCreditLimit" parameterType="com.qinfenqi.mall.member.query.MemberQuery">
-		update qfq_core_member set credit_limit  = #{creditLimit}, used_credit_limit  = #{usedCreditLimit} where member_id = #{memberId}
+		update qfq_core_member 
+		<set>
+		<if test="creditLimit != null">
+			credit_limit  = #{creditLimit}, 
+		</if>
+		<if test="usedCreditLimit != null">
+			used_credit_limit  = #{usedCreditLimit}, 
+		</if>
+		<if test="creditCashLimit != null">
+			credit_cash_limit  = #{creditCashLimit}, 
+		</if>
+		<if test="usedCashCreditLimit != null">
+			used_cash_credit_limit  = #{usedCashCreditLimit} 
+		</if>
+		</set>
+		where member_id = #{memberId}
 	</update>
 	
 	<!-- 验证会员邮箱 -->

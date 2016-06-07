@@ -50,9 +50,9 @@ public class LoginAction extends BaseActionEx {
 		JSONObject json = new JSONObject();
 		userName = userName.trim();
 		String ip = request.getRemoteAddr();
-		if(checkIp(ip) == false && PropertyUtil.getInt("IPCHECK") == 1){
-			message = "您目前访问的地址无效!";
-		} else {
+//		if(checkIp(ip) == false && PropertyUtil.getInt("IPCHECK") == 1){
+//			message = "您目前访问的地址无效!";
+//		} else {
 			if (StringUtils.isBlank(userName) || StringUtils.isBlank(password)) {
 				return LOGIN;
 			} else {
@@ -90,7 +90,7 @@ public class LoginAction extends BaseActionEx {
 					}
 				}
 			}
-		}
+//		}
 		json.put("result", StringUtils.isNotBlank(message) ? FAILURE : SUCCESS);
 		json.put("message", message);
 		ajaxReturnValue = json.toString();

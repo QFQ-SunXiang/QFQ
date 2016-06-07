@@ -124,9 +124,13 @@ public class ProductAction extends BaseAction {
 		specs = productService.getProductSpecs(productQuery.getProductPid());
 		int productId = 0;
 		productId = productQuery.getProductId();
-		if(productId == 1568 || productId == 1569 || productId == 1570)
+		if(productId >=1568 && productId<=1570)
 		{
 			return "freeprodetail";
+		}
+		else if(productId >= 1571 && productId <=1575)
+		{
+			return "cashCredit";
 		}
 		return "detail";
 	}
@@ -374,9 +378,13 @@ public class ProductAction extends BaseAction {
 		commentList = commentService.getCommentList(comment);
 		int productId = 0;
 		productId = productQuery.getProductId();
-		if(productId == 1568 || productId == 1569 || productId == 1570)
+		if(productId >=1568 && productId<=1570)
 		{
 			return "freeCommentList";
+		}
+		else if(productId >= 1571 && productId <=1575)
+		{
+			return "cashCreditCommentList";
 		}
 		return "commentList";
 	}
@@ -395,23 +403,6 @@ public class ProductAction extends BaseAction {
 	public void setCommentList(List<Comment> commentList) {
 		this.commentList = commentList;
 	}
-	/**
-	 * 展示商品评论
-	 * 
-	 * @return String
-	 */
-	public String freeCommentList(){
-		productQuery = productService.getProductDetailById(productQuery, getCurrentUser());
-		productImages = StringUtil.String2List(productQuery.getProductImgs());
-		colors = productService.getProductColors(productQuery.getProductPid());
-		specs = productService.getProductSpecs(productQuery.getProductPid());
-		Comment comment = new Comment();
-		comment.setProductId(productQuery.getProductId());
-		commentList = commentService.getCommentList(comment);
-		return "freeCommentList";
-	}
-	
-
 	/**
 	 * @return the commentList
 	 */

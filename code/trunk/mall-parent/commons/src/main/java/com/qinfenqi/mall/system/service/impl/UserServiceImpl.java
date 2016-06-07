@@ -125,7 +125,8 @@ public class UserServiceImpl extends BaseService implements UserService {
 		member.setCreateTime(new Date());
 		
 		// 初始额度
-		member.setCreditLimit(6000);
+		member.setCreditLimit(0);
+		member.setCreditCashLimit(0);
 		
 		return userDao.createMember(member);
 	}

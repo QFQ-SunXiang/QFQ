@@ -17,7 +17,7 @@
 	
 	<!-- 根据ID获取帐单 -->
 	<select id="getBillById" parameterType="com.qinfenqi.mall.bill.query.BillQuery" resultType="com.qinfenqi.mall.bill.query.BillQuery">
-		select o.order_code, o.deliver_name, o.receive_name, o.product_name, o.create_time as order_time, b.* from qfq_mall_bill b, qfq_mall_order o where b.order_id = o.order_id and bill_id = #{billId}
+		select o.order_code, o.deliver_name, o.receive_name, o.product_id, o.product_name, o.create_time as order_time, b.* from qfq_mall_bill b, qfq_mall_order o where b.order_id = o.order_id and bill_id = #{billId}
 	</select>
 	
 	<!-- 更新帐单状态 -->

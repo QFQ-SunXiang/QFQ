@@ -32,6 +32,10 @@
               			<i class="icon_o icon_green"></i>
                   		<span class="font3 font-size0">
                         	信用额度：<span class="bold">¥ <s:property value="%{formatDouble(memberQuery.creditLimit + memberQuery.usedCreditLimit)}" /> </span>
+                       	</span>
+                       	<i class="icon_o icon_blue"></i>
+                  		<span class="font3 font-size0">
+                        	已用信用额度：<span class="bold">¥ <s:property value="%{formatDouble(memberQuery.usedCreditLimit)}" /> </span>
                            	<s:if test="memberQuery.isBkflowOauth != 3">
                            		<a class="font-bd margin_10" href="center/credit.html">提升额度</a>
                            	</s:if>
@@ -45,7 +49,7 @@
                       	<!--  -->
                       	<i class="icon_o icon_red"></i>
                       	<span class="font3 font-size0">
-                      		可预借现金额度：<span class="bold">¥ <s:property value="%{formatDouble(memberQuery.creditLimit)}" /></span>
+                      		可预借现金额度：<span class="bold">¥ <s:property value="%{formatDouble(memberQuery.creditCashLimit)}" /></span>
                       	</span>
                       	
                     </p>

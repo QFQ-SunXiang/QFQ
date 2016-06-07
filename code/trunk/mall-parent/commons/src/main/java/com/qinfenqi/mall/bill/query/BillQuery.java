@@ -20,6 +20,9 @@ public class BillQuery extends Bill{
 	private int isCurrPayDate;
 	
 	private String orderCode;
+	private int productId;
+
+
 	private String productName;
 	private Date orderTime;
 	private String username;
@@ -70,6 +73,20 @@ public class BillQuery extends Bill{
 	 */
 	public void setOrderCode(String orderCode) {
 		this.orderCode = orderCode;
+	}
+	
+	/**
+	 * @return the productId
+	 */
+	public int getProductId() {
+		return productId;
+	}
+
+	/**
+	 * @param productId the productId to set
+	 */
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 
 	/**

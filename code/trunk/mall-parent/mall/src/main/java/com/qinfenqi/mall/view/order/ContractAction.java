@@ -80,22 +80,50 @@ public class ContractAction extends BaseAction {
 	 * 
 	 * @return
 	 */
-	public String createContract() {
+	public String createContract() 
+	{
 		JSONObject json = new JSONObject();
 		String msg = "";
-		if (getUserStyle() == 1) {
+		if (getUserStyle() == 1) 
+		{
 			double creditLimit = memberQuery.getCreditLimit();
-			if ((contract.getProductPrice() - contract.getFirstPay()) > creditLimit) {
-				msg = "您目前的信用额度无法支付该订单所购买商品!";
-			} else {
-				contract.setUserId(getUserId());
-				contractService.createContract(contract, memberQuery);
-//				if (result) {
-//					if(contract.getProductPrice() > contract.getFirstPay()){
-//						billService.createBills(getCurrentUser(), contract);
+			double creditCashLimit = memberQuery.getCreditCashLimit();
+			//判断是否是白条产品
+			if (orderQuery.getProductId() == 1571)
+			{
+				if ((contract.getProductPrice() - contract.getFirstPay()) > creditCashLimit) 
+				{
+					msg = "您目前的现金信用额度无法支付该订单所购买商品!";
+				} 
+				else 
+				{
+					contract.setUserId(getUserId());
+					contractService.createCashContract(contract, memberQuery);
+//					if (result) {
+//						if(contract.getProductPrice() > contract.getFirstPay()){
+//							billService.createBills(getCurrentUser(), contract);
+//						}
 //					}
-//				}
+				}
 			}
+			else
+			{
+				if ((contract.getProductPrice() - contract.getFirstPay()) > creditLimit) 
+				{
+					msg = "您目前的信用额度无法支付该订单所购买商品!";
+				} 
+				else 
+				{
+					contract.setUserId(getUserId());
+					contractService.createContract(contract, memberQuery);
+//					if (result) {
+//						if(contract.getProductPrice() > contract.getFirstPay()){
+//							billService.createBills(getCurrentUser(), contract);
+//						}
+//					}
+				}
+			}
+			
 		}
 		if (getUserStyle() == 2) {
 			double creditLimit = collarQuery.getCreditLimit();

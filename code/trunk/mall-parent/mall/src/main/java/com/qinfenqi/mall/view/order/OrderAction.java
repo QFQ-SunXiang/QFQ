@@ -74,6 +74,10 @@ public class OrderAction extends BaseAction {
 		{
 			return "freedetail";
 		}
+		if(orderQuery.getProductId() == 1571)
+		{
+			return "cashDetail";
+		}
 		else
 		{
 			return "detail";

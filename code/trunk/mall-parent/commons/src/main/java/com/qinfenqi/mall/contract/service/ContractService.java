@@ -38,6 +38,13 @@ public interface ContractService {
 	 * @return
 	 */
 	boolean createContract(Contract contract, MemberQuery memberQuery);
+	
+	/**
+	 * @param contract
+	 * @param memberQuery 
+	 * @return
+	 */
+	boolean createCashContract(Contract contract, MemberQuery memberQuery);
 
 
 	/**

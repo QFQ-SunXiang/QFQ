@@ -75,6 +75,25 @@ public class ContractServiceImpl implements ContractService {
 		}
 		return result;
 	}
+	@Override
+	public boolean createCashContract(Contract contract, MemberQuery memberQuery) {
+		contract.setDeadLine(new DateTime().plusMonths(contract.getMonths()).toDate());
+		contract.setCreateTime(new Date());
+		boolean result = contractDao.createContract(contract);
+		memberQuery = memberDao.getMemberById(memberQuery);
+		if(result){
+			memberQuery.setCreditLimit(memberQuery.getCreditLimit() - (contract.getProductPrice() - contract.getFirstPay()));
+			memberQuery.setUsedCreditLimit(memberQuery.getUsedCreditLimit() + (contract.getProductPrice() - contract.getFirstPay()));
+			memberQuery.setCreditCashLimit(memberQuery.getCreditCashLimit() - (contract.getProductPrice() - contract.getFirstPay()));
+			memberQuery.setUsedCashCreditLimit(memberQuery.getUsedCashCreditLimit() + (contract.getProductPrice() - contract.getFirstPay()));
+			result = memberDao.updateCreditLimit(memberQuery);
+			OrderQuery order = new OrderQuery();
+			order.setOrderId(contract.getOrderId());
+			order.setOrderStatus(OrderStatus.AUDIT_READY.getId());
+			result = orderDao.updateOrderStatus(order);
+		}
+		return result;
+	}
 	
 	@Override
 	public boolean createContract(Contract contract, CollarQuery collarQuery) {

@@ -32,6 +32,11 @@
 				<span class="nav_title">免费送活动</span>
 			</li>
 		</a>
+		<a href="channel/cashCredit.html" target="_blank">
+			<li>
+				<span class="nav_title">亲白条</span>
+			</li>
+		</a>
 		<a href="center/home.html" target="_blank">
 			<div class="li_main_right">
 				<span class="nav_title">我的亲分期</span>

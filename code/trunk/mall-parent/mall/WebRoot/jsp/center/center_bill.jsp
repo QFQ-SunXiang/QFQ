@@ -86,7 +86,7 @@
 														<s:property value="%{@com.qinfenqi.mall.common.constant.PaymentStatus@getName(#bill.paymentStatus)}"/>
 													</td> 
 													<td>
-														<s:if test="#bill.paymentStatus == 1">
+														<s:if test="#bill.paymentStatus == 1 || #bill.paymentStatus == 3">
 															<s:if test="#bill.theLast == 1 && #bill.isCurrPayDate != 1">
 																<a href="bill/<s:property value="billId" />.html?billQuery.theLast=<s:property value="theLast" />" class="orange">提前还款</a>
 															</s:if>

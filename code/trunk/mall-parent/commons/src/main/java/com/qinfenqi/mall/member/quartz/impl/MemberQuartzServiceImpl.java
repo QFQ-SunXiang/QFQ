@@ -45,9 +45,13 @@ public class MemberQuartzServiceImpl implements MemberQuartzService {
 		{
 		    double totalCredit;
 		    totalCredit = memberCredit.getCreditLimit()+memberCredit.getUsedCreditLimit();
-		    memberCredit.setUsedCreditLimit(memberCredit.getSumMonthPay());
-		    memberCredit.setCreditLimit(totalCredit - memberCredit.getUsedCreditLimit());
-		    memberDao.updateMemberCredit(memberCredit);
+		    if(memberCredit.getUsedCreditLimit() != memberCredit.getSumMonthPay())
+		    {
+		    	memberCredit.setUsedCreditLimit(memberCredit.getSumMonthPay());
+			    memberCredit.setCreditLimit(totalCredit - memberCredit.getUsedCreditLimit());
+			    memberDao.updateMemberCredit(memberCredit);
+		    }		    
+		   
 		}
 		List<MemberCredit> listCollar = memberDao.getCreditListCollar();
 		
@@ -55,9 +59,12 @@ public class MemberQuartzServiceImpl implements MemberQuartzService {
 		{
 		    double totalCredit;
 		    totalCredit = memberCredit.getCreditLimit()+memberCredit.getUsedCreditLimit();
-		    memberCredit.setUsedCreditLimit(memberCredit.getSumMonthPay());
-		    memberCredit.setCreditLimit(totalCredit - memberCredit.getUsedCreditLimit());
-		    memberDao.updateCollarCredit(memberCredit);
+		    if(memberCredit.getUsedCreditLimit() != memberCredit.getSumMonthPay())
+		    {
+		    	memberCredit.setUsedCreditLimit(memberCredit.getSumMonthPay());
+		    	memberCredit.setCreditLimit(totalCredit - memberCredit.getUsedCreditLimit());
+		    	memberDao.updateCollarCredit(memberCredit);
+		    }
 		}
 
 		logger.info("更新会员信用额度 End!");

@@ -8,12 +8,14 @@
 	<%@include file="../common/head.jsp"%>
 	<link href="<%=basePath%>css/center.css" type="text/css" rel="stylesheet" />
 	<title>亲分期  - 立即支付</title>
+	<!-- 微信用的是以前的baseurl，支付宝是改过的basepath -->
 	<script type="text/javascript">
 		function wxpay(id, isEarly){
 			window.location.href = "<%=baseUrl%>pay/pay!wxpay.do?payment.tradeType=1&payment.payType=2&payment.tradeNo=" + id + "&payment.isEarly=" + isEarly;;
 		}
+	
 		function alipay(id, isEarly){
-			window.location.href = "<%=baseUrl%>pay/pay!alipay.do?payment.tradeType=1&payment.payType=1&payment.tradeNo=" + id + "&payment.isEarly=" + isEarly;
+			window.location.href = "<%=basePath%>pay/pay!alipay.do?payment.tradeType=1&payment.payType=1&payment.tradeNo=" + id + "&payment.isEarly=" + isEarly;
 		}
 	</script>
 </head>

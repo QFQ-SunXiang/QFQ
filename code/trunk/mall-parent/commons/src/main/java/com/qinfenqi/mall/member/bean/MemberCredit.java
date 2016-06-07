@@ -118,5 +118,30 @@ public class MemberCredit {
 	}
 	private double creditLimit;
 	private double usedCreditLimit;
-
+	private double creditCashLimit;
+	private double usedCashCreditLimit;
+	/**
+	 * @return the creditCashLimit
+	 */
+	public double getCreditCashLimit() {
+		return creditCashLimit;
+	}
+	/**
+	 * @param creditCashLimit the creditCashLimit to set
+	 */
+	public void setCreditCashLimit(double creditCashLimit) {
+		this.creditCashLimit = creditCashLimit;
+	}
+	/**
+	 * @return the usedCashCreditLimit
+	 */
+	public double getUsedCashCreditLimit() {
+		return usedCashCreditLimit;
+	}
+	/**
+	 * @param usedCashCreditLimit the usedCashCreditLimit to set
+	 */
+	public void setUsedCashCreditLimit(double usedCashCreditLimit) {
+		this.usedCashCreditLimit = usedCashCreditLimit;
+	}
 }
