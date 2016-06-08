@@ -53,7 +53,7 @@
                             	<td width="80px">操作</td>
                             </tr>
 		            		<s:iterator value="orderList" id="order">
-		            			<s:if test="orderStatus == 10">
+		            			<s:if test="orderStatus == 10 || orderStatus == 3 || orderStatus == 4 || orderStatus == 5 || orderStatus == 11">
 	                           		<tr class="font-size0">
 	                                   <td><s:property value="orderCode" /></td>                                   
 	                                   <td><a href="products/<s:property value="productId" />.html"><s:property value="productName" /></a> </td>                                   
@@ -71,38 +71,7 @@
 	                                   <td width="70px"><span><s:date name="createTime" format="yyyy-MM-dd" /></span></td>                             
 	                                   <td><s:property value="%{@com.qinfenqi.mall.common.constant.OrderStatus@getName(orderStatus)}"/></td>                                   
 	                         			<td class="logInfo">
-	                         				<s:if test="orderTypes == 1">
-		                         				<s:if test="orderStatus == 1">
-			                                		<div><a href="order/contract!contract.do?orderQuery.orderId=<s:property value="orderId" />">签订合同</a></div>
-			                                	</s:if>
-		                         				<s:if test="orderStatus == 1 || orderStatus == 2 || orderStatus == 8">
-		                         					<s:if test="firstPayStatus == 1 && firstPay > 0">
-		                         						<div><a href="javascript: payment('<s:property value="orderId" />', 2)">支付首付</a></div>
-		                         					</s:if>
-		                         					<div><a href="javascript: cancelOrder(<s:property value="orderId" />)">取消订单</a></div>
-		                         				</s:if>
-		                         				<s:if test="orderStatus == 3 || orderStatus == 4 || orderStatus == 5">
-			                                		<div><a href="center/bill.html">去还款</a></div>
-			                                		<div><a href="center/<s:property value="orderId" />.html">去评论</a></div>
-			                                	</s:if>  	
-			                                </s:if>
-			                                <s:if test="orderTypes == 2">
-			                                	<s:if test="orderStatus == 9">
-			                                		<div><a href="javascript: payment(<s:property value="orderId" />, 3)">立即付款</a></div>
-				                                	<div><a href="javascript: cancelOrder(<s:property value="orderId" />)">取消订单</a></div>
-			                                	</s:if>
-			                                </s:if>
-		                                	<s:if test="orderStatus == 6">
-		                                		 <s:if test="productId == 1568 || productId == 1569 || productId == 1570">
-		                                			<div><a href="freeproducts/<s:property value="productId" />.html">再次领取</a></div>
-		                                		</s:if>
-		                                		<s:else> 
-		                                			<div><a href="products/<s:property value="productId" />.html">再次购买</a></div>
-		                                		</s:else>
-		                                	</s:if>
-		                                	<s:if test="orderStatus == 10">
-			                                		<div><a href="center/<s:property value="orderId" />.html">去评论</a></div>
-			                                </s:if>
+											<div><a href="center/<s:property value="orderId" />.html">去评论</a></div>
 			                          		<div><a href="order/<s:property value="orderId" />.html">查看详情</a></div>
 		                       			</td>                                   
 	                     			</tr>

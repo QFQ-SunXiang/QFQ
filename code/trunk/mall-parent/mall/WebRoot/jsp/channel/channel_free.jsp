@@ -20,19 +20,19 @@
             	<div class="zero-box">
             		<div class="zero-header zero-h1">免费送专区</div>
                 	<ul class="zero-list">
-                  		<li><a href="http://www.qinfenqi.com/freeproducts/1568.html" target="_blank">
+                  		<li><a href="../mall/products/1568.html" target="_blank">
                   		<div class="zero-img"><img src="mall/images/freeproduct/product1.png" alt="免费送活动1"></div>
                   		<div class="zero-title">数码礼包3件套 （适用iPhone6/6S）</div>
                   		<div class="zero-prices"><span class="pricetag">售价 :￥0.00</span></div>
                   		<div class="zero-price"><span class="zero-btn">免费领取</span></div></a></li>
                   
-                  		<li><a href="http://www.qinfenqi.com/freeproducts/1569.html" target="_blank">
+                  		<li><a href="../mall/products/1569.html" target="_blank">
                   		<div class="zero-img"><img src="mall/images/freeproduct/product2.png" alt="免费送活动2"></div>
                   		<div class="zero-title">数码礼包3件套 （适用iPhone6 plus/6S plus） </div>
                   		<div class="zero-prices"><span class="pricetag">售价 :￥0.00</span></div>
                   		<div class="zero-price"><span class="zero-btn">免费领取</span></div></a></li>                        
                   
-                  		<li><a href="http://www.qinfenqi.com/freeproducts/1570.html" target="_blank">
+                  		<li><a href="../mall/products/1570.html" target="_blank">
                   		<div class="zero-img"><img src="mall/images/freeproduct/product3.png" alt="免费送活动3"></div>
                   		<div class="zero-title">数码礼包3件套 （适用iPhone5S/SE）</div>
                   		<div class="zero-prices"><span class="pricetag">售价 :￥0.00</span></div>

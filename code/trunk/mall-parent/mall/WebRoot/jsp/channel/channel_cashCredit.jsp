@@ -20,19 +20,19 @@
             	<div class="zero-box">
             		<div class="zero-header zero-h1">亲白条专区</div>
                 	<ul class="zero-list">
-                  		<li><a href="http://localhost/mall/products/1572.html" target="_blank">
+                  		<li><a href="../mall/products/1572.html" target="_blank">
                   		<div class="zero-img"><img src="mall/images/freeproduct/product1.png" alt="白条产品"></div>
                   		<div class="zero-title">亲白条业务1</div>
                   		<div class="zero-prices"><span class="pricetag">金额 :￥500</span></div>
                   		<div class="zero-price"><span class="zero-btn">立即申请</span></div></a></li>
                   
-                  		<li><a href="http://localhost/mall/products/1573.html" target="_blank">
+                  		<li><a href="../mall/products/1573.html" target="_blank">
                   		<div class="zero-img"><img src="mall/images/freeproduct/product1.png" alt="白条产品"></div>
                   		<div class="zero-title">亲白条业务2</div>
                   		<div class="zero-prices"><span class="pricetag">金额 :￥1000</span></div>
                   		<div class="zero-price"><span class="zero-btn">立即申请</span></div></a></li>                        
                   
-                  		<li><a href="http://localhost/mall/products/1574.html" target="_blank">
+                  		<li><a href="../mall/products/1574.html" target="_blank">
                   		<div class="zero-img"><img src="mall/images/freeproduct/product1.png" alt="白条产品"></div>
                   		<div class="zero-title">亲白条业务3</div>
                   		<div class="zero-prices"><span class="pricetag">金额 :￥1500</span></div>

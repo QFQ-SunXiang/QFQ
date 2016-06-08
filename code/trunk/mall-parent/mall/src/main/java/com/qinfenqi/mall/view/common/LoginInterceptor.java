@@ -71,10 +71,10 @@ public class LoginInterceptor extends MethodFilterInterceptor {
 			// Product
 			"product/product!queryProduct.do", 
 			"product/product!showProdList.do",
-			"product/product!cacuMonthPay.do",
-			"product/product!showProDetail.do",
+			"product/product!cacuMonthPay.do",			
 			"product/product!getRecommends.do",
 			"product/product!queryProductListByCon.do",
+			"product/product!showProDetail.do",
 			"product/product!commentList.do",
 			
 			// Channel

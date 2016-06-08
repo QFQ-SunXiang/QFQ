@@ -101,9 +101,9 @@
 		<if test="orderStatus &lt; 4">
 		 ORDER BY order_id desc 
 		</if>
-		<if test="isPage">
+<!-- 		<if test="isPage">
 			limit #{startNo}, #{pageSize}
-		</if>
+		</if> -->
 	</select>
 	<!-- 查询订单列表数量 -->
 	<select id="getOrderCount" resultType="int" parameterType="com.qinfenqi.mall.order.query.OrderQuery" >	
