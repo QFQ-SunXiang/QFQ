@@ -22,6 +22,11 @@
 				<span class="nav_title">分期购物</span>
 			</li>
 		</a>
+		<!-- <a href="channel/lotto.html" target="_blank">
+			<li>
+				<span class="nav_title">1元抢购</span>
+			</li>
+		</a> -->
 		<a href="channel/employ.html" target="_blank">
 			<li>
 				<span class="nav_title">校园招聘</span>

@@ -54,6 +54,25 @@
 		</foreach>
 	</insert>
 	
+	<!-- 查询高级费率列表 -->
+	<select id="queryAdvanceRates" resultType="com.qinfenqi.mall.bean.DefaultRate">
+		select * from qfq_mall_product_advance_rate
+	</select>
+	
+	<!-- 删除默认费率 -->
+	<delete id="removeAdvanceRates">
+		delete from qfq_mall_product_advance_rate
+	</delete>
+	
+	<!-- 保存默认费率 -->
+	<insert id="createAdvanceRates" parameterType="com.qinfenqi.mall.bean.DefaultRate">
+		insert into qfq_mall_product_advance_rate (service_fee, rate_fee, period_num)
+			values 
+		<foreach collection="list" item="item" index="index" separator="," >  
+			(#{item.serviceFee}, #{item.rateFee}, #{item.periodNum})  
+		</foreach>
+	</insert>
+	
 	<!-- 保存精品推荐产品 -->
 	<insert id="saveRecom" parameterType="com.qinfenqi.mall.manage.bean.ProductRecom">
 		insert into qfq_mall_product_recom (position_id, product_id, create_time)

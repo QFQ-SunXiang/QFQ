@@ -157,6 +157,25 @@ public class ProductAction extends BaseActionEx {
 		out.println("</script>");
 		return null;
 	}
+	
+	/**
+	 * 添加商品种类列表
+	 * 
+	 * @return
+	 * @throws IOException 
+	 */
+	public String saveCategory() throws IOException {
+		PrintWriter out = response.getWriter();
+
+		productService.addCategory(productQuery);
+
+
+		response.setCharacterEncoding(Encoding.UTF_8);
+		out.println("<script type=\"text/javascript\">");
+		out.println("window.parent.closeAndFresh()");
+		out.println("</script>");
+		return null;
+	}
 
 	/**
 	 * 删除商品

@@ -15,6 +15,8 @@ package com.qinfenqi.mall.pay.bean;
 public class Payment {
 	// 支付方式。1：ali; 2: wx
 	private int payType;
+	// 支付产品编号
+	private String productId;
 	// 支付成功后通知URL
 	private String notify_url;
 	// 支付标题

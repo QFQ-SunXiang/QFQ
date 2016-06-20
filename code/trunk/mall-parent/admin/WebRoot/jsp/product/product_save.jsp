@@ -53,8 +53,8 @@
 					};
 				}, "json");
 		}
-		
-		function submitProduct(){
+		//  		
+ 		function submitProduct(){
 			if(checkSubmit()){
 				// 更新ckeditor属性值
 				for( instance in CKEDITOR.instances ){ 
@@ -64,6 +64,34 @@
 			} else {
 				return;
 			}
+		} 
+		function submitCategory(){
+			if($("#productQuery_brandId").val() == 0){
+				$.post("product/product!saveCategory.do", {
+					"productQuery.brandId" : $("#productQuery_brandIdNew").val(),
+					"productQuery.productPName" : $("#productQuery_productPName").val()
+					}, function(data) {
+						if (data.result == "FAILURE") {
+							layer.alert("添加失败!"); 
+						} else {
+							location.href = "product/product!index.do";	
+					}
+				}, "json"); 
+			}
+			else
+			{
+				$.post("product/product!saveCategory.do", {
+					"productQuery.brandId" : $("#productQuery_brandId").val(),
+					"productQuery.productPName" : $("#productQuery_productPName").val()
+					}, function(data) {
+						if (data.result == "FAILURE") {
+							layer.alert("添加失败!"); 
+						} else {
+							location.href = "product/product!index.do";	
+					}
+				}, "json");
+			}
+ 			 
 		}
 		function checkSubmit(){
 			if($("#productQuery\\.productName").val().length == 0){
@@ -190,11 +218,6 @@
 								<option value="<s:property value="#brand.brandId"/>"><s:property value="#brand.brandName"/></option>
 							</s:iterator>
 						</select>
-					</td>
-					<td width="12%" class="pn-flabel pn-flabel-h">
-						商品：
-					</td>
-					<td colspan="1" width="38%" class="pn-fcontent">
 						<select name="productQuery.productPid" id="productQuery_productPid">
 							<option value="" selected="selected">-请选择-</option>
 							<s:iterator value="prods" id="prod" >
@@ -202,7 +225,15 @@
 									<s:property value="#prod.productPname"/>
 								</option>
 							</s:iterator>
-						</select>
+						</select>						
+					</td>
+					<td width="12%" class="pn-flabel pn-flabel-h">
+						新增品类：
+					</td>
+					<td colspan="1" width="38%" class="pn-fcontent">
+						<input type="text" name="productQuery.brandId" id="productQuery_brandIdNew" style="width:100px" /> &nbsp;
+						<input type="text" name="productQuery.productPName" id="productQuery_productPName" style="width:150px" /> &nbsp;
+						<input type="button" value="提交" onclick="submitCategory();" />&nbsp;
 					</td>
 				</tr>
 				<tr>

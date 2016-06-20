@@ -38,6 +38,10 @@ public interface ProductService {
 	 * @param product
 	 */
 	void editProduct(ProductQuery productQuery);
+	/**
+	 * @param product
+	 */
+	void addCategory(ProductQuery productQuery);
 
 	/**
 	 * @param productQuery

@@ -47,6 +47,19 @@ public interface ManageService {
 	/**
 	 * @return
 	 */
+	List<DefaultRate> getAdvanceRates();
+
+	/**
+	 * @param periodNumStarts
+	 * @param periodNumEnds
+	 * @param serviceRates
+	 * @return
+	 */
+	boolean saveAdvanceRate(String[] serviceFee, String[] rateFee, String[] periodNum);
+
+	/**
+	 * @return
+	 */
 	List<DefaultRate> getDefRates();
 
 	/**
@@ -56,7 +69,7 @@ public interface ManageService {
 	 * @return
 	 */
 	boolean saveDefRate(String[] periodNumStarts, String[] periodNumEnds, String[] serviceRates);
-
+	
 	/**
 	 * @param authCode
 	 * @return

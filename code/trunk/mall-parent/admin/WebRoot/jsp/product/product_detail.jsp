@@ -66,7 +66,7 @@
 						<s:property value="productQuery.brandName"/>
 					</td>
 					<td width="12%" class="pn-flabel pn-flabel-h">
-						<span class="pn-frequired">*</span>商品：
+						<span class="pn-frequired">*</span>商品
 					</td>
 					<td colspan="1" width="38%" class="pn-fcontent">
 						<s:property value="productQuery.productPid"/>

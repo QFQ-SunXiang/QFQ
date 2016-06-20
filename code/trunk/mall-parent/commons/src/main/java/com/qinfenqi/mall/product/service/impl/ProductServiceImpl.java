@@ -96,6 +96,7 @@ public class ProductServiceImpl implements ProductService, InitializingBean {
 		productDao.editProduct(productQuery);
 
 	}
+	
 
 	@Override
 	public boolean deleteProduct(ProductQuery productQuery) {
@@ -105,6 +106,11 @@ public class ProductServiceImpl implements ProductService, InitializingBean {
 	@Override
 	public Product getProductById(int productId) {
 		return productDao.getProductById(productId);
+	}
+	
+	@Override
+	public void addCategory(ProductQuery productQuery) {
+		productDao.addCategory(productQuery);
 	}
 
 	@Override
@@ -197,11 +203,35 @@ public class ProductServiceImpl implements ProductService, InitializingBean {
 		product.setPrincipal(NumberUtil.formatDouble(salePrice / month, NumberUtil.DOT_LAST_TWO));
 		product.setServicePay(NumberUtil.formatDouble(salePrice * serviceRate, NumberUtil.DOT_LAST_TWO));
 	}
+	
+	/**
+	 * @param product
+	 * @param rateMap
+	 * @param month
+	 */
+	public void cacuAdvanceMoneyByRate(ProductQuery product, int month, User user) {
+		double salePrice = product.getSalePrice() - product.getFirstPay();
+		double serviceRate = 0;			
+		List<DefaultRate> list = serviceRateDao.getAdvanceRates();
+		if (list.size() > 0) {
+			for (DefaultRate rate : list) {
+				for (int i = rate.getPeriodNumStart(); i <= rate.getPeriodNumEnd(); i++) {
+					DEFAULT_RATE_MAP.put(String.valueOf(i), rate.getServiceRate());
+					System.out.println(rate.getRateFee());
+				}
+			}
+		}
+		double monthPay = salePrice / month + salePrice * serviceRate;		
+		product.setServiceRate(serviceRate);
+		product.setMonthPay(NumberUtil.formatDouble(monthPay, NumberUtil.DOT_LAST_TWO));
+		product.setPrincipal(NumberUtil.formatDouble(salePrice / month, NumberUtil.DOT_LAST_TWO));
+		product.setServicePay(NumberUtil.formatDouble(salePrice * serviceRate, NumberUtil.DOT_LAST_TWO));
+	}
 
 	@Override
 	public ProductQuery cacuMonthPay(ProductQuery product, User user) {
 		product.setSalePrice(product.getSalePrice());
-		cacuMoneyByRate(product, product.getMonths(), user);
+		cacuMoneyByRate(product, product.getMonths(), user);		
 		return product;
 	}
 

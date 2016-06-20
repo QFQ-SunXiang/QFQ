@@ -66,6 +66,27 @@ public interface ManageDao {
 	 * @param authCode
 	 * @return
 	 */
+	
+	/**
+	 * @return
+	 */
+	List<DefaultRate> queryAdvanceRates();
+
+	/**
+	 * 
+	 */
+	boolean removeAdvanceRates();
+
+	/**
+	 * @param list
+	 */
+	boolean createAdvanceRates(List<DefaultRate> list);
+
+	/**
+	 * @param authCode
+	 * @return
+	 */
+	
 	boolean removeCode(AuthCode authCode);
 
 	/**

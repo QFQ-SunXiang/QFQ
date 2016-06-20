@@ -3,6 +3,8 @@
  */
 package com.qinfenqi.mall.view.product;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -112,6 +114,11 @@ public class ProductAction extends BaseAction {
 	/** 评论 */
 	protected Comment comment;
 	private List<Comment> commentList;
+	
+	
+	
+	
+
 	/**
 	 * 展示商品详情
 	 * 
@@ -122,15 +129,20 @@ public class ProductAction extends BaseAction {
 		productImages = StringUtil.String2List(productQuery.getProductImgs());
 		colors = productService.getProductColors(productQuery.getProductPid());
 		specs = productService.getProductSpecs(productQuery.getProductPid());
+		
 		int productId = 0;
 		productId = productQuery.getProductId();
 		if(productId >=1568 && productId<=1570)
 		{
 			return "freeprodetail";
 		}
-		else if(productId >= 1571 && productId <=1575)
+		else if(productId >= 1572 && productId <=1575)
 		{
 			return "cashCredit";
+		}
+		else if (productId == 1571)
+		{
+			return "lottoprodetail";
 		}
 		return "detail";
 	}
@@ -228,6 +240,7 @@ public class ProductAction extends BaseAction {
 		return AJAX;
 
 	}
+	
 
 	/**
 	 * @return the productQuery
@@ -382,9 +395,13 @@ public class ProductAction extends BaseAction {
 		{
 			return "freeCommentList";
 		}
-		else if(productId >= 1571 && productId <=1575)
+		else if(productId >= 1572 && productId <=1575)
 		{
 			return "cashCreditCommentList";
+		}
+		else if (productId == 1571)
+		{
+			return "lottoCommentList";
 		}
 		return "commentList";
 	}
@@ -426,3 +443,4 @@ public class ProductAction extends BaseAction {
 		this.comment = comment;
 	}
 }
+

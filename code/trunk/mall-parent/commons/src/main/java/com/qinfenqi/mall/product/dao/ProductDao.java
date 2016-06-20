@@ -35,7 +35,12 @@ public interface ProductDao {
 	 * @param product
 	 */
 	void addProduct(Product product);
-
+	
+	/**
+	 * @param product
+	 */
+	void addCategory(Product product);
+	
 	/**
 	 * @param productId
 	 * @return

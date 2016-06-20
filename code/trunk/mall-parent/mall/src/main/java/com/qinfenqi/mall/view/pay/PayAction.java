@@ -157,8 +157,8 @@ public class PayAction extends BaseAction {
 	 * 
 	 * @return
 	 */
-	public String payment() {
-
+	public String payment() 
+	{
 		return "payment";
 	}
 

@@ -23,6 +23,7 @@
 				<li><a href="javascript:loadPage('manage/manage!authCodePage.do')">授权码管理</a></li>
 				<li><a href="javascript:loadPage('manage/coupon!manage.do')">优惠券管理</a></li>
 				<li><a href="javascript:loadPage('manage/manage!defaultRatePage.do')">默认服务费率</a></li>
+				<li><a href="javascript:loadPage('manage/manage!advanceRatePage.do')">高级服务费率</a></li>
 				<!-- 
 				<li><a href="javascript:loadPage('manage/manage!prodRecom.do')">精品推荐</a></li>
 				 -->

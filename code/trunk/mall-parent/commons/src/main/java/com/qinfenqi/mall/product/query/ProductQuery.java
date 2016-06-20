@@ -3,6 +3,8 @@
  */
 package com.qinfenqi.mall.product.query;
 
+import java.util.List;
+
 import com.qinfenqi.mall.product.bean.Product;
 
 /**
@@ -18,6 +20,10 @@ public class ProductQuery extends Product{
 	
 	private String categoryIds;
 	
+	private String productPName;
+	
+
+
 	private String pcategoryName;
 	
 	private String categoryName;
@@ -27,6 +33,12 @@ public class ProductQuery extends Product{
 	private double monthPay ;
 	/** 分期服务费率*/
 	private double serviceRate;
+	/** 高级分期服务费率*/
+	private List<Double> advanceServiceRate;
+	/** 高级分期月供 */
+	private List<Double> advanceMonthPay ;
+
+
 	/** 服务费 */
 	private double servicePay;
 	/** 分期财务费率*/
@@ -59,6 +71,20 @@ public class ProductQuery extends Product{
 	 */
 	public void setCategoryIds(String categoryIds) {
 		this.categoryIds = categoryIds;
+	}
+	
+	/**
+	 * @return the productPName
+	 */
+	public String getProductPName() {
+		return productPName;
+	}
+
+	/**
+	 * @param productPName the productPName to set
+	 */
+	public void setProductPName(String productPName) {
+		this.productPName = productPName;
 	}
 
 	/**
@@ -131,7 +157,33 @@ public class ProductQuery extends Product{
 	public void setServiceRate(double serviceRate) {
 		this.serviceRate = serviceRate;
 	}
+	/**
+	 * @return the advanceServiceRate
+	 */
+	public List<Double> getAdvanceServiceRate() {
+		return advanceServiceRate;
+	}
 
+	/**
+	 * @param advanceServiceRate the advanceServiceRate to set
+	 */
+	public void setAdvanceServiceRate(List<Double> advanceServiceRate) {
+		this.advanceServiceRate = advanceServiceRate;
+	}
+	
+	/**
+	 * @return the advanceMonthPay
+	 */
+	public List<Double> getAdvanceMonthPay() {
+		return advanceMonthPay;
+	}
+
+	/**
+	 * @param advanceMonthPay the advanceMonthPay to set
+	 */
+	public void setAdvanceMonthPay(List<Double> advanceMonthPay) {
+		this.advanceMonthPay = advanceMonthPay;
+	}
 
 	/**
 	 * @return the servicePay

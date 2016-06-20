@@ -14,6 +14,14 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.MethodFilterInterceptor;
 import com.qinfenqi.mall.common.constant.Constant;
 
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 @Component("loginInterceptor")
 public class LoginInterceptor extends MethodFilterInterceptor {
 	// private static final Logger logger = LoggerFactory.getLogger(LoginInterceptor.class);
@@ -25,6 +33,8 @@ public class LoginInterceptor extends MethodFilterInterceptor {
 	public static final String INDEX = "index/index!indexPage.do";
 	/** 限制访问转向 */
 	public static final String FORBIDDEN_RESULT = "forbidden";
+	
+	
 
 	/**
 	 * 额外要放开的Action
@@ -85,6 +95,7 @@ public class LoginInterceptor extends MethodFilterInterceptor {
 			"channel/channel!apple.do",
 			"channel/channel!free.do",
 			"channel/channel!cashCredit.do",
+			"channel/channel!lotto.do",
 			
 			//activity
 			"activity/activity!rule.do",
@@ -132,6 +143,8 @@ public class LoginInterceptor extends MethodFilterInterceptor {
 	protected String doIntercept(ActionInvocation invocation) throws Exception {
 		String result = INDEX;
 		String currentURL = getCurrentURL();
+		//String code = (String) request.getSession().getAttribute("ss");
+		//System.out.println(code);
 		System.out.println("=======================currentURL ====================== " + currentURL + "===============================");
 		if (currentURL.endsWith(REQUESTURI_SUFFIX)) {
 			for (String action : FREE_ACTIONS) {

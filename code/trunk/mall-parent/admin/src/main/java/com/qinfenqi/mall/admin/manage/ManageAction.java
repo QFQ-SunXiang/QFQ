@@ -44,6 +44,7 @@ public class ManageAction extends BaseActionEx {
 	private AuthCode authCode = new AuthCode();
 	private List<AuthCode> authCodes;
 	private List<DefaultRate> defRates;
+	private List<DefaultRate> advanceRates;
 	private ProductRecom productRecom;
 	private String recoms;
 
@@ -135,7 +136,32 @@ public class ManageAction extends BaseActionEx {
 		ajaxReturnValue = json.toString();
 		return AJAX;
 	}
+	/**
+	 * 设置高级费率页
+	 * 
+	 * @return
+	 */
+	public String advanceRatePage() {
+		advanceRates = manageService.getAdvanceRates();
+		return "advanceRate";
+	}
 
+	/**
+	 * 保存高级费率
+	 * 
+	 * @return
+	 */
+	public String saveAdvanceRate() {
+		String[] serviceFee = request.getParameterValues("serviceFee");
+		String[] rateFee = request.getParameterValues("rateFee");
+		String[] periodNum = request.getParameterValues("periodNum");
+
+		JSONObject json = new JSONObject();
+		boolean result = manageService.saveAdvanceRate(serviceFee, rateFee, periodNum);
+		json.put("result", result ? SUCCESS : FAILURE);
+		ajaxReturnValue = json.toString();
+		return AJAX;
+	}
 	/**
 	 * 设置精品推荐
 	 * 
@@ -197,6 +223,20 @@ public class ManageAction extends BaseActionEx {
 	 */
 	public void setDefRates(List<DefaultRate> defRates) {
 		this.defRates = defRates;
+	}
+	
+	/**
+	 * @return the advanceRates
+	 */
+	public List<DefaultRate> getAdvanceRates() {
+		return advanceRates;
+	}
+
+	/**
+	 * @param advanceRates the advanceRates to set
+	 */
+	public void setAdvanceRates(List<DefaultRate> advanceRates) {
+		this.advanceRates = advanceRates;
 	}
 
 	/**

@@ -86,6 +86,27 @@ public class ManageServiceImpl implements ManageService {
 		}
 		return result;
 	}
+	
+	@Override
+	public List<DefaultRate> getAdvanceRates() {
+		return manageDao.queryAdvanceRates();
+	}
+
+	@Override
+	public boolean saveAdvanceRate(String[] serviceFee, String[] rateFee, String[] periodNum) {
+		boolean result = false;
+		List<DefaultRate> list = new ArrayList<DefaultRate>();
+		manageDao.removeAdvanceRates();
+		for (int i = 0; i < periodNum.length; i++) {
+			DefaultRate dr = new DefaultRate();
+			dr.setServiceFee(Float.parseFloat(serviceFee[i]));
+			dr.setRateFee(Float.parseFloat(rateFee[i]));
+			dr.setPeriodNum(Integer.parseInt(periodNum[i]));
+			list.add(dr);
+		}
+		result = manageDao.createAdvanceRates(list);	
+		return result;
+	}
 
 	@Override
 	public boolean deleteCode(AuthCode authCode) {

@@ -49,7 +49,12 @@ public interface ServiceRateDao {
 	 * @return
 	 */
 	List<DefaultRate> getDefaultRates();
-
+	
+	/**
+	 * @return
+	 */
+	List<DefaultRate> getAdvanceRates();
+	
 	/**
 	 * @param caches
 	 */

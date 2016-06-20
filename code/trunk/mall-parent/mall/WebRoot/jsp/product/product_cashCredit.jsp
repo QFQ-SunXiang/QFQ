@@ -5,12 +5,14 @@
 <%@include file="../common/head.jsp"%>
 <link href="<%=basePath%>css/detail.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.gallery.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
 <title>亲分期 - <s:property value="productQuery.productName" /></title>
 	<script type="text/javascript">
 		$(function(){
+			
 			// 加载商品推荐列表 
-			getRecommends();
-			  
+			getRecommends(); 
 			$(".product-payment dd a").click(function(){
 				var thisToggle = $(this).is(".inline-block") ? $(this) : $(this).prev();
 				$(".inline-block").removeClass("current");

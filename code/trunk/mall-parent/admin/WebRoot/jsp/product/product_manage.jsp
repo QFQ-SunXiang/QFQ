@@ -174,7 +174,7 @@
 	<!--main-->
 		<div class="rhead">
 			<div class="rpos">当前位置: 商品 - 商品管理 - 列表</div>
-			<input type="button" class="ropt" value="添加商品" onclick="addProduct()" />
+				<input type="button" class="ropt" value="添加商品" onclick="addProduct()" />
 			<div class="clear"></div>
 		</div>
 		<!-- --> 

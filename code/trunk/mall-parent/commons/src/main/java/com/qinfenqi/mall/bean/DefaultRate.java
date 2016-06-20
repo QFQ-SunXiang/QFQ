@@ -16,6 +16,11 @@ public class DefaultRate {
 	private double serviceRate;
 	private int periodNumStart;
 	private int periodNumEnd;
+
+
+	private double serviceFee;
+	private double rateFee;
+	private int periodNum;
 	
 	/**
 	 * @return the serviceRate
@@ -52,6 +57,43 @@ public class DefaultRate {
 	 */
 	public void setPeriodNumEnd(int periodNumEnd) {
 		this.periodNumEnd = periodNumEnd;
+	}
+	
+	/**
+	 * @return the serviceFee
+	 */
+	public double getServiceFee() {
+		return serviceFee;
+	}
+	/**
+	 * @param serviceFee the serviceFee to set
+	 */
+	public void setServiceFee(double serviceFee) {
+		this.serviceFee = serviceFee;
+	}
+	/**
+	 * @return the rateFee
+	 */
+	public double getRateFee() {
+		return rateFee;
+	}
+	/**
+	 * @param rateFee the rateFee to set
+	 */
+	public void setRateFee(double rateFee) {
+		this.rateFee = rateFee;
+	}
+	/**
+	 * @return the periodNum
+	 */
+	public int getPeriodNum() {
+		return periodNum;
+	}
+	/**
+	 * @param periodNum the periodNum to set
+	 */
+	public void setPeriodNum(int periodNum) {
+		this.periodNum = periodNum;
 	}
 	
 }

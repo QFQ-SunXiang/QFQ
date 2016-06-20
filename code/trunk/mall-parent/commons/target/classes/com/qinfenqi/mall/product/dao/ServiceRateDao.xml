@@ -52,5 +52,8 @@
 	<select id="getDefaultRates" resultType="com.qinfenqi.mall.bean.DefaultRate">
 		select * from qfq_mall_product_default_rate
 	</select>
-	
+	<!-- 获取商品高级费率 -->
+	<select id="getAdvanceRates" resultType="com.qinfenqi.mall.bean.DefaultRate">
+		select * from qfq_mall_product_advance_rate
+	</select>
 </mapper>

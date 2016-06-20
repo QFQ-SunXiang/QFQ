@@ -20,6 +20,19 @@
 				}, "json");
 			});
 		}
+		function lottoPayment(id, type, productId){
+			layer.open({
+			    type: 2,
+			    title: false,
+			    shadeClose: false,
+			    shade: 0.3,
+			    cancel: function(index){ 
+			    	window.location.href = "<%=basePath%>center/order.html";
+			    },
+			    area: ["500px", "200px"],
+			    content: "<%=basePath%>pay/lottoPayment.html?payment.tradeType=" + type +  "&payment.tradeNo=" + id + "&payment.productId=" + productId
+			});
+		}
 	</script>
 </head>
 <body>
@@ -96,7 +109,12 @@
 		                                </s:if>
 		                                <s:if test="orderTypes == 2">
 		                                	<s:if test="orderStatus == 9">
-		                                		<div><a href="javascript: payment(<s:property value="orderId" />, 3)">立即付款</a></div>
+		                                		<s:if test="productId == 1571">
+                                   					<div><a href="javascript:  lottoPayment(<s:property value="orderId" />, 3 ,<s:property value="productId" />)">立即付款</a></div>
+	                              			 	</s:if>
+		                                		<s:else>
+                                   					<div><a href="javascript:  payment(<s:property value="orderId" />, 3)">立即付款</a></div>
+                                   				</s:else>                                 				
 			                                	<div><a href="javascript: cancelOrder(<s:property value="orderId" />)">取消订单</a></div>
 		                                	</s:if>
 		                                </s:if>

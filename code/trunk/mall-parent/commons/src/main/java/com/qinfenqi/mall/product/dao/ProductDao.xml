@@ -66,7 +66,11 @@
 			index_order = #{indexOrder}
 		where product_id = #{productId}
 	</update>
-	
+	<!-- 添加新产品 -->
+	<insert id="addCategory" parameterType="com.qinfenqi.mall.product.query.ProductQuery">
+		insert into qfq_mall_product_list (product_pname, brand_id)
+			values (#{productPName}, #{brandId})
+	</insert>
 	<update id="editProductCover" parameterType="com.qinfenqi.mall.product.query.ProductQuery">
 		update qfq_mall_product set cover_img = #{coverImg}, product_imgs = #{productImgs} where product_id = #{productId}
 	</update>
